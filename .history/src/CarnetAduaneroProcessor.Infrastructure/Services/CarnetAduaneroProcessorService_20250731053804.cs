@@ -483,46 +483,6 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
         }
 
         /// <summary>
-        /// Extrae texto usando Azure Computer Vision directamente sin procesamiento local
-        /// </summary>
-        private async Task<string> ExtraerTextoConAzureVisionDirectoAsync(Stream imageStream)
-        {
-            try
-            {
-                if (string.IsNullOrEmpty(_azureVisionKey) || string.IsNullOrEmpty(_azureVisionEndpoint))
-                {
-                    return "Azure Computer Vision no configurado. Configure AzureVision:Key y AzureVision:Endpoint en appsettings.json";
-                }
-
-                var credential = new Azure.AzureKeyCredential(_azureVisionKey);
-                var client = new ImageAnalysisClient(new Uri(_azureVisionEndpoint), credential);
-
-                // Usar el stream directamente sin conversión
-                var imageData = BinaryData.FromStream(imageStream);
-                var options = new ImageAnalysisOptions
-                {
-                    Language = "es"
-                };
-
-                var result = await client.AnalyzeAsync(imageData, VisualFeatures.Read, options);
-
-                if (result.Value?.Read?.Blocks != null)
-                {
-                    var textoCompleto = string.Join(" ", result.Value.Read.Blocks.SelectMany(b => b.Lines?.Select(l => l.Text) ?? Array.Empty<string>()));
-                    _logger.LogInformation("Texto extraído con Azure Vision directo: {Texto}", textoCompleto.Substring(0, Math.Min(200, textoCompleto.Length)));
-                    return textoCompleto;
-                }
-
-                return "Azure Computer Vision no detectó texto en la imagen";
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error en extracción con Azure Vision directo");
-                return $"Error en Azure Computer Vision: {ex.Message}";
-            }
-        }
-
-        /// <summary>
         /// Extrae texto usando Azure Computer Vision (método legacy con System.Drawing)
         /// </summary>
         private async Task<string> ExtraerTextoConAzureVisionAsync(Bitmap image)

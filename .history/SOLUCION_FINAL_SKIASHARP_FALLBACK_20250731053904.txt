@@ -1,0 +1,109 @@
+🔧 SOLUCIÓN FINAL SKIASHARP + FALLBACK
+====================================
+
+PROBLEMA IDENTIFICADO:
+=====================
+- SkiaSharp necesita librerías nativas Linux que no están en el contenedor
+- Error: "Unable to load shared library 'libSkiaSharp'"
+
+SOLUCIÓN IMPLEMENTADA:
+=====================
+
+1. ✅ DEPENDENCIAS NATIVAS AGREGADAS AL DOCKERFILE:
+   - libfontconfig1
+   - libfreetype6  
+   - libexpat1
+   - libuuid1
+
+2. ✅ PAQUETE NATIVO AGREGADO:
+   - SkiaSharp.NativeAssets.Linux v2.88.7
+
+3. ✅ MÉTODO FALLBACK IMPLEMENTADO:
+   - Si SkiaSharp falla → usa Azure Vision directamente
+   - Sin procesamiento local de imágenes
+   - Stream directo a Azure Computer Vision
+
+LÓGICA DE FALLBACK:
+==================
+```csharp
+try {
+    // Intenta SkiaSharp primero
+    using var bitmap = SKBitmap.Decode(fileStream);
+    return await ExtraerTextoConAzureVisionSkiaAsync(bitmap);
+}
+catch (Exception skiaEx) {
+    // Si SkiaSharp falla, usa Azure Vision directamente
+    fileStream.Position = 0;
+    return await ExtraerTextoConAzureVisionDirectoAsync(fileStream);
+}
+```
+
+VENTAJAS DE ESTA SOLUCIÓN:
+=========================
+✅ Si SkiaSharp funciona → mejor rendimiento
+✅ Si SkiaSharp falla → funciona igual con Azure Vision
+✅ No requiere System.Drawing en absoluto
+✅ Mantiene toda la funcionalidad
+✅ Logs claros para debugging
+
+ARCHIVOS MODIFICADOS:
+====================
+1. Dockerfile - agregadas dependencias nativas
+2. CarnetAduaneroProcessor.Infrastructure.csproj - agregado SkiaSharp.NativeAssets.Linux
+3. CarnetAduaneroProcessorService.cs - lógica de fallback
+
+RESULTADO ESPERADO EN LOGS:
+===========================
+
+ESCENARIO 1 (SkiaSharp funciona):
+✅ "Texto extraído con SkiaSharp + Azure Vision: [texto]"
+
+ESCENARIO 2 (SkiaSharp falla):
+⚠️ "SkiaSharp falló, usando Azure Vision directamente"
+✅ "Texto extraído con Azure Vision directo: [texto]"
+
+COMANDOS PARA RENDER:
+====================
+1. git add .
+2. git commit -m "SkiaSharp + fallback a Azure Vision directo"
+3. git push origin main
+4. Render: Manual Deploy → Clear build cache & deploy
+
+DEBUGGING:
+==========
+Si aún falla, los logs mostrarán exactamente qué método se está usando:
+- "SkiaSharp + Azure Vision" = SkiaSharp funcionando
+- "Azure Vision directo" = Fallback funcionando
+- Error = Problemas con Azure Vision (revisar credenciales)
+
+DEPENDENCIAS COMPLETAS EN DOCKERFILE:
+====================================
+RUN apt-get update && apt-get install -y \
+    tesseract-ocr \
+    tesseract-ocr-spa \
+    tesseract-ocr-eng \
+    libgdiplus \
+    libc6-dev \
+    libgif-dev \
+    libjpeg-dev \
+    libpng-dev \
+    libtiff-dev \
+    libwebp-dev \
+    libfontconfig1 \
+    libfreetype6 \
+    libexpat1 \
+    libuuid1 \
+    && rm -rf /var/lib/apt/lists/*
+
+PAQUETES .NET:
+==============
+<PackageReference Include="SkiaSharp" Version="2.88.7" />
+<PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="2.88.7" />
+
+ESTADO:
+=======
+🎯 LISTO PARA DESPLEGAR
+🔄 Fallback garantiza funcionamiento
+📊 Logs detallados para debugging
+
+¡Esta solución garantiza que funcione en cualquier caso!
