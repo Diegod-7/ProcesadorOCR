@@ -39,8 +39,7 @@ RUN dotnet publish "CarnetAduaneroProcessor.API.csproj" -c Release -o /app/publi
 FROM base AS final
 WORKDIR /app
 
-# Copiar archivos de Tesseract locales si existen
-COPY tessdata/ /usr/share/tessdata/
+# Copiar archivos de Tesseract (ya instalados en la imagen base)
 
 # Copiar la aplicación publicada
 COPY --from=publish /app/publish .
