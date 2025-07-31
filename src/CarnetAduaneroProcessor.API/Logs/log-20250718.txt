@@ -1,0 +1,21 @@
+2025-07-18 09:56:42.336 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-07-18 09:56:50.068 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-07-18 09:57:46.394 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-07-18 09:57:46.590 -04:00 [INF] Iniciando procesamiento de archivo PNG: carneAduanero_1.png
+2025-07-18 09:57:46.608 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmp16EE.tmp
+2025-07-18 09:57:46.619 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmp16EE.tmp
+2025-07-18 09:57:48.234 -04:00 [INF] Texto extraído con Azure Vision: CARNE anagena ADUANERO N8 687 Nombre ... OLIZAŁO-ADOLFO GONZALO ADOLFO GONZALEZ PINO GONZALEZ PINO 15.970.128-K RUT.15 970 1.28-K. Resol. 01.42. Fecha 17 .01.2024 AGAD Cod .... B -. 12 Nombre ALEXIS A
+2025-07-18 09:57:48.235 -04:00 [INF] Texto extraído de carné aduanero: CARNE anagena ADUANERO N8 687 Nombre ... OLIZAŁO-ADOLFO GONZALO ADOLFO GONZALEZ PINO GONZALEZ PINO 1
+2025-07-18 09:57:48.238 -04:00 [INF] Iniciando procesamiento de texto OCR para carné aduanero
+2025-07-18 09:57:48.240 -04:00 [INF] Texto normalizado: CARNE anagena ADUANERO N8 687 Nombre ... OLIZAŁO-ADOLFO GONZALO ADOLFO GONZALEZ PINO GONZALEZ PINO 15.970.128-K RUT.15 970 1.28-K. Resol. 01.42. Fecha 17 .01.2024 AGAD Cod .... B -. 12 Nombre ALEXIS AGAD Cod. 111 Nombre MONTENEGRO AGAD Cog Nombre Los funcionarios de Aduanas, los empleados de los Recintos de Depósito Aduanero y de Zona Franca, permitirán al titular del. presente Carné, el acceso y facilitación de las gestiones y operaciones de las destin o los agentes de aduBRALACUBILLOS SEGOVIA PERSONAL EINTRANSFE NSFERIBLE Fecha Emisión: 112 FEB 20124 Fecha Vencimiento: VALIDO POR 3 AÑOS Firma Autoridad Aduanera
+2025-07-18 09:57:48.242 -04:00 [INF] Título extraído: CARNÉ ADUANERO
+2025-07-18 09:57:48.251 -04:00 [INF] Nombre extraído: ADOLFO GONZALO ADOLFO GONZALEZ
+2025-07-18 09:57:48.254 -04:00 [INF] RUT extraído: 15.970.128-K
+2025-07-18 09:57:48.256 -04:00 [INF] Número de carné extraído: N8
+2025-07-18 09:57:48.257 -04:00 [INF] Fecha extraída: 17.01.2024
+2025-07-18 09:57:48.259 -04:00 [INF] Resolución extraída: Resol. 01
+2025-07-18 09:57:48.261 -04:00 [INF] Procesamiento completado exitosamente
+2025-07-18 09:57:48.263 -04:00 [INF] Extracción completada para carné aduanero: N8
+2025-07-18 09:57:48.265 -04:00 [INF] Carné procesado exitosamente: N8
+2025-07-18 09:57:48.301 -04:00 [INF] Solicitud completada: POST /api/CarnetAduanero/procesar - 200 en 1918.3296ms
+2025-07-18 09:57:52.683 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.

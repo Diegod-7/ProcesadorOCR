@@ -1,0 +1,233 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B39EE77-0C13-4811-B4FA-D76D5BF9F90F}|src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj|c:\\users\\diegodiaz\\downloads\\powerautomate\\carnetaduaneroprocessor\\src\\carnetaduaneroprocessor.infrastructure\\services\\carnetaduaneroprocessorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B39EE77-0C13-4811-B4FA-D76D5BF9F90F}|src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj|solutionrelative:src\\carnetaduaneroprocessor.infrastructure\\services\\carnetaduaneroprocessorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|src\\CarnetAduaneroProcessor.API\\CarnetAduaneroProcessor.API.csproj|c:\\users\\diegodiaz\\downloads\\powerautomate\\carnetaduaneroprocessor\\src\\carnetaduaneroprocessor.api\\controllers\\carnetaduanerocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|src\\CarnetAduaneroProcessor.API\\CarnetAduaneroProcessor.API.csproj|solutionrelative:src\\carnetaduaneroprocessor.api\\controllers\\carnetaduanerocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B39EE77-0C13-4811-B4FA-D76D5BF9F90F}|src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj|c:\\users\\diegodiaz\\downloads\\powerautomate\\carnetaduaneroprocessor\\src\\carnetaduaneroprocessor.infrastructure\\services\\guiadespachoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B39EE77-0C13-4811-B4FA-D76D5BF9F90F}|src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj|solutionrelative:src\\carnetaduaneroprocessor.infrastructure\\services\\guiadespachoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|src\\CarnetAduaneroProcessor.API\\CarnetAduaneroProcessor.API.csproj|c:\\users\\diegodiaz\\downloads\\powerautomate\\carnetaduaneroprocessor\\src\\carnetaduaneroprocessor.api\\controllers\\documentorecepcioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|src\\CarnetAduaneroProcessor.API\\CarnetAduaneroProcessor.API.csproj|solutionrelative:src\\carnetaduaneroprocessor.api\\controllers\\documentorecepcioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|src\\CarnetAduaneroProcessor.API\\CarnetAduaneroProcessor.API.csproj|c:\\users\\diegodiaz\\downloads\\powerautomate\\carnetaduaneroprocessor\\src\\carnetaduaneroprocessor.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|src\\CarnetAduaneroProcessor.API\\CarnetAduaneroProcessor.API.csproj|solutionrelative:src\\carnetaduaneroprocessor.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|src\\CarnetAduaneroProcessor.API\\CarnetAduaneroProcessor.API.csproj|c:\\users\\diegodiaz\\downloads\\powerautomate\\carnetaduaneroprocessor\\src\\carnetaduaneroprocessor.api\\controllers\\tactadccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|src\\CarnetAduaneroProcessor.API\\CarnetAduaneroProcessor.API.csproj|solutionrelative:src\\carnetaduaneroprocessor.api\\controllers\\tactadccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B39EE77-0C13-4811-B4FA-D76D5BF9F90F}|src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj|c:\\users\\diegodiaz\\downloads\\powerautomate\\carnetaduaneroprocessor\\src\\carnetaduaneroprocessor.infrastructure\\services\\documentorecepcionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B39EE77-0C13-4811-B4FA-D76D5BF9F90F}|src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj|solutionrelative:src\\carnetaduaneroprocessor.infrastructure\\services\\documentorecepcionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|src\\CarnetAduaneroProcessor.API\\CarnetAduaneroProcessor.API.csproj|c:\\users\\diegodiaz\\downloads\\powerautomate\\carnetaduaneroprocessor\\src\\carnetaduaneroprocessor.api\\controllers\\declaracioningresocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|src\\CarnetAduaneroProcessor.API\\CarnetAduaneroProcessor.API.csproj|solutionrelative:src\\carnetaduaneroprocessor.api\\controllers\\declaracioningresocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B39EE77-0C13-4811-B4FA-D76D5BF9F90F}|src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj|c:\\users\\diegodiaz\\downloads\\powerautomate\\carnetaduaneroprocessor\\src\\carnetaduaneroprocessor.infrastructure\\services\\pdfextractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B39EE77-0C13-4811-B4FA-D76D5BF9F90F}|src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj|solutionrelative:src\\carnetaduaneroprocessor.infrastructure\\services\\pdfextractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0331CC92-DF6C-432D-BC14-F4787CBE3622}|src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj|c:\\users\\diegodiaz\\downloads\\powerautomate\\carnetaduaneroprocessor\\src\\carnetaduaneroprocessor.core\\models\\carnetaduanerodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0331CC92-DF6C-432D-BC14-F4787CBE3622}|src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj|solutionrelative:src\\carnetaduaneroprocessor.core\\models\\carnetaduanerodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0331CC92-DF6C-432D-BC14-F4787CBE3622}|src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj|c:\\users\\diegodiaz\\downloads\\powerautomate\\carnetaduaneroprocessor\\src\\carnetaduaneroprocessor.core\\services\\ipdfextractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0331CC92-DF6C-432D-BC14-F4787CBE3622}|src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj|solutionrelative:src\\carnetaduaneroprocessor.core\\services\\ipdfextractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B39EE77-0C13-4811-B4FA-D76D5BF9F90F}|src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj|c:\\users\\diegodiaz\\downloads\\powerautomate\\carnetaduaneroprocessor\\src\\carnetaduaneroprocessor.infrastructure\\carnetaduaneroprocessor.infrastructure.csproj||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9B39EE77-0C13-4811-B4FA-D76D5BF9F90F}|src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj|solutionrelative:src\\carnetaduaneroprocessor.infrastructure\\carnetaduaneroprocessor.infrastructure.csproj||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:150:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:151:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:149:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GuiaDespachoService.cs",
+              "DocumentMoniker": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Infrastructure\\Services\\GuiaDespachoService.cs",
+              "RelativeDocumentMoniker": "src\\CarnetAduaneroProcessor.Infrastructure\\Services\\GuiaDespachoService.cs",
+              "ToolTip": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Infrastructure\\Services\\GuiaDespachoService.cs",
+              "RelativeToolTip": "src\\CarnetAduaneroProcessor.Infrastructure\\Services\\GuiaDespachoService.cs",
+              "ViewState": "AQIAAGUEAAAAAAAAAAAYwI8EAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T08:46:42.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarnetAduaneroController.cs",
+              "DocumentMoniker": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.API\\Controllers\\CarnetAduaneroController.cs",
+              "RelativeDocumentMoniker": "src\\CarnetAduaneroProcessor.API\\Controllers\\CarnetAduaneroController.cs",
+              "ToolTip": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.API\\Controllers\\CarnetAduaneroController.cs",
+              "RelativeToolTip": "src\\CarnetAduaneroProcessor.API\\Controllers\\CarnetAduaneroController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAcwEkAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T02:39:02.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\CarnetAduaneroProcessor.API\\Program.cs",
+              "ToolTip": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.API\\Program.cs",
+              "RelativeToolTip": "src\\CarnetAduaneroProcessor.API\\Program.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAmwCMAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T01:20:00.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IPdfExtractionService.cs",
+              "DocumentMoniker": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\Services\\IPdfExtractionService.cs",
+              "RelativeDocumentMoniker": "src\\CarnetAduaneroProcessor.Core\\Services\\IPdfExtractionService.cs",
+              "ToolTip": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\Services\\IPdfExtractionService.cs",
+              "RelativeToolTip": "src\\CarnetAduaneroProcessor.Core\\Services\\IPdfExtractionService.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAmwFoAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T02:28:50.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarnetAduaneroProcessorService.cs",
+              "DocumentMoniker": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Infrastructure\\Services\\CarnetAduaneroProcessorService.cs",
+              "RelativeDocumentMoniker": "src\\CarnetAduaneroProcessor.Infrastructure\\Services\\CarnetAduaneroProcessorService.cs",
+              "ToolTip": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Infrastructure\\Services\\CarnetAduaneroProcessorService.cs",
+              "RelativeToolTip": "src\\CarnetAduaneroProcessor.Infrastructure\\Services\\CarnetAduaneroProcessorService.cs",
+              "ViewState": "AQIAAOMAAAAAAAAAAAAMwO8AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T03:02:18.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DocumentoRecepcionController.cs",
+              "DocumentMoniker": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.API\\Controllers\\DocumentoRecepcionController.cs",
+              "RelativeDocumentMoniker": "src\\CarnetAduaneroProcessor.API\\Controllers\\DocumentoRecepcionController.cs",
+              "ToolTip": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.API\\Controllers\\DocumentoRecepcionController.cs",
+              "RelativeToolTip": "src\\CarnetAduaneroProcessor.API\\Controllers\\DocumentoRecepcionController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAUwB8AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T06:07:18.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TactAdcController.cs",
+              "DocumentMoniker": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.API\\Controllers\\TactAdcController.cs",
+              "RelativeDocumentMoniker": "src\\CarnetAduaneroProcessor.API\\Controllers\\TactAdcController.cs",
+              "ToolTip": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.API\\Controllers\\TactAdcController.cs",
+              "RelativeToolTip": "src\\CarnetAduaneroProcessor.API\\Controllers\\TactAdcController.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAiwFoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T08:03:19.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DocumentoRecepcionService.cs",
+              "DocumentMoniker": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Infrastructure\\Services\\DocumentoRecepcionService.cs",
+              "RelativeDocumentMoniker": "src\\CarnetAduaneroProcessor.Infrastructure\\Services\\DocumentoRecepcionService.cs",
+              "ToolTip": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Infrastructure\\Services\\DocumentoRecepcionService.cs",
+              "RelativeToolTip": "src\\CarnetAduaneroProcessor.Infrastructure\\Services\\DocumentoRecepcionService.cs",
+              "ViewState": "AQIAAIwBAAAAAAAAAAAEwHQBAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T06:34:07.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DeclaracionIngresoController.cs",
+              "DocumentMoniker": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.API\\Controllers\\DeclaracionIngresoController.cs",
+              "RelativeDocumentMoniker": "src\\CarnetAduaneroProcessor.API\\Controllers\\DeclaracionIngresoController.cs",
+              "ToolTip": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.API\\Controllers\\DeclaracionIngresoController.cs",
+              "RelativeToolTip": "src\\CarnetAduaneroProcessor.API\\Controllers\\DeclaracionIngresoController.cs",
+              "ViewState": "AQIAALcAAAAAAAAAAADgv8IAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T04:52:58.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PdfExtractionService.cs",
+              "DocumentMoniker": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Infrastructure\\Services\\PdfExtractionService.cs",
+              "RelativeDocumentMoniker": "src\\CarnetAduaneroProcessor.Infrastructure\\Services\\PdfExtractionService.cs",
+              "ToolTip": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Infrastructure\\Services\\PdfExtractionService.cs",
+              "RelativeToolTip": "src\\CarnetAduaneroProcessor.Infrastructure\\Services\\PdfExtractionService.cs",
+              "ViewState": "AQIAAIQBAAAAAAAAAAAEwIcBAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T01:20:42.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CarnetAduaneroData.cs",
+              "DocumentMoniker": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\Models\\CarnetAduaneroData.cs",
+              "RelativeDocumentMoniker": "src\\CarnetAduaneroProcessor.Core\\Models\\CarnetAduaneroData.cs",
+              "ToolTip": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\Models\\CarnetAduaneroData.cs",
+              "RelativeToolTip": "src\\CarnetAduaneroProcessor.Core\\Models\\CarnetAduaneroData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T03:01:10.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CarnetAduaneroProcessor.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\DiegoDiaz\\Downloads\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj",
+              "RelativeToolTip": "src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-17T00:46:52.806Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj",
+        "projectName": "CarnetAduaneroProcessor.Core",
+        "projectPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj",
+        "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

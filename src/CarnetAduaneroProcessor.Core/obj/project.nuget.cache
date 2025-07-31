@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Vq0sZbC5TQpdfeFXQhV5H+OxwDznY5Qq4AiSzY9iE5+PVu2qC/zTP8Tmn/Xz15mHmHkuN2767e24Is3OwYqMxg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Diego\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

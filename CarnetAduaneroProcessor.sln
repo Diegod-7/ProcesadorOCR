@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarnetAduaneroProcessor.API", "src\CarnetAduaneroProcessor.API\CarnetAduaneroProcessor.API.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarnetAduaneroProcessor.Core", "src\CarnetAduaneroProcessor.Core\CarnetAduaneroProcessor.Core.csproj", "{0331CC92-DF6C-432D-BC14-F4787CBE3622}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarnetAduaneroProcessor.Infrastructure", "src\CarnetAduaneroProcessor.Infrastructure\CarnetAduaneroProcessor.Infrastructure.csproj", "{9B39EE77-0C13-4811-B4FA-D76D5BF9F90F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0331CC92-DF6C-432D-BC14-F4787CBE3622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0331CC92-DF6C-432D-BC14-F4787CBE3622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0331CC92-DF6C-432D-BC14-F4787CBE3622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0331CC92-DF6C-432D-BC14-F4787CBE3622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B39EE77-0C13-4811-B4FA-D76D5BF9F90F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B39EE77-0C13-4811-B4FA-D76D5BF9F90F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B39EE77-0C13-4811-B4FA-D76D5BF9F90F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B39EE77-0C13-4811-B4FA-D76D5BF9F90F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4E5F6G7-H8I9-0123-EFGH-456789012345}
+	EndGlobalSection
+EndGlobal

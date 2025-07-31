@@ -1,0 +1,12 @@
+C:\Users\DiegoDiaz\Downloads\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\bin\Debug\net8.0\CarnetAduaneroProcessor.Core.deps.json
+C:\Users\DiegoDiaz\Downloads\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\bin\Debug\net8.0\CarnetAduaneroProcessor.Core.dll
+C:\Users\DiegoDiaz\Downloads\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\bin\Debug\net8.0\CarnetAduaneroProcessor.Core.pdb
+C:\Users\DiegoDiaz\Downloads\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net8.0\CarnetAduaneroProcessor.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DiegoDiaz\Downloads\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net8.0\CarnetAduaneroProcessor.Core.AssemblyInfoInputs.cache
+C:\Users\DiegoDiaz\Downloads\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net8.0\CarnetAduaneroProcessor.Core.AssemblyInfo.cs
+C:\Users\DiegoDiaz\Downloads\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net8.0\CarnetAduaneroProcessor.Core.csproj.CoreCompileInputs.cache
+C:\Users\DiegoDiaz\Downloads\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net8.0\CarnetAduaneroProcessor.Core.dll
+C:\Users\DiegoDiaz\Downloads\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net8.0\refint\CarnetAduaneroProcessor.Core.dll
+C:\Users\DiegoDiaz\Downloads\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net8.0\CarnetAduaneroProcessor.Core.pdb
+C:\Users\DiegoDiaz\Downloads\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net8.0\ref\CarnetAduaneroProcessor.Core.dll
+C:\Users\DiegoDiaz\Downloads\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net8.0\CarnetAduaneroProcessor.Core.csproj.AssemblyReference.cache

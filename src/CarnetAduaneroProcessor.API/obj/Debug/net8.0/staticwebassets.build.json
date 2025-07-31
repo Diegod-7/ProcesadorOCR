@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cXzC3tHYvpP9Las9FjjzNGQTkYkIjp57UiYugtZVgNA=",
+  "Source": "CarnetAduaneroProcessor.API",
+  "BasePath": "_content/CarnetAduaneroProcessor.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

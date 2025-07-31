@@ -1,0 +1,466 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CarnetAduaneroProcessor.API</name>
+    </assembly>
+    <members>
+        <member name="T:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController">
+            <summary>
+            Controlador para procesar PDFs de Carnés Aduaneros
+            </summary>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.ProcesarPng(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Sube y procesa un archivo PNG de carné aduanero
+            </summary>
+            <param name="file">Archivo PNG a procesar</param>
+            <returns>Datos extraídos del carné</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.ProcesarLote(Microsoft.AspNetCore.Http.IFormFileCollection)">
+            <summary>
+            Procesa múltiples PDFs en lote
+            </summary>
+            <param name="files">Lista de archivos PDF</param>
+            <returns>Resultados del procesamiento</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.ObtenerPorId(System.Int32)">
+            <summary>
+            Obtiene un carné por su ID
+            </summary>
+            <param name="id">ID del carné</param>
+            <returns>Carné encontrado</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.ObtenerTodos(System.Int32,System.Int32,System.String)">
+            <summary>
+            Obtiene todos los carnés con paginación
+            </summary>
+            <param name="page">Número de página</param>
+            <param name="pageSize">Tamaño de página</param>
+            <param name="search">Término de búsqueda</param>
+            <returns>Lista de carnés</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.ProcesarImagen(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Procesa una imagen directamente y extrae texto usando OCR
+            </summary>
+            <param name="file">Archivo de imagen (PNG, JPG, etc.)</param>
+            <returns>Texto extraído de la imagen</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.ExtraerImagenes(Microsoft.AspNetCore.Http.IFormFile,System.String)">
+            <summary>
+            Extrae y guarda las imágenes de un PDF
+            </summary>
+            <param name="file">Archivo PDF</param>
+            <param name="outputFolder">Carpeta de destino (opcional)</param>
+            <returns>Lista de rutas de las imágenes extraídas</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.ObtenerEstadisticas">
+            <summary>
+            Obtiene estadísticas de procesamiento
+            </summary>
+            <returns>Estadísticas del sistema</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.ExportarJson(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Exporta carnés a JSON
+            </summary>
+            <param name="fechaDesde">Fecha desde</param>
+            <param name="fechaHasta">Fecha hasta</param>
+            <returns>Archivo JSON con los datos</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.Eliminar(System.Int32)">
+            <summary>
+            Elimina un carné por su ID
+            </summary>
+            <param name="id">ID del carné</param>
+            <returns>Resultado de la eliminación</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.ProcesarTextoOcr(CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.ProcesarTextoOcrRequest)">
+            <summary>
+            Procesa texto OCR de un carné aduanero y extrae los datos principales
+            </summary>
+            <param name="request">Objeto con la propiedad 'textoOcr'</param>
+            <returns>Datos estructurados del carné aduanero</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.GuardarArchivoTemporalAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Guarda un archivo temporalmente
+            </summary>
+        </member>
+        <member name="T:CarnetAduaneroProcessor.API.Controllers.ComprobanteTransaccionController">
+            <summary>
+            Controlador para procesar documentos de Comprobante de Transacción
+            </summary>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.ComprobanteTransaccionController.ProcesarDocumento(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Procesa un archivo PNG de documento de Comprobante de Transacción
+            </summary>
+            <param name="file">Archivo PNG del documento de Comprobante de Transacción</param>
+            <returns>Datos extraídos del documento de Comprobante de Transacción</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.ComprobanteTransaccionController.ProcesarTexto(CarnetAduaneroProcessor.API.Models.ProcesamientoTextoRequest)">
+            <summary>
+            Procesa texto OCR para extraer datos de documento de Comprobante de Transacción
+            </summary>
+            <param name="request">Solicitud con texto OCR</param>
+            <returns>Datos extraídos del documento de Comprobante de Transacción</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.ComprobanteTransaccionController.ValidarArchivo(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Valida si un archivo es un PNG válido
+            </summary>
+            <param name="file">Archivo a validar</param>
+            <returns>Resultado de la validación</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.ComprobanteTransaccionController.ObtenerInfo">
+            <summary>
+            Obtiene información sobre el servicio de Comprobante de Transacción
+            </summary>
+            <returns>Información del servicio</returns>
+        </member>
+        <member name="T:CarnetAduaneroProcessor.API.Controllers.DeclaracionIngresoController">
+            <summary>
+            Controlador para procesar Declaraciones de Ingreso (DI)
+            </summary>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.DeclaracionIngresoController.ProcesarDeclaracionIngreso(Microsoft.AspNetCore.Http.IFormFileCollection)">
+            <summary>
+            Procesa 1 o 2 archivos PNG de Declaración de Ingreso
+            </summary>
+            <param name="files">1 o 2 archivos PNG de la declaración</param>
+            <returns>Datos extraídos combinados de los archivos</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.DeclaracionIngresoController.ProcesarDeclaracionIngresoSingle(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Procesa un solo archivo PNG de Declaración de Ingreso
+            </summary>
+            <param name="file">Archivo PNG de la declaración de ingreso</param>
+            <returns>Datos extraídos de la declaración</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.DeclaracionIngresoController.ExtraerDatosArchivo(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Extrae datos de una Declaración de Ingreso desde un archivo (PDF, PNG, JPG)
+            </summary>
+            <param name="file">Archivo de la declaración de ingreso (PDF, PNG, JPG)</param>
+            <returns>Datos extraídos de la declaración</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.DeclaracionIngresoController.ProcesarTexto(CarnetAduaneroProcessor.API.Controllers.ProcesarTextoRequest)">
+            <summary>
+            Procesa texto OCR para extraer datos de declaración de ingreso
+            </summary>
+            <param name="request">Solicitud con el texto OCR</param>
+            <returns>Datos extraídos de la declaración</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.DeclaracionIngresoController.ExtraerCamposCriticos(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Obtiene los campos críticos extraídos de una declaración de ingreso (PDF, PNG, JPG)
+            </summary>
+            <param name="file">Archivo de la declaración (PDF, PNG, JPG)</param>
+            <returns>Campos críticos extraídos (los marcados en rojo)</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.DeclaracionIngresoController.ExtraerCamposCriticosMultiple(Microsoft.AspNetCore.Http.IFormFileCollection)">
+            <summary>
+            Obtiene los campos críticos extraídos de 1 o más archivos de declaración de ingreso (PDF, PNG, JPG)
+            </summary>
+            <param name="files">1 o más archivos de la declaración (PDF, PNG, JPG)</param>
+            <returns>Campos críticos extraídos combinados de todos los archivos</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.DeclaracionIngresoController.ValidarDeclaracion(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Valida si un archivo es una declaración de ingreso válida (PDF, PNG, JPG)
+            </summary>
+            <param name="file">Archivo a validar (PDF, PNG, JPG)</param>
+            <returns>Resultado de la validación</returns>
+        </member>
+        <member name="T:CarnetAduaneroProcessor.API.Controllers.ProcesarTextoRequest">
+            <summary>
+            Modelo para solicitud de procesamiento de texto
+            </summary>
+        </member>
+        <member name="P:CarnetAduaneroProcessor.API.Controllers.ProcesarTextoRequest.TextoOcr">
+            <summary>
+            Texto OCR a procesar
+            </summary>
+        </member>
+        <member name="T:CarnetAduaneroProcessor.API.Controllers.ProcesarDeclaracionIngresoRequest">
+            <summary>
+            Modelo para solicitud de procesamiento de Declaración de Ingreso con 1 o 2 PNG
+            </summary>
+        </member>
+        <member name="P:CarnetAduaneroProcessor.API.Controllers.ProcesarDeclaracionIngresoRequest.Archivo1">
+            <summary>
+            Primer archivo PNG de la declaración (requerido)
+            </summary>
+        </member>
+        <member name="P:CarnetAduaneroProcessor.API.Controllers.ProcesarDeclaracionIngresoRequest.Archivo2">
+            <summary>
+            Segundo archivo PNG de la declaración (opcional)
+            </summary>
+        </member>
+        <member name="T:CarnetAduaneroProcessor.API.Controllers.DocumentoRecepcionController">
+            <summary>
+            Controlador para procesar Documentos de Recepción (DR)
+            </summary>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.DocumentoRecepcionController.ProcesarDocumentoRecepcion(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Procesa un archivo PNG de Documento de Recepción
+            </summary>
+            <param name="file">Archivo PNG a procesar</param>
+            <returns>Documento de recepción procesado con todos los campos</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.DocumentoRecepcionController.ExtraerArchivo(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Extrae datos de un archivo PNG de Documento de Recepción
+            </summary>
+            <param name="file">Archivo PNG a procesar</param>
+            <returns>Documento de recepción procesado</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.DocumentoRecepcionController.CamposCriticos(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Extrae campos críticos de un archivo PNG de Documento de Recepción
+            </summary>
+            <param name="file">Archivo PNG a procesar</param>
+            <returns>Campos críticos extraídos</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.DocumentoRecepcionController.ValidarArchivo(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Valida un archivo PNG de Documento de Recepción
+            </summary>
+            <param name="file">Archivo PNG a validar</param>
+            <returns>Resultado de la validación</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.DocumentoRecepcionController.ProcesarTexto(CarnetAduaneroProcessor.API.Models.Dto.ProcesarTextoRequestDto)">
+            <summary>
+            Procesa texto OCR para extraer datos de Documento de Recepción
+            </summary>
+            <param name="request">Solicitud con texto OCR</param>
+            <returns>Documento de recepción procesado</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.DocumentoRecepcionController.GetInfo">
+            <summary>
+            Obtiene información sobre el servicio de Documento de Recepción
+            </summary>
+            <returns>Información del servicio</returns>
+        </member>
+        <member name="T:CarnetAduaneroProcessor.API.Controllers.GuiaDespachoController">
+            <summary>
+            Controlador para procesar documentos de Guía de Despacho Electrónica
+            </summary>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.GuiaDespachoController.ProcesarPng(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Sube y procesa un archivo PNG de Guía de Despacho Electrónica
+            </summary>
+            <param name="file">Archivo PNG a procesar</param>
+            <returns>Datos extraídos de la guía de despacho</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.GuiaDespachoController.ProcesarLote(Microsoft.AspNetCore.Http.IFormFileCollection)">
+            <summary>
+            Procesa múltiples archivos PNG en lote
+            </summary>
+            <param name="files">Lista de archivos PNG</param>
+            <returns>Resultados del procesamiento</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.GuiaDespachoController.ObtenerPorId(System.Int32)">
+            <summary>
+            Obtiene una guía de despacho por ID
+            </summary>
+            <param name="id">ID de la guía de despacho</param>
+            <returns>Guía de despacho encontrada</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.GuiaDespachoController.ObtenerTodos(System.Int32,System.Int32,System.String)">
+            <summary>
+            Obtiene todas las guías de despacho
+            </summary>
+            <param name="page">Número de página</param>
+            <param name="pageSize">Tamaño de página</param>
+            <param name="search">Término de búsqueda</param>
+            <returns>Lista de guías de despacho</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.GuiaDespachoController.ProcesarTextoOcr(CarnetAduaneroProcessor.API.Controllers.GuiaDespachoController.ProcesarTextoOcrGuiaDespachoRequest)">
+            <summary>
+            Procesa texto OCR para extraer datos de Guía de Despacho
+            </summary>
+            <param name="request">Solicitud con texto OCR</param>
+            <returns>Datos extraídos de la guía de despacho</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.GuiaDespachoController.ValidarPng(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Valida si un archivo es un PNG válido
+            </summary>
+            <param name="file">Archivo a validar</param>
+            <returns>Resultado de la validación</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.GuiaDespachoController.ObtenerEstadisticas">
+            <summary>
+            Obtiene estadísticas de procesamiento
+            </summary>
+            <returns>Estadísticas del sistema</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.GuiaDespachoController.Eliminar(System.Int32)">
+            <summary>
+            Elimina una guía de despacho por ID
+            </summary>
+            <param name="id">ID de la guía de despacho</param>
+            <returns>Resultado de la eliminación</returns>
+        </member>
+        <member name="T:CarnetAduaneroProcessor.API.Controllers.GuiaDespachoController.ProcesarTextoOcrGuiaDespachoRequest">
+            <summary>
+            Solicitud para procesar texto OCR de Guía de Despacho
+            </summary>
+        </member>
+        <member name="P:CarnetAduaneroProcessor.API.Controllers.GuiaDespachoController.ProcesarTextoOcrGuiaDespachoRequest.TextoOcr">
+            <summary>
+            Texto extraído por OCR
+            </summary>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.GuiaDespachoController.GuardarArchivoTemporalAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Guarda un archivo temporalmente
+            </summary>
+        </member>
+        <member name="T:CarnetAduaneroProcessor.API.Controllers.HomeController">
+            <summary>
+            Controlador para la página principal
+            </summary>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.HomeController.Index">
+            <summary>
+            Página principal de la aplicación
+            </summary>
+        </member>
+        <member name="T:CarnetAduaneroProcessor.API.Controllers.SeleccionAforoController">
+            <summary>
+            Controlador para procesar documentos de Selección de Aforo
+            </summary>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.SeleccionAforoController.ProcesarPng(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Sube y procesa un archivo PNG de Selección de Aforo
+            </summary>
+            <param name="file">Archivo PNG a procesar</param>
+            <returns>Datos extraídos de la selección de aforo</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.SeleccionAforoController.ProcesarLote(Microsoft.AspNetCore.Http.IFormFileCollection)">
+            <summary>
+            Procesa múltiples archivos PNG en lote
+            </summary>
+            <param name="files">Lista de archivos PNG</param>
+            <returns>Resultados del procesamiento</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.SeleccionAforoController.ObtenerPorId(System.Int32)">
+            <summary>
+            Obtiene una selección de aforo por ID
+            </summary>
+            <param name="id">ID de la selección de aforo</param>
+            <returns>Selección de aforo encontrada</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.SeleccionAforoController.ObtenerTodos(System.Int32,System.Int32,System.String)">
+            <summary>
+            Obtiene todas las selecciones de aforo
+            </summary>
+            <param name="page">Número de página</param>
+            <param name="pageSize">Tamaño de página</param>
+            <param name="search">Término de búsqueda</param>
+            <returns>Lista de selecciones de aforo</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.SeleccionAforoController.ProcesarTextoOcr(CarnetAduaneroProcessor.API.Controllers.SeleccionAforoController.ProcesarTextoOcrSeleccionAforoRequest)">
+            <summary>
+            Procesa texto OCR para extraer datos de Selección de Aforo
+            </summary>
+            <param name="request">Solicitud con texto OCR</param>
+            <returns>Datos extraídos de la selección de aforo</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.SeleccionAforoController.ValidarPng(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Valida si un archivo es un PNG válido
+            </summary>
+            <param name="file">Archivo a validar</param>
+            <returns>Resultado de la validación</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.SeleccionAforoController.ObtenerEstadisticas">
+            <summary>
+            Obtiene estadísticas de procesamiento
+            </summary>
+            <returns>Estadísticas del sistema</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.SeleccionAforoController.Eliminar(System.Int32)">
+            <summary>
+            Elimina una selección de aforo por ID
+            </summary>
+            <param name="id">ID de la selección de aforo</param>
+            <returns>Resultado de la eliminación</returns>
+        </member>
+        <member name="T:CarnetAduaneroProcessor.API.Controllers.SeleccionAforoController.ProcesarTextoOcrSeleccionAforoRequest">
+            <summary>
+            Solicitud para procesar texto OCR de Selección de Aforo
+            </summary>
+        </member>
+        <member name="P:CarnetAduaneroProcessor.API.Controllers.SeleccionAforoController.ProcesarTextoOcrSeleccionAforoRequest.TextoOcr">
+            <summary>
+            Texto extraído por OCR
+            </summary>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.SeleccionAforoController.GuardarArchivoTemporalAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Guarda un archivo temporalmente
+            </summary>
+        </member>
+        <member name="T:CarnetAduaneroProcessor.API.Controllers.TactAdcController">
+            <summary>
+            Controlador para procesar documentos TACT/ADC (Transport Air Cargo Tariff / Autorización de Despacho de Contenedores)
+            Soporta formatos de MAERSK, Mediterranean Shipping Company (MSC) e IANTAYLOR
+            </summary>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.TactAdcController.ProcesarDocumento(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Procesa un archivo PNG de documento TACT/ADC (Autorización de Despacho de Contenedores)
+            Soporta formatos de MAERSK, Mediterranean Shipping Company (MSC) e IANTAYLOR
+            </summary>
+            <param name="file">Archivo PNG del documento TACT/ADC</param>
+            <returns>Datos extraídos del documento TACT/ADC</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.TactAdcController.ProcesarTexto(CarnetAduaneroProcessor.API.Models.ProcesamientoTextoRequest)">
+            <summary>
+            Procesa texto OCR para extraer datos de documento TACT/ADC
+            </summary>
+            <param name="request">Solicitud con texto OCR</param>
+            <returns>Datos extraídos del documento TACT/ADC</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.TactAdcController.ValidarArchivo(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Valida si un archivo es un PNG válido
+            </summary>
+            <param name="file">Archivo a validar</param>
+            <returns>Resultado de la validación</returns>
+        </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.TactAdcController.ObtenerInfo">
+            <summary>
+            Obtiene información sobre el servicio TACT/ADC
+            </summary>
+            <returns>Información del servicio</returns>
+        </member>
+        <member name="T:CarnetAduaneroProcessor.API.Models.Dto.ProcesarTextoRequestDto">
+            <summary>
+            Modelo para solicitud de procesamiento de texto OCR (compartido)
+            </summary>
+        </member>
+        <member name="P:CarnetAduaneroProcessor.API.Models.Dto.ProcesarTextoRequestDto.TextoOcr">
+            <summary>
+            Texto extraído por OCR
+            </summary>
+        </member>
+        <member name="T:CarnetAduaneroProcessor.API.Models.ProcesamientoTextoRequest">
+            <summary>
+            Modelo para solicitud de procesamiento de texto
+            </summary>
+        </member>
+        <member name="P:CarnetAduaneroProcessor.API.Models.ProcesamientoTextoRequest.Texto">
+            <summary>
+            Texto OCR a procesar
+            </summary>
+        </member>
+    </members>
+</doc>

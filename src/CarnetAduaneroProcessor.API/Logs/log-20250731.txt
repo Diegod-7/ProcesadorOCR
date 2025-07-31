@@ -1,0 +1,6 @@
+2025-07-31 03:30:19.068 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-07-31 03:30:23.357 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-07-31 03:31:32.753 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-07-31 03:31:38.200 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-07-31 03:31:49.197 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmpCA02.tmp
+2025-07-31 03:31:55.572 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmpCA02.tmp

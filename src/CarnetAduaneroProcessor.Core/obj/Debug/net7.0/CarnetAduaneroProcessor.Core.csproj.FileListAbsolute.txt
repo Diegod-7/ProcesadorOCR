@@ -1,0 +1,12 @@
+C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\bin\Debug\net7.0\CarnetAduaneroProcessor.Core.deps.json
+C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\bin\Debug\net7.0\CarnetAduaneroProcessor.Core.dll
+C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\bin\Debug\net7.0\CarnetAduaneroProcessor.Core.pdb
+C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net7.0\CarnetAduaneroProcessor.Core.csproj.AssemblyReference.cache
+C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net7.0\CarnetAduaneroProcessor.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net7.0\CarnetAduaneroProcessor.Core.AssemblyInfoInputs.cache
+C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net7.0\CarnetAduaneroProcessor.Core.AssemblyInfo.cs
+C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net7.0\CarnetAduaneroProcessor.Core.csproj.CoreCompileInputs.cache
+C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net7.0\CarnetAduaneroProcessor.Core.dll
+C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net7.0\refint\CarnetAduaneroProcessor.Core.dll
+C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net7.0\CarnetAduaneroProcessor.Core.pdb
+C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.Core\obj\Debug\net7.0\ref\CarnetAduaneroProcessor.Core.dll
