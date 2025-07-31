@@ -63,8 +63,4 @@ RUN groupadd -r appuser && useradd -r -g appuser appuser
 RUN chown -R appuser:appuser /app
 USER appuser
 
-# Configurar variables de entorno para System.Drawing
-ENV DOTNET_SYSTEM_DRAWING_ENABLE_UNSAFE_CODE=1
-ENV DOTNET_SYSTEM_DRAWING_ENABLE_LINUX_NATIVE=1
-
 ENTRYPOINT ["dotnet", "CarnetAduaneroProcessor.API.dll"] 
