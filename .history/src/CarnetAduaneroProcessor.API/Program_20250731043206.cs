@@ -146,9 +146,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// Redireccionar la raíz a Swagger
-app.MapGet("/", () => Results.Redirect("/swagger"));
-
 // Endpoint de salud
 app.MapGet("/health", () => new
 {
