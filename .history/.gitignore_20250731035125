@@ -1,0 +1,70 @@
+# Archivos de configuración con claves sensibles
+appsettings.json
+appsettings.*.json
+appsettings.Development.json
+appsettings.Production.json
+
+# Archivos de compilación y binarios
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# Archivos de Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos de logs
+Logs/
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+*~
+
+# Archivos de base de datos
+*.db
+*.sqlite
+*.mdf
+
+# Archivos de configuración local
+local.settings.json
+secrets.json
+
+# Archivos de historial
+.history/
+
+# Archivos de uploads
+Uploads/
+uploads/
+
+# Archivos de Tessdata (si son muy grandes)
+# tessdata/
+
+# Archivos de configuración de Azure
+azure-settings.json
+*.pfx
+*.publishsettings
+
+# Archivos de Node.js (si los hay)
+node_modules/
+npm-debug.log*
+
+# Archivos de Python (si los hay)
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos de macOS
+.DS_Store
+
+# Archivos de Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini 
