@@ -1,0 +1,67 @@
+# Archivos de Git
+.git
+.gitignore
+.gitattributes
+
+# Archivos de Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.pdb
+*.userprefs
+
+# Archivos de build
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Archivos temporales
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Archivos de configuración local
+appsettings.Development.json
+appsettings.Local.json
+*.local.json
+
+# Archivos de Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Archivos de documentación
+*.md
+!README.md
+
+# Archivos de prueba
+test_*.txt
+*.test
+*.spec
+
+# Archivos de historial
+.history/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos de uploads (se crearán en runtime)
+Uploads/
+Logs/ 
