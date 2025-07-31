@@ -566,57 +566,5 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
                 return false;
             }
         }
-
-        /// <summary>
-        /// Función auxiliar para convertir Stream a SkiaSharp y procesar con Azure Vision
-        /// </summary>
-        public static async Task<string> ProcessImageWithSkiaSharpAsync(Stream imageStream, string azureVisionKey, string azureVisionEndpoint, ILogger logger)
-        {
-            try
-            {
-                if (string.IsNullOrEmpty(azureVisionKey) || string.IsNullOrEmpty(azureVisionEndpoint))
-                {
-                    logger.LogWarning("Azure Vision no configurado, usando fallback");
-                    return "Azure Computer Vision no configurado. Configure AzureVision:Key y AzureVision:Endpoint en appsettings.json";
-                }
-
-                // Usar SkiaSharp para procesar la imagen
-                using var bitmap = SKBitmap.Decode(imageStream);
-                if (bitmap == null)
-                {
-                    throw new InvalidOperationException("No se pudo decodificar la imagen con SkiaSharp");
-                }
-
-                var credential = new Azure.AzureKeyCredential(azureVisionKey);
-                var client = new ImageAnalysisClient(new Uri(azureVisionEndpoint), credential);
-
-                // Convertir SKBitmap a stream para Azure
-                using var image = SKImage.FromBitmap(bitmap);
-                using var data = image.Encode(SKEncodedImageFormat.Png, 100);
-                using var memoryStream = new MemoryStream(data.ToArray());
-
-                var imageData = BinaryData.FromStream(memoryStream);
-                var options = new ImageAnalysisOptions
-                {
-                    Language = "es"
-                };
-
-                var result = await client.AnalyzeAsync(imageData, VisualFeatures.Read, options);
-
-                if (result.Value?.Read?.Blocks != null)
-                {
-                    var textoCompleto = string.Join(" ", result.Value.Read.Blocks.SelectMany(b => b.Lines?.Select(l => l.Text) ?? Array.Empty<string>()));
-                    logger.LogInformation("Texto extraído con SkiaSharp + Azure Vision: {Texto}", textoCompleto.Substring(0, Math.Min(200, textoCompleto.Length)));
-                    return textoCompleto;
-                }
-
-                return "Azure Computer Vision no detectó texto en la imagen";
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, "Error procesando imagen con SkiaSharp + Azure Vision");
-                return $"Error en Azure Computer Vision: {ex.Message}";
-            }
-        }
     }
 } 

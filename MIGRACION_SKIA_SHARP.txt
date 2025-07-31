@@ -1,0 +1,154 @@
+GUÍA DE MIGRACIÓN - SYSTEM.DRAWING A SKIASHARP
+=============================================
+
+PROGRESO:
+✅ Instalado paquete SkiaSharp
+✅ Modificado CarnetAduaneroProcessorService
+✅ Creada función auxiliar ProcessImageWithSkiaSharpAsync
+
+SERVICIOS QUE NECESITAN MIGRACIÓN:
+================================
+
+1. TactAdcService.cs
+   - Línea 556: using var bitmap = new Bitmap(fileStream);
+   - Método: ExtraerTextoConAzureVisionAsync
+
+2. SeleccionAforoService.cs
+   - Línea 601: using var image = new Bitmap(fileStream);
+   - Método: ExtraerTextoConAzureVisionAsync
+
+3. GuiaDespachoService.cs
+   - Línea 1055: using var image = new Bitmap(fileStream);
+   - Método: ExtraerTextoConAzureVisionAsync
+
+4. DocumentoRecepcionService.cs
+   - Línea 920: using var bitmap = new Bitmap(fileStream);
+   - Método: ExtraerTextoConAzureVisionAsync
+
+5. ComprobanteTransaccionService.cs
+   - Línea 349: using var bitmap = new Bitmap(fileStream);
+   - Método: ExtraerTextoConAzureVisionAsync
+
+6. PdfExtractionService.cs
+   - Múltiples líneas con new Bitmap()
+   - Métodos varios de procesamiento de imágenes
+
+PATRÓN DE MIGRACIÓN:
+===================
+
+ANTES (System.Drawing):
+----------------------
+using var bitmap = new Bitmap(fileStream);
+return await ExtraerTextoConAzureVisionAsync(bitmap);
+
+DESPUÉS (SkiaSharp):
+-------------------
+return await CarnetAduaneroProcessorService.ProcessImageWithSkiaSharpAsync(
+    fileStream, 
+    _azureVisionKey, 
+    _azureVisionEndpoint, 
+    _logger
+);
+
+CÓDIGO ESPECÍFICO PARA CADA SERVICIO:
+====================================
+
+TactAdcService.cs:
+-----------------
+REEMPLAZAR:
+using var bitmap = new Bitmap(fileStream);
+return await ExtraerTextoConAzureVisionAsync(bitmap);
+
+CON:
+return await CarnetAduaneroProcessorService.ProcessImageWithSkiaSharpAsync(
+    fileStream, _azureVisionKey, _azureVisionEndpoint, _logger
+);
+
+SeleccionAforoService.cs:
+------------------------
+REEMPLAZAR:
+using var image = new Bitmap(fileStream);
+return await ExtraerTextoConAzureVisionAsync(image);
+
+CON:
+return await CarnetAduaneroProcessorService.ProcessImageWithSkiaSharpAsync(
+    fileStream, _azureVisionKey, _azureVisionEndpoint, _logger
+);
+
+GuiaDespachoService.cs:
+----------------------
+REEMPLAZAR:
+using var image = new Bitmap(fileStream);
+return await ExtraerTextoConAzureVisionAsync(image);
+
+CON:
+return await CarnetAduaneroProcessorService.ProcessImageWithSkiaSharpAsync(
+    fileStream, _azureVisionKey, _azureVisionEndpoint, _logger
+);
+
+DocumentoRecepcionService.cs:
+----------------------------
+REEMPLAZAR:
+using var bitmap = new Bitmap(fileStream);
+return await ExtraerTextoConAzureVisionAsync(bitmap);
+
+CON:
+return await CarnetAduaneroProcessorService.ProcessImageWithSkiaSharpAsync(
+    fileStream, _azureVisionKey, _azureVisionEndpoint, _logger
+);
+
+ComprobanteTransaccionService.cs:
+--------------------------------
+REEMPLAZAR:
+using var bitmap = new Bitmap(fileStream);
+return await ExtraerTextoConAzureVisionAsync(bitmap);
+
+CON:
+return await CarnetAduaneroProcessorService.ProcessImageWithSkiaSharpAsync(
+    fileStream, _azureVisionKey, _azureVisionEndpoint, _logger
+);
+
+IMPORTACIONES NECESARIAS:
+========================
+En cada archivo, agregar:
+using SkiaSharp;
+
+Y puede mantener System.Drawing si tiene otros usos.
+
+ORDEN DE PRIORIDAD:
+==================
+1. PRIMERA PRUEBA: Solo CarnetAduaneroProcessorService (YA HECHO)
+2. Si funciona, migrar los otros servicios uno por uno
+3. PdfExtractionService requiere más análisis (muchos usos de Bitmap)
+
+CÓMO PROBAR:
+============
+1. Subir cambios a GitHub
+2. Desplegar en Render
+3. Probar subida de PNG desde Swagger
+4. Verificar logs: debe mostrar "SkiaSharp + Azure Vision"
+5. Si funciona, migrar el resto
+
+VENTAJAS DE SKIASHARP:
+=====================
+✅ Compatible con Linux nativo
+✅ Mejor rendimiento
+✅ No requiere libgdiplus
+✅ API moderna
+✅ Soporte completo para .NET Core
+
+ESTADO ACTUAL:
+==============
+✅ CarnetAduaneroProcessorService - MIGRADO
+⏳ TactAdcService - PENDIENTE
+⏳ SeleccionAforoService - PENDIENTE  
+⏳ GuiaDespachoService - PENDIENTE
+⏳ DocumentoRecepcionService - PENDIENTE
+⏳ ComprobanteTransaccionService - PENDIENTE
+⏳ PdfExtractionService - PENDIENTE (COMPLEJO)
+
+PRÓXIMO PASO:
+=============
+1. Probar CarnetAduaneroProcessorService en Render
+2. Si funciona, migrar los demás servicios
+3. Documentar resultados

@@ -1,0 +1,43 @@
+SOLUCIÓN RÁPIDA PARA RENDER - SYSTEM.DRAWING
+============================================
+
+EL PROBLEMA PERSISTE porque el contenedor actual NO tiene las correcciones.
+
+PASOS INMEDIATOS:
+
+1. SUBIR CAMBIOS A GITHUB
+==========================
+Asegúrate de que estos archivos estén en tu repositorio:
+- Dockerfile (con las dependencias de System.Drawing)
+- docker-compose.yml (con variables de entorno)
+- .dockerignore
+- appsettings.Docker.json
+
+2. VARIABLES DE ENTORNO EN RENDER
+=================================
+En tu dashboard de Render, agrega estas variables:
+DOTNET_SYSTEM_DRAWING_ENABLE_UNSAFE_CODE=1
+DOTNET_SYSTEM_DRAWING_ENABLE_LINUX_NATIVE=1
+ASPNETCORE_ENVIRONMENT=Production
+ASPNETCORE_URLS=http://+:80
+
+3. RECONSTRUIR EN RENDER
+========================
+1. Ve a tu servicio en Render
+2. Haz clic en "Manual Deploy"
+3. Selecciona "Clear build cache & deploy"
+4. ESPERA a que termine completamente
+
+4. VERIFICAR
+============
+Después del despliegue:
+- Revisa los logs en Render
+- NO deberías ver "System.Drawing.Common is not supported"
+- Prueba subir un PNG desde Swagger
+
+IMPORTANTE:
+- El contenedor actual NO tiene las correcciones
+- NECESITAS hacer un nuevo despliegue
+- Las variables de entorno SOLO funcionan en nuevos builds
+
+¡Haz el "Clear build cache & deploy" ahora! 

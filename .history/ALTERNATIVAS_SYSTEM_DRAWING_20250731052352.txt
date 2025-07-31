@@ -1,0 +1,125 @@
+ALTERNATIVAS PARA SOLUCIONAR SYSTEM.DRAWING
+==========================================
+
+OPCIÓN 1: REEMPLAZAR SYSTEM.DRAWING CON SKIA
+============================================
+Usar SkiaSharp en lugar de System.Drawing
+
+Ventajas:
+- Compatible con Linux
+- Mejor rendimiento
+- Soporte nativo
+
+Pasos:
+1. Instalar paquete: SkiaSharp
+2. Reemplazar System.Drawing.Bitmap con SKBitmap
+3. Modificar el código de procesamiento de imágenes
+
+OPCIÓN 2: USAR IMAGEMAGICK
+===========================
+Usar Magick.NET para procesamiento de imágenes
+
+Ventajas:
+- Muy potente para manipulación de imágenes
+- Compatible con Linux
+- Muchas opciones de procesamiento
+
+Pasos:
+1. Instalar paquete: Magick.NET-Q16-AnyCPU
+2. Reemplazar System.Drawing con MagickImage
+3. Modificar el código de procesamiento
+
+OPCIÓN 3: USAR SIXLABORS.IMAGESHARP
+===================================
+Biblioteca moderna para procesamiento de imágenes
+
+Ventajas:
+- Diseñada para .NET Core
+- Compatible con Linux
+- API moderna
+
+Pasos:
+1. Instalar paquete: SixLabors.ImageSharp
+2. Reemplazar System.Drawing con ImageSharp
+3. Modificar el código de procesamiento
+
+OPCIÓN 4: CONFIGURACIÓN ALTERNATIVA DE SYSTEM.DRAWING
+=====================================================
+Intentar configuración más específica
+
+Variables adicionales:
+DOTNET_SYSTEM_DRAWING_ENABLE_UNSAFE_CODE=1
+DOTNET_SYSTEM_DRAWING_ENABLE_LINUX_NATIVE=1
+DOTNET_SYSTEM_DRAWING_ENABLE_LINUX_NATIVE_FONTS=1
+DOTNET_SYSTEM_DRAWING_ENABLE_LINUX_NATIVE_IMAGES=1
+
+OPCIÓN 5: USAR DOCKER CON IMAGEN DIFERENTE
+==========================================
+Cambiar la imagen base de Docker
+
+Opciones:
+- Usar imagen con Mono instalado
+- Usar imagen con Wine
+- Usar imagen personalizada con System.Drawing habilitado
+
+OPCIÓN 6: PROCESAMIENTO EXTERNO
+===============================
+Usar servicios externos para procesamiento de imágenes
+
+Opciones:
+- Azure Computer Vision (ya tienes configurado)
+- Google Cloud Vision
+- AWS Rekognition
+- Servicios OCR en la nube
+
+OPCIÓN 7: CONVERTIR IMÁGENES ANTES DE PROCESAR
+==============================================
+Convertir PNG a formato compatible antes de procesar
+
+Pasos:
+1. Usar ImageMagick para convertir PNG a formato compatible
+2. Procesar la imagen convertida
+3. Eliminar archivo temporal
+
+OPCIÓN 8: USAR TESSERACT DIRECTAMENTE
+=====================================
+Evitar System.Drawing y usar Tesseract directamente
+
+Pasos:
+1. Usar Tesseract CLI directamente
+2. Procesar archivos sin conversión
+3. Leer resultados desde archivo de texto
+
+RECOMENDACIÓN RÁPIDA:
+=====================
+Para solución inmediata, usa OPCIÓN 1 (SkiaSharp):
+
+1. Instalar: dotnet add package SkiaSharp
+2. Reemplazar System.Drawing.Bitmap con SKBitmap
+3. Modificar el método ExtraerTextoPngAsync
+
+CÓDIGO DE EJEMPLO CON SKIA:
+===========================
+```csharp
+using SkiaSharp;
+
+public async Task<string> ExtraerTextoPngAsync(Stream fileStream)
+{
+    using var bitmap = SKBitmap.Decode(fileStream);
+    using var image = SKImage.FromBitmap(bitmap);
+    using var data = image.Encode(SKEncodedImageFormat.Png, 100);
+    
+    // Continuar con el procesamiento...
+}
+```
+
+¿CUÁL OPCIÓN PREFIERES?
+=======================
+1. SkiaSharp (Recomendado - Rápido)
+2. ImageMagick (Potente)
+3. ImageSharp (Moderno)
+4. Configuración adicional de System.Drawing
+5. Procesamiento externo
+6. Tesseract directo
+
+Elige una opción y te ayudo a implementarla. 
