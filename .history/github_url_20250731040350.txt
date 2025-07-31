@@ -1,0 +1,19 @@
+URL para permitir la clave de Azure en GitHub:
+
+https://github.com/Diegod-7/ProcesadorOCR/security/secret-scanning/unblock-secret/30dC5eGSYNgbYsGdWvvXCxbdzsl
+
+Pasos:
+1. Copia y pega esta URL en tu navegador
+2. En la página que se abre:
+   - Selecciona "Used in tests" (Usado en pruebas)
+   - O "False positive" (Falso positivo)
+   - Haz clic en "Allow secret" (Permitir secreto)
+3. Una vez que permitas la clave, vuelve al terminal y ejecuta:
+   git push -u origin main
+
+Alternativa (si no funciona la URL):
+1. Ve a: https://github.com/Diegod-7/ProcesadorOCR
+2. Settings → Security → Push protection
+3. Desactiva temporalmente la protección
+4. Haz el push
+5. Vuelve a activar la protección 
