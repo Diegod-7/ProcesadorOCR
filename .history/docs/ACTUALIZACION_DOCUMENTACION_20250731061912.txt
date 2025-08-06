@@ -1,0 +1,137 @@
+📋 ACTUALIZACIÓN DE DOCUMENTACIÓN - API PROCESADOR OCR
+=====================================================
+
+Fecha: 31 de Julio 2024
+URL Real de la API: https://procesadorocr.onrender.com
+
+🔧 CAMBIOS REALIZADOS
+====================
+
+1. ARCHIVO: docs/api-documentation.html
+   ✅ URL Base actualizada: https://procesadorocr.onrender.com
+   ✅ Todos los ejemplos curl actualizados con:
+      - URL correcta: https://procesadorocr.onrender.com
+      - Header 'accept: text/plain' en lugar de 'X-API-Key'
+      - Header 'Content-Type: multipart/form-data' agregado
+      - Formato de archivo especificado: ';type=image/png'
+   ✅ Ejemplos de Response actualizados con datos reales:
+      - Carné Aduanero: Campos reales como titulo, nombreCompleto, rut, numeroCarne, etc.
+      - TACT ADC: Campos reales como numeroTatc, numeroContenedor, numeroSellos, etc.
+      - Selección Aforo: Campos reales como numeroDin, tipoRevision, nombreAgente, etc.
+      - Guía Despacho: Campos reales como numeroGuia, rutEmisor, fechaDocumento, etc.
+      - Documento Recepción: Response con estructura real (status, message, data)
+      - Comprobante Transacción: Campos reales como numeroFolio, totalPagado, rut, etc.
+      - Declaración Ingreso: Response con estructura real y campos completos
+
+2. ARCHIVO: docs/ejemplos-uso.js
+   ✅ URL Base actualizada: https://procesadorocr.onrender.com
+   ✅ Configuración API_CONFIG actualizada:
+      - Header por defecto: 'accept: text/plain'
+   ✅ Todos los ejemplos de fetch actualizados:
+      - Headers cambiados de 'X-API-Key' a 'accept: text/plain'
+      - 10 ejemplos de funciones actualizados
+      - Ejemplo de Node.js actualizado
+
+📝 EJEMPLO REAL DE LA API
+=========================
+
+El usuario proporcionó este ejemplo real que se usó como base:
+
+```bash
+curl -X 'POST' \
+  'https://procesadorocr.onrender.com/api/CarnetAduanero/procesar' \
+  -H 'accept: text/plain' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@6.carne.png;type=image/png'
+```
+
+🔄 CAMBIOS ESPECÍFICOS
+======================
+
+ENDPOINTS ACTUALIZADOS:
+- /api/CarnetAduanero/procesar
+- /api/CarnetAduanero/procesar-lote
+- /api/CarnetAduanero/procesar-texto-ocr
+- /api/TactAdc/procesar
+- /api/SeleccionAforo/procesar
+- /api/GuiaDespacho/procesar
+- /api/DocumentoRecepcion/procesar
+- /api/ComprobanteTransaccion/procesar
+- /api/DeclaracionIngreso/procesar
+
+FUNCIONES JAVASCRIPT ACTUALIZADAS:
+- procesarCarneAduaneroPNG()
+- procesarCarnesAduanerosLote()
+- procesarTextoCarneAduanero()
+- procesarTactAdc()
+- procesarSeleccionAforo()
+- procesarGuiaDespacho()
+- procesarDocumentoRecepcion()
+- extraerCamposCriticosRecepcion()
+- procesarComprobanteTransaccion()
+- procesarDeclaracionIngreso()
+- procesarArchivoNodeJS()
+
+📊 RESPONSES REALES AGREGADOS
+=============================
+
+CARNÉ ADUANERO:
+- titulo, nombreCompleto, rut, numeroCarne, fechaEmision, resolucion
+- esValido, mensajeError, nombreArchivo, hashArchivo
+- metodoExtraccion, textoExtraido, confianzaExtraccion, fechaProcesamiento
+
+TACT ADC:
+- numeroTatc, numeroContenedor, numeroSellos, empresaEmisora
+- consignatario, rutConsignatario, lineaOperadora, puertoOrigen
+- peso, volumen, estado, esValido
+
+SELECCIÓN AFORO:
+- numeroDin, fechaAceptacion, tipoRevision, nombreAgente
+- nombreAduana, nombreFirmante, rutFirmante, esValido
+
+GUÍA DESPACHO:
+- numeroGuia, rutEmisor, fechaDocumento, nombreEmisor
+- transportista, patenteVehiculo, origen, destino
+- peso, cifUSD, neto, iva, total, esValido
+
+DOCUMENTO RECEPCIÓN:
+- Estructura: status, message, data, camposExtraidos
+- numeroDocumento, situacionDocumento, numeroManifiesto
+- blArmador, contenedor, tatc, peso, volumen
+
+COMPROBANTE TRANSACCIÓN:
+- numeroFolio, totalPagado, rut, formulario
+- fechaVencimiento, monedaPago, institucionRecaudadora
+- esValido
+
+DECLARACIÓN INGRESO:
+- Estructura: status, message, data, archivosProcesados, errores
+- numeroIdentificacion, fechaVencimiento, tipoOperacion
+- consignatario, consignante, paisOrigen, valorCif, valorFob
+- esValida
+
+✅ ESTADO FINAL
+===============
+
+La documentación ahora refleja correctamente:
+- La URL real de la API desplegada en Render
+- Los headers correctos utilizados por la API
+- Ejemplos funcionales que pueden ser copiados y pegados
+- Consistencia entre HTML y JavaScript
+- Responses reales basados en los modelos de datos de la aplicación
+- Estructuras de respuesta específicas para cada tipo de documento
+- Campos reales extraídos por el OCR con valores de ejemplo
+
+🎯 RESULTADO
+===========
+
+Los usuarios ahora pueden:
+1. Copiar y pegar los ejemplos curl directamente
+2. Usar las funciones JavaScript sin modificaciones
+3. Acceder a la API real en https://procesadorocr.onrender.com
+4. Tener ejemplos consistentes y funcionales
+5. Ver exactamente qué campos devuelve cada endpoint
+6. Entender la estructura de respuesta de cada tipo de documento
+7. Conocer los valores reales que pueden esperar en las respuestas
+
+¡Documentación actualizada y lista para usar! 🚀 

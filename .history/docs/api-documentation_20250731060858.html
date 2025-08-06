@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation - Procesador OCR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-file-alt"></i>
+                    <h1>Procesador OCR API</h1>
+                </div>
+                <div class="header-info">
+                    <p>Documentación completa de endpoints para procesamiento de documentos aduaneros</p>
+                    <div class="status-badge">
+                        <i class="fas fa-circle"></i>
+                        <span>API Activa</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="sidebar">
+            <div class="nav-section">
+                <h3>Documentos Principales</h3>
+                <ul>
+                    <li><a href="#carnet-aduanero">Carné Aduanero</a></li>
+                    <li><a href="#tact-adc">TACT ADC</a></li>
+                    <li><a href="#seleccion-aforo">Selección Aforo</a></li>
+                    <li><a href="#guia-despacho">Guía Despacho</a></li>
+                    <li><a href="#documento-recepcion">Documento Recepción</a></li>
+                    <li><a href="#comprobante-transaccion">Comprobante Transacción</a></li>
+                    <li><a href="#declaracion-ingreso">Declaración Ingreso</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-section">
+                <h3>Información General</h3>
+                <ul>
+                    <li><a href="#base-url">URL Base</a></li>
+                    <li><a href="#authentication">Autenticación</a></li>
+                    <li><a href="#response-codes">Códigos de Respuesta</a></li>
+                    <li><a href="#file-limits">Límites de Archivos</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- General Information -->
+            <section id="base-url" class="section">
+                <h2><i class="fas fa-info-circle"></i> Información General</h2>
+                
+                <div class="info-card">
+                    <h3>URL Base</h3>
+                    <div class="code-block">
+                        <code>https://procesadorocr.onrender.com</code>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>Autenticación</h3>
+                    <p>La API utiliza autenticación por API Key en el header:</p>
+                    <div class="code-block">
+                        <code>X-API-Key: tu-api-key</code>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>Límites de Archivos</h3>
+                    <ul>
+                        <li><strong>PNG:</strong> Máximo 10MB</li>
+                        <li><strong>PDF:</strong> Máximo 10MB</li>
+                        <li><strong>Lote:</strong> Máximo 10 archivos por request</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>Códigos de Respuesta</h3>
+                    <div class="response-codes">
+                        <div class="code-item">
+                            <span class="code success">200</span>
+                            <span>OK - Procesamiento exitoso</span>
+                        </div>
+                        <div class="code-item">
+                            <span class="code success">201</span>
+                            <span>Created - Recurso creado</span>
+                        </div>
+                        <div class="code-item">
+                            <span class="code warning">400</span>
+                            <span>Bad Request - Error en datos enviados</span>
+                        </div>
+                        <div class="code-item">
+                            <span class="code warning">401</span>
+                            <span>Unauthorized - API Key inválida</span>
+                        </div>
+                        <div class="code-item">
+                            <span class="code error">500</span>
+                            <span>Internal Server Error - Error del servidor</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Carné Aduanero -->
+            <section id="carnet-aduanero" class="section">
+                <h2><i class="fas fa-id-card"></i> Carné Aduanero</h2>
+                <p class="section-description">Procesamiento de carnés aduaneros desde archivos PNG y PDF</p>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/CarnetAduanero/procesar</code>
+                        <span class="badge">PNG</span>
+                    </div>
+                    <p>Procesa un archivo PNG de carné aduanero y extrae todos los datos</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>file</strong> (IFormFile) - Archivo PNG del carné aduanero
+                        </div>
+                    </div>
+
+                    <h4>Ejemplo de Request</h4>
+                    <div class="code-block">
+                        <pre><code>curl -X POST "https://tu-dominio-render.onrender.com/api/CarnetAduanero/procesar" \
+  -H "X-API-Key: tu-api-key" \
+  -F "file=@carnet.png"</code></pre>
+                    </div>
+
+                    <h4>Ejemplo de Response</h4>
+                    <div class="code-block">
+                        <pre><code>{
+  "numeroCarne": "123456789",
+  "fechaEmision": "2024-01-15",
+  "fechaVencimiento": "2025-01-15",
+  "nombreTitular": "Juan Pérez",
+  "rutTitular": "12345678-9",
+  "tipoDocumento": "Carné Aduanero",
+  "estado": "Vigente",
+  "hashArchivo": "abc123...",
+  "fechaProcesamiento": "2024-01-15T10:30:00Z"
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/CarnetAduanero/procesar-lote</code>
+                        <span class="badge">PDF</span>
+                    </div>
+                    <p>Procesa múltiples archivos PDF de carnés aduaneros en lote</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>files</strong> (IFormFileCollection) - Colección de archivos PDF
+                        </div>
+                    </div>
+
+                    <h4>Ejemplo de Request</h4>
+                    <div class="code-block">
+                        <pre><code>curl -X POST "https://tu-dominio-render.onrender.com/api/CarnetAduanero/procesar-lote" \
+  -H "X-API-Key: tu-api-key" \
+  -F "files=@carnet1.pdf" \
+  -F "files=@carnet2.pdf"</code></pre>
+                    </div>
+                </div>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/CarnetAduanero/procesar-texto-ocr</code>
+                        <span class="badge">TEXT</span>
+                    </div>
+                    <p>Procesa texto OCR extraído manualmente</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>textoOcr</strong> (string) - Texto extraído del documento
+                        </div>
+                    </div>
+
+                    <h4>Ejemplo de Request</h4>
+                    <div class="code-block">
+                        <pre><code>curl -X POST "https://tu-dominio-render.onrender.com/api/CarnetAduanero/procesar-texto-ocr" \
+  -H "X-API-Key: tu-api-key" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "textoOcr": "CARNÉ ADUANERO N° 123456789..."
+  }'</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TACT ADC -->
+            <section id="tact-adc" class="section">
+                <h2><i class="fas fa-file-contract"></i> TACT ADC</h2>
+                <p class="section-description">Procesamiento de documentos TACT ADC</p>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/TactAdc/procesar</code>
+                        <span class="badge">PNG</span>
+                    </div>
+                    <p>Procesa un archivo PNG de documento TACT ADC</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>file</strong> (IFormFile) - Archivo PNG del documento TACT ADC
+                        </div>
+                    </div>
+
+                    <h4>Ejemplo de Request</h4>
+                    <div class="code-block">
+                        <pre><code>curl -X POST "https://tu-dominio-render.onrender.com/api/TactAdc/procesar" \
+  -H "X-API-Key: tu-api-key" \
+  -F "file=@tact-adc.png"</code></pre>
+                    </div>
+
+                    <h4>Ejemplo de Response</h4>
+                    <div class="code-block">
+                        <pre><code>{
+  "numeroDocumento": "TACT-2024-001",
+  "fechaEmision": "2024-01-15",
+  "tipoDocumento": "TACT ADC",
+  "datosTitular": {
+    "nombre": "Empresa ABC",
+    "rut": "12345678-9"
+  },
+  "hashArchivo": "abc123...",
+  "fechaProcesamiento": "2024-01-15T10:30:00Z"
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/TactAdc/procesar-texto</code>
+                        <span class="badge">TEXT</span>
+                    </div>
+                    <p>Procesa texto OCR de documento TACT ADC</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>textoOcr</strong> (string) - Texto extraído del documento
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Selección Aforo -->
+            <section id="seleccion-aforo" class="section">
+                <h2><i class="fas fa-clipboard-list"></i> Selección Aforo</h2>
+                <p class="section-description">Procesamiento de documentos de selección aforo</p>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/SeleccionAforo/procesar</code>
+                        <span class="badge">PNG</span>
+                    </div>
+                    <p>Procesa un archivo PNG de selección aforo</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>file</strong> (IFormFile) - Archivo PNG del documento
+                        </div>
+                    </div>
+
+                    <h4>Ejemplo de Request</h4>
+                    <div class="code-block">
+                        <pre><code>curl -X POST "https://tu-dominio-render.onrender.com/api/SeleccionAforo/procesar" \
+  -H "X-API-Key: tu-api-key" \
+  -F "file=@seleccion-aforo.png"</code></pre>
+                    </div>
+                </div>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/SeleccionAforo/procesar-lote</code>
+                        <span class="badge">PDF</span>
+                    </div>
+                    <p>Procesa múltiples archivos PDF en lote</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>files</strong> (IFormFileCollection) - Colección de archivos PDF
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Guía Despacho -->
+            <section id="guia-despacho" class="section">
+                <h2><i class="fas fa-truck"></i> Guía Despacho</h2>
+                <p class="section-description">Procesamiento de guías de despacho</p>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/GuiaDespacho/procesar</code>
+                        <span class="badge">PNG</span>
+                    </div>
+                    <p>Procesa un archivo PNG de guía de despacho</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>file</strong> (IFormFile) - Archivo PNG del documento
+                        </div>
+                    </div>
+
+                    <h4>Ejemplo de Request</h4>
+                    <div class="code-block">
+                        <pre><code>curl -X POST "https://tu-dominio-render.onrender.com/api/GuiaDespacho/procesar" \
+  -H "X-API-Key: tu-api-key" \
+  -F "file=@guia-despacho.png"</code></pre>
+                    </div>
+                </div>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/GuiaDespacho/procesar-lote</code>
+                        <span class="badge">PDF</span>
+                    </div>
+                    <p>Procesa múltiples archivos PDF en lote</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>files</strong> (IFormFileCollection) - Colección de archivos PDF
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Documento Recepción -->
+            <section id="documento-recepcion" class="section">
+                <h2><i class="fas fa-inbox"></i> Documento Recepción</h2>
+                <p class="section-description">Procesamiento de documentos de recepción</p>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/DocumentoRecepcion/procesar</code>
+                        <span class="badge">PNG</span>
+                    </div>
+                    <p>Procesa un archivo PNG de documento de recepción</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>file</strong> (IFormFile) - Archivo PNG del documento
+                        </div>
+                    </div>
+
+                    <h4>Ejemplo de Request</h4>
+                    <div class="code-block">
+                        <pre><code>curl -X POST "https://tu-dominio-render.onrender.com/api/DocumentoRecepcion/procesar" \
+  -H "X-API-Key: tu-api-key" \
+  -F "file=@documento-recepcion.png"</code></pre>
+                    </div>
+                </div>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/DocumentoRecepcion/campos-criticos</code>
+                        <span class="badge">PNG</span>
+                    </div>
+                    <p>Extrae solo los campos críticos del documento</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>file</strong> (IFormFile) - Archivo PNG del documento
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comprobante Transacción -->
+            <section id="comprobante-transaccion" class="section">
+                <h2><i class="fas fa-receipt"></i> Comprobante Transacción</h2>
+                <p class="section-description">Procesamiento de comprobantes de transacción</p>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/ComprobanteTransaccion/procesar</code>
+                        <span class="badge">PNG</span>
+                    </div>
+                    <p>Procesa un archivo PNG de comprobante de transacción</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>file</strong> (IFormFile) - Archivo PNG del documento
+                        </div>
+                    </div>
+
+                    <h4>Ejemplo de Request</h4>
+                    <div class="code-block">
+                        <pre><code>curl -X POST "https://tu-dominio-render.onrender.com/api/ComprobanteTransaccion/procesar" \
+  -H "X-API-Key: tu-api-key" \
+  -F "file=@comprobante.png"</code></pre>
+                    </div>
+                </div>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/ComprobanteTransaccion/procesar-texto</code>
+                        <span class="badge">TEXT</span>
+                    </div>
+                    <p>Procesa texto OCR de comprobante de transacción</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>textoOcr</strong> (string) - Texto extraído del documento
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Declaración Ingreso -->
+            <section id="declaracion-ingreso" class="section">
+                <h2><i class="fas fa-file-import"></i> Declaración Ingreso</h2>
+                <p class="section-description">Procesamiento de declaraciones de ingreso</p>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/DeclaracionIngreso/procesar</code>
+                        <span class="badge">PNG</span>
+                    </div>
+                    <p>Procesa un archivo PNG de declaración de ingreso</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>file</strong> (IFormFile) - Archivo PNG del documento
+                        </div>
+                    </div>
+
+                    <h4>Ejemplo de Request</h4>
+                    <div class="code-block">
+                        <pre><code>curl -X POST "https://tu-dominio-render.onrender.com/api/DeclaracionIngreso/procesar" \
+  -H "X-API-Key: tu-api-key" \
+  -F "file=@declaracion-ingreso.png"</code></pre>
+                    </div>
+                </div>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/DeclaracionIngreso/campos-criticos</code>
+                        <span class="badge">PNG</span>
+                    </div>
+                    <p>Extrae solo los campos críticos de la declaración</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>file</strong> (IFormFile) - Archivo PNG del documento
+                        </div>
+                    </div>
+                </div>
+
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <code>/api/DeclaracionIngreso/campos-criticos-multiple</code>
+                        <span class="badge">PNG</span>
+                    </div>
+                    <p>Extrae campos críticos de múltiples documentos</p>
+                    
+                    <h4>Parámetros</h4>
+                    <div class="params">
+                        <div class="param">
+                            <strong>files</strong> (IFormFileCollection) - Colección de archivos PNG
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2024 Procesador OCR API. Documentación generada automáticamente.</p>
+                    <div class="footer-links">
+                        <a href="#base-url">Inicio</a>
+                        <a href="https://github.com/Diegod-7/ProcesadorOCR" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Highlight current section in navigation
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.sidebar a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Copy code blocks
+        document.querySelectorAll('.code-block').forEach(block => {
+            block.addEventListener('click', () => {
+                const code = block.querySelector('code, pre');
+                if (code) {
+                    navigator.clipboard.writeText(code.textContent).then(() => {
+                        // Show feedback
+                        const originalText = block.innerHTML;
+                        block.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                        setTimeout(() => {
+                            block.innerHTML = originalText;
+                        }, 2000);
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

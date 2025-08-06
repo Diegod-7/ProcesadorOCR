@@ -160,10 +160,9 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
             // Detectar formato del documento
             var esFormatoJorgeStein = texto.Contains("Jorge Stein") || texto.Contains("stein.cl");
             var esFormatoAlbertoRubio = texto.Contains("Alberto Rubio") || texto.Contains("agenciarubio.cl");
-            var esFormatoRicardoMewes = texto.Contains("RICARDO MEWES") || texto.Contains("MEWES SCHNAIDT");
             
-            _logger.LogInformation("Formato detectado - Jorge Stein: {JorgeStein}, Alberto Rubio: {AlbertoRubio}, Ricardo Mewes: {RicardoMewes}", 
-                esFormatoJorgeStein, esFormatoAlbertoRubio, esFormatoRicardoMewes);
+            _logger.LogInformation("Formato detectado - Jorge Stein: {JorgeStein}, Alberto Rubio: {AlbertoRubio}", 
+                esFormatoJorgeStein, esFormatoAlbertoRubio);
 
             // Extraer número de guía (diferentes formatos)
             string numeroGuia = string.Empty;
@@ -186,16 +185,6 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
                 {
                     numeroGuia = matchGuia.Groups[1].Value;
                     _logger.LogInformation("Número de guía (Alberto Rubio) extraído: {Guia}", numeroGuia);
-                }
-            }
-            else if (esFormatoRicardoMewes)
-            {
-                // Formato Ricardo Mewes: Nº 27499
-                var matchGuia = Regex.Match(texto, @"N[°º]\s*(\d+)", RegexOptions.IgnoreCase);
-                if (matchGuia.Success)
-                {
-                    numeroGuia = matchGuia.Groups[1].Value;
-                    _logger.LogInformation("Número de guía (Ricardo Mewes) extraído: {Guia}", numeroGuia);
                 }
             }
             else
@@ -241,44 +230,14 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
                     _logger.LogInformation("RUT del emisor (Alberto Rubio) extraído: {Rut}", rutEmisor);
                 }
             }
-            else if (esFormatoRicardoMewes)
-            {
-                // Formato Ricardo Mewes: Rut: : 76.627.544-3 (con doble punto)
-                var matchRutEmisor = Regex.Match(texto, @"AG\.\s+DE\s+ADUANAS.*?Rut:\s*:\s*(\d{1,2}\.\d{3}\.\d{3}-\d)", RegexOptions.IgnoreCase | RegexOptions.Singleline);
-                if (matchRutEmisor.Success)
-                {
-                    rutEmisor = matchRutEmisor.Groups[1].Value;
-                    _logger.LogInformation("RUT del emisor (Ricardo Mewes) extraído: {Rut}", rutEmisor);
-                }
-                else
-                {
-                    // Patrón alternativo para capturar Rut: : (con doble punto)
-                    var matchRutEmisorAlt = Regex.Match(texto, @"Rut:\s*:\s*(\d{1,2}\.\d{3}\.\d{3}-\d)", RegexOptions.IgnoreCase);
-                    if (matchRutEmisorAlt.Success)
-                    {
-                        rutEmisor = matchRutEmisorAlt.Groups[1].Value;
-                        _logger.LogInformation("RUT del emisor (Ricardo Mewes alt) extraído: {Rut}", rutEmisor);
-                    }
-                }
-            }
             else
             {
-                // Intentar múltiples formatos como fallback incluyendo doble punto
-                var matchRutEmisor = Regex.Match(texto, @"(?:R\.U\.T\s*\.?\s*:|Rut:\s*:)\s*(\d{1,2}\.\d{3}\.\d{3}-\d)", RegexOptions.IgnoreCase);
+                // Intentar ambos formatos como fallback
+                var matchRutEmisor = Regex.Match(texto, @"R\.U\.T\s*\.?\s*:\s*(\d{1,2}\.\d{3}\.\d{3}-\d)", RegexOptions.IgnoreCase);
                 if (matchRutEmisor.Success)
                 {
                     rutEmisor = matchRutEmisor.Groups[1].Value;
                     _logger.LogInformation("RUT del emisor (fallback) extraído: {Rut}", rutEmisor);
-                }
-                else
-                {
-                    // Patrón más simple para capturar cualquier RUT al inicio del documento
-                    var matchRutSimple = Regex.Match(texto, @"(\d{1,2}\.\d{3}\.\d{3}-\d)", RegexOptions.IgnoreCase);
-                    if (matchRutSimple.Success)
-                    {
-                        rutEmisor = matchRutSimple.Groups[1].Value;
-                        _logger.LogInformation("RUT del emisor (simple) extraído: {Rut}", rutEmisor);
-                    }
                 }
             }
 
@@ -331,23 +290,9 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
                     }
                 }
             }
-            else if (esFormatoRicardoMewes)
-            {
-                // Formato Ricardo Mewes: FECHA: 24-06-2025
-                var matchFecha = Regex.Match(texto, @"FECHA:\s*(\d{1,2}-\d{1,2}-\d{4})", RegexOptions.IgnoreCase);
-                if (matchFecha.Success)
-                {
-                    var fechaStr = matchFecha.Groups[1].Value;
-                    if (DateTime.TryParseExact(fechaStr, "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out var fecha))
-                    {
-                        fechaDocumento = fecha;
-                        _logger.LogInformation("Fecha del documento (Ricardo Mewes) extraída: {Fecha}", fechaDocumento);
-                    }
-                }
-            }
             else
             {
-                // Intentar múltiples formatos como fallback
+                // Intentar ambos formatos como fallback
                 var matchFecha = Regex.Match(texto, @"(?:FECHA|Fecha)\s*:\s*(\d{1,2}-\d{1,2}-\d{4})", RegexOptions.IgnoreCase);
                 if (matchFecha.Success)
                 {
@@ -395,7 +340,6 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
             // Detectar formato del documento
             var esFormatoJorgeStein = texto.Contains("Jorge Stein") || texto.Contains("stein.cl");
             var esFormatoAlbertoRubio = texto.Contains("Alberto Rubio") || texto.Contains("agenciarubio.cl");
-            var esFormatoRicardoMewes = texto.Contains("RICARDO MEWES") || texto.Contains("MEWES SCHNAIDT");
 
             // Extraer nombre del emisor
             string nombreEmisor = string.Empty;
@@ -419,16 +363,6 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
                     _logger.LogInformation("Nombre del emisor (Alberto Rubio) extraído: {Nombre}", nombreEmisor);
                 }
             }
-            else if (esFormatoRicardoMewes)
-            {
-                // Formato Ricardo Mewes: AG. DE ADUANAS RICARDO MEWES SCHNAIDT Y CIA LTDA.
-                var matchNombreEmisor = Regex.Match(texto, @"(AG\.\s+DE\s+ADUANAS\s+[A-ZÁÉÍÓÚÑ\s]+?Y\s+CIA\s+LTDA\.)", RegexOptions.IgnoreCase);
-                if (matchNombreEmisor.Success)
-                {
-                    nombreEmisor = matchNombreEmisor.Groups[1].Value.Trim();
-                    _logger.LogInformation("Nombre del emisor (Ricardo Mewes) extraído: {Nombre}", nombreEmisor);
-                }
-            }
 
             if (!string.IsNullOrEmpty(nombreEmisor))
             {
@@ -436,17 +370,7 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
             }
             else
             {
-                // Fallback: buscar cualquier texto que contenga "ADUANAS" y "CIA"
-                var matchNombreEmisorFallback = Regex.Match(texto, @"([A-ZÁÉÍÓÚÑ\s\.]*ADUANAS[A-ZÁÉÍÓÚÑ\s\.]*CIA[A-ZÁÉÍÓÚÑ\s\.]*)", RegexOptions.IgnoreCase);
-                if (matchNombreEmisorFallback.Success)
-                {
-                    documento.NombreEmisor = matchNombreEmisorFallback.Groups[1].Value.Trim();
-                    _logger.LogInformation("Nombre del emisor (fallback) extraído: {Nombre}", documento.NombreEmisor);
-                }
-                else
-                {
-                    _logger.LogWarning("No se pudo extraer el nombre del emisor");
-                }
+                _logger.LogWarning("No se pudo extraer el nombre del emisor");
             }
 
             // Extraer giro del emisor
@@ -555,16 +479,6 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
                     _logger.LogInformation("Nombre del receptor (Alberto Rubio) extraído: {Nombre}", nombreReceptor);
                 }
             }
-            else if (esFormatoRicardoMewes)
-            {
-                // Formato Ricardo Mewes: Razón Social: VIRUTEX ILKO S.P.A
-                var matchNombreReceptor = Regex.Match(texto, @"RECEPTOR.*?Razón Social:\s*([A-ZÁÉÍÓÚÑ\s\.]+?)\s+Rut:", RegexOptions.IgnoreCase | RegexOptions.Singleline);
-                if (matchNombreReceptor.Success)
-                {
-                    nombreReceptor = matchNombreReceptor.Groups[1].Value.Trim();
-                    _logger.LogInformation("Nombre del receptor (Ricardo Mewes) extraído: {Nombre}", nombreReceptor);
-                }
-            }
 
             if (!string.IsNullOrEmpty(nombreReceptor))
             {
@@ -572,17 +486,7 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
             }
             else
             {
-                // Fallback: buscar después de "Razón Social:" sin restricciones de formato
-                var matchNombreReceptorFallback = Regex.Match(texto, @"Razón Social:\s*([A-ZÁÉÍÓÚÑ\s\.]+?)(?:\s+Rut:|$)", RegexOptions.IgnoreCase);
-                if (matchNombreReceptorFallback.Success)
-                {
-                    documento.NombreReceptor = matchNombreReceptorFallback.Groups[1].Value.Trim();
-                    _logger.LogInformation("Nombre del receptor (fallback) extraído: {Nombre}", documento.NombreReceptor);
-                }
-                else
-                {
-                    _logger.LogWarning("No se pudo extraer el nombre del receptor");
-                }
+                _logger.LogWarning("No se pudo extraer el nombre del receptor");
             }
 
             // Extraer RUT del receptor
@@ -607,16 +511,6 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
                     _logger.LogInformation("RUT del receptor (Alberto Rubio) extraído: {Rut}", rutReceptor);
                 }
             }
-            else if (esFormatoRicardoMewes)
-            {
-                // Formato Ricardo Mewes: buscar el segundo Rut: después de RECEPTOR
-                var matchRutReceptor = Regex.Match(texto, @"RECEPTOR.*?Razón Social:.*?Rut:\s*(\d{1,2}\.\d{3}\.\d{3}-\d)", RegexOptions.IgnoreCase | RegexOptions.Singleline);
-                if (matchRutReceptor.Success)
-                {
-                    rutReceptor = matchRutReceptor.Groups[1].Value.Trim();
-                    _logger.LogInformation("RUT del receptor (Ricardo Mewes) extraído: {Rut}", rutReceptor);
-                }
-            }
 
             if (!string.IsNullOrEmpty(rutReceptor))
             {
@@ -624,17 +518,7 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
             }
             else
             {
-                // Fallback: buscar el segundo RUT que aparece en el documento
-                var matches = Regex.Matches(texto, @"(\d{1,2}\.\d{3}\.\d{3}-\d)", RegexOptions.IgnoreCase);
-                if (matches.Count >= 2)
-                {
-                    documento.RutReceptor = matches[1].Groups[1].Value.Trim();
-                    _logger.LogInformation("RUT del receptor (fallback - segundo RUT) extraído: {Rut}", documento.RutReceptor);
-                }
-                else
-                {
-                    _logger.LogWarning("No se pudo extraer el RUT del receptor");
-                }
+                _logger.LogWarning("No se pudo extraer el RUT del receptor");
             }
 
             // Extraer dirección del receptor
@@ -659,54 +543,10 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
                     _logger.LogInformation("Dirección del receptor (Alberto Rubio) extraída: {Direccion}", direccionReceptor);
                 }
             }
-            else if (esFormatoRicardoMewes)
-            {
-                // Formato Ricardo Mewes: buscar Dirección: después del segundo RUT
-                var matchDireccionReceptor = Regex.Match(texto, @"RECEPTOR.*?Razón Social:.*?Rut:\s*\d+\.\d+\.\d+-\d\s*Dirección:\s*([A-ZÁÉÍÓÚÑ\s\d]+?)\s+Giro:", RegexOptions.IgnoreCase | RegexOptions.Singleline);
-                if (matchDireccionReceptor.Success)
-                {
-                    direccionReceptor = matchDireccionReceptor.Groups[1].Value.Trim();
-                    _logger.LogInformation("Dirección del receptor (Ricardo Mewes) extraída: {Direccion}", direccionReceptor);
-                }
-            }
 
             if (!string.IsNullOrEmpty(direccionReceptor))
             {
                 documento.DireccionReceptor = direccionReceptor;
-            }
-            else
-            {
-                // Fallback: buscar después de "Dirección:" sin restricciones de formato
-                var matchDireccionReceptorFallback = Regex.Match(texto, @"Dirección:\s*([A-ZÁÉÍÓÚÑ\s\d]+?)(?:\s+Giro:|$)", RegexOptions.IgnoreCase);
-                if (matchDireccionReceptorFallback.Success)
-                {
-                    documento.DireccionReceptor = matchDireccionReceptorFallback.Groups[1].Value.Trim();
-                    _logger.LogInformation("Dirección del receptor (fallback) extraída: {Direccion}", documento.DireccionReceptor);
-                }
-            }
-
-            // Extraer giro del receptor (específico para formato Ricardo Mewes)
-            string giroReceptor = string.Empty;
-            if (esFormatoRicardoMewes)
-            {
-                // Formato Ricardo Mewes: Giro: FABR.PRODUC.METALICOS
-                var matchGiroReceptor = Regex.Match(texto, @"RECEPTOR.*?Dirección:.*?Giro:\s*([A-ZÁÉÍÓÚÑ\s\.]+?)(?:\s+DATOS|\s*$)", RegexOptions.IgnoreCase | RegexOptions.Singleline);
-                if (matchGiroReceptor.Success)
-                {
-                    giroReceptor = matchGiroReceptor.Groups[1].Value.Trim();
-                    _logger.LogInformation("Giro del receptor (Ricardo Mewes) extraído: {Giro}", giroReceptor);
-                    documento.GiroReceptor = giroReceptor;
-                }
-                else
-                {
-                    // Fallback: buscar después de "Giro:" sin restricciones
-                    var matchGiroReceptorFallback = Regex.Match(texto, @"Giro:\s*([A-ZÁÉÍÓÚÑ\s\.]+?)(?:\s+DATOS|\s*$)", RegexOptions.IgnoreCase);
-                    if (matchGiroReceptorFallback.Success)
-                    {
-                        documento.GiroReceptor = matchGiroReceptorFallback.Groups[1].Value.Trim();
-                        _logger.LogInformation("Giro del receptor (fallback) extraído: {Giro}", documento.GiroReceptor);
-                    }
-                }
             }
 
             // Extraer comuna del receptor
@@ -934,16 +774,6 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
                     _logger.LogInformation("Aduana (Alberto Rubio) extraída: {Aduana}", aduana);
                 }
             }
-            else if (esFormatoRicardoMewes)
-            {
-                // Formato Ricardo Mewes: Aduana : SAN ANTONIO
-                var matchAduana = Regex.Match(texto, @"Aduana\s*:\s*([A-ZÁÉÍÓÚÑ\s]+?)(?:\s+Ref\s*:|$)", RegexOptions.IgnoreCase);
-                if (matchAduana.Success)
-                {
-                    aduana = matchAduana.Groups[1].Value.Trim();
-                    _logger.LogInformation("Aduana (Ricardo Mewes) extraída: {Aduana}", aduana);
-                }
-            }
 
             if (!string.IsNullOrEmpty(aduana))
             {
@@ -970,16 +800,6 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
                 {
                     referencia = matchReferencia.Groups[1].Value.Trim();
                     _logger.LogInformation("Referencia (Alberto Rubio) extraída: {Referencia}", referencia);
-                }
-            }
-            else if (esFormatoRicardoMewes)
-            {
-                // Formato Ricardo Mewes: Ref : IM15452 (con espacio antes del :)
-                var matchReferencia = Regex.Match(texto, @"Ref\s*:\s*([A-ZÁÉÍÓÚÑ\s\d\-\.]+?)(?:\s+\d+|\s*$)", RegexOptions.IgnoreCase);
-                if (matchReferencia.Success)
-                {
-                    referencia = matchReferencia.Groups[1].Value.Trim();
-                    _logger.LogInformation("Referencia (Ricardo Mewes) extraída: {Referencia}", referencia);
                 }
             }
 
@@ -1071,30 +891,6 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
                     {
                         peso = pesoValor;
                         _logger.LogInformation("Peso (Alberto Rubio) extraído: {Peso}", peso);
-                    }
-                }
-            }
-            else if (esFormatoRicardoMewes)
-            {
-                // Formato Ricardo Mewes: Peso Bruto (Kgs.) : 26.270,00
-                var matchPeso = Regex.Match(texto, @"Peso\s+Bruto\s*\(Kgs\.\)\s*:\s*([\d\.,]+)", RegexOptions.IgnoreCase);
-                if (matchPeso.Success)
-                {
-                    var pesoStr = matchPeso.Groups[1].Value;
-                    // Convertir formato chileno (26.270,00) a formato decimal
-                    if (pesoStr.Contains(","))
-                    {
-                        // Separar miles de decimales
-                        var partes = pesoStr.Split(',');
-                        var entero = partes[0].Replace(".", ""); // Quitar separadores de miles
-                        var decimales = partes.Length > 1 ? partes[1] : "00";
-                        pesoStr = $"{entero}.{decimales}";
-                    }
-                    
-                    if (decimal.TryParse(pesoStr, out var pesoValor))
-                    {
-                        peso = pesoValor;
-                        _logger.LogInformation("Peso (Ricardo Mewes) extraído: {Peso}", peso);
                     }
                 }
             }
@@ -1228,62 +1024,6 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
             if (!string.IsNullOrEmpty(observaciones))
             {
                 documento.Observaciones = observaciones;
-            }
-
-            // Campos específicos del formato Ricardo Mewes
-            if (esFormatoRicardoMewes)
-            {
-                // Extraer destino (dirección de entrega)
-                var matchDestino = Regex.Match(texto, @"DESTINO.*?ENTREGA.*?([A-ZÁÉÍÓÚÑ\s\d]+?ENEA)", RegexOptions.IgnoreCase | RegexOptions.Singleline);
-                if (matchDestino.Success)
-                {
-                    documento.Destino = matchDestino.Groups[1].Value.Trim();
-                    _logger.LogInformation("Destino (Ricardo Mewes) extraído: {Destino}", documento.Destino);
-                }
-
-                // Extraer tipo de traslado como observación adicional
-                var matchTipoTraslado = Regex.Match(texto, @"Tipo traslado:\s*([A-ZÁÉÍÓÚÑ\s]+?)(?:\s+DESTINO|$)", RegexOptions.IgnoreCase);
-                if (matchTipoTraslado.Success)
-                {
-                    var tipoTraslado = matchTipoTraslado.Groups[1].Value.Trim();
-                    if (string.IsNullOrEmpty(documento.Observaciones))
-                    {
-                        documento.Observaciones = $"Tipo traslado: {tipoTraslado}";
-                    }
-                    else
-                    {
-                        documento.Observaciones += $" | Tipo traslado: {tipoTraslado}";
-                    }
-                    _logger.LogInformation("Tipo traslado (Ricardo Mewes) extraído: {TipoTraslado}", tipoTraslado);
-                }
-
-                // Extraer información de contenedor
-                var matchContenedor = Regex.Match(texto, @"(\d+)\s+(CONT\d+)\s+([A-ZÁÉÍÓÚÑ\d\-]+)", RegexOptions.IgnoreCase);
-                if (matchContenedor.Success)
-                {
-                    var cantidad = matchContenedor.Groups[1].Value;
-                    var tipoContenedor = matchContenedor.Groups[2].Value;
-                    var numeroContenedor = matchContenedor.Groups[3].Value;
-                    
-                    if (int.TryParse(cantidad, out var cantidadBultosContenedor))
-                    {
-                        documento.CantidadBultos = cantidadBultosContenedor;
-                    }
-                    documento.TipoBulto = tipoContenedor;
-                    
-                    var infoContenedor = $"Contenedor: {numeroContenedor}";
-                    if (string.IsNullOrEmpty(documento.Observaciones))
-                    {
-                        documento.Observaciones = infoContenedor;
-                    }
-                    else
-                    {
-                        documento.Observaciones += $" | {infoContenedor}";
-                    }
-                    
-                    _logger.LogInformation("Información de contenedor (Ricardo Mewes) extraída: {Cantidad} {Tipo} {Numero}", 
-                        cantidad, tipoContenedor, numeroContenedor);
-                }
             }
 
             // Establecer valores por defecto para campos no encontrados
