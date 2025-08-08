@@ -91,3 +91,14 @@ C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\Car
 C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\CarnetAduaneroProcessor.API.pdb
 C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\CarnetAduaneroProcessor.API.genruntimeconfig.cache
 C:\Users\Diego\OneDrive\Escritorio\PowerAutomate\CarnetAduaneroProcessor\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\ref\CarnetAduaneroProcessor.API.dll
+C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\CarnetAduaneroProcessor.API.csproj.AssemblyReference.cache
+C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\CarnetAduaneroProcessor.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\CarnetAduaneroProcessor.API.AssemblyInfoInputs.cache
+C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\CarnetAduaneroProcessor.API.AssemblyInfo.cs
+C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\CarnetAduaneroProcessor.API.csproj.CoreCompileInputs.cache
+C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\CarnetAduaneroProcessor.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\CarnetAduaneroProcessor.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\CarnetAduaneroProcessor.API.dll
+C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\refint\CarnetAduaneroProcessor.API.dll
+C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\CarnetAduaneroProcessor.API.xml
+C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\CarnetAduaneroProcessor.API.pdb

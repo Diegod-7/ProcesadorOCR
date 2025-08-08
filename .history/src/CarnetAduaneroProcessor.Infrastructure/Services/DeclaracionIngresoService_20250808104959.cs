@@ -683,9 +683,8 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
         }
 
         /// <summary>
-        /// Preprocesa la imagen para mejorar el OCR - OBSOLETO: Migrado a SkiaSharp
+        /// Preprocesa la imagen para mejorar el OCR
         /// </summary>
-        [Obsolete("Usar ProcessImageWithSkiaSharpAsync en su lugar")]
         private System.Drawing.Bitmap PreprocessImageForOCR(System.Drawing.Bitmap originalImage)
         {
             try

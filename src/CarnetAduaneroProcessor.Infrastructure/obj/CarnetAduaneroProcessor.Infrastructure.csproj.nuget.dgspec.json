@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj": {}
+    "C:\\Users\\Diego\\OneDrive\\Escritorio\\ProcesadorOCR\\src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj": {
+    "C:\\Users\\Diego\\OneDrive\\Escritorio\\ProcesadorOCR\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Diego\\OneDrive\\Escritorio\\ProcesadorOCR\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj",
         "projectName": "CarnetAduaneroProcessor.Core",
-        "projectPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj",
+        "projectPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\ProcesadorOCR\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj",
         "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\obj\\",
+        "outputPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\ProcesadorOCR\\src\\CarnetAduaneroProcessor.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj": {
+    "C:\\Users\\Diego\\OneDrive\\Escritorio\\ProcesadorOCR\\src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Diego\\OneDrive\\Escritorio\\ProcesadorOCR\\src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj",
         "projectName": "CarnetAduaneroProcessor.Infrastructure",
-        "projectPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\ProcesadorOCR\\src\\CarnetAduaneroProcessor.Infrastructure\\CarnetAduaneroProcessor.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\ProcesadorOCR\\src\\CarnetAduaneroProcessor.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj": {
-                "projectPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj"
+              "C:\\Users\\Diego\\OneDrive\\Escritorio\\ProcesadorOCR\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj": {
+                "projectPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\ProcesadorOCR\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj"
               }
             }
           }
@@ -120,6 +120,14 @@
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.7, )"
+            },
+            "SkiaSharp.NativeAssets.Linux": {
+              "target": "Package",
+              "version": "[2.88.7, )"
             },
             "System.Drawing.Common": {
               "target": "Package",

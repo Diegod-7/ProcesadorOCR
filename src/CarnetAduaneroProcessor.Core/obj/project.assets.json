@@ -236,11 +236,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Diego\\OneDrive\\Escritorio\\ProcesadorOCR\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj",
       "projectName": "CarnetAduaneroProcessor.Core",
-      "projectPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj",
+      "projectPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\ProcesadorOCR\\src\\CarnetAduaneroProcessor.Core\\CarnetAduaneroProcessor.Core.csproj",
       "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\PowerAutomate\\CarnetAduaneroProcessor\\src\\CarnetAduaneroProcessor.Core\\obj\\",
+      "outputPath": "C:\\Users\\Diego\\OneDrive\\Escritorio\\ProcesadorOCR\\src\\CarnetAduaneroProcessor.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",

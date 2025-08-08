@@ -278,7 +278,7 @@ namespace CarnetAduaneroProcessor.API.Controllers
                     var metodoUsado = "SkiaSharp + Azure Computer Vision";
                     
                     _logger.LogInformation("Procesamiento completado con {Metodo}: {Resultado}", 
-                        metodoUsado, textoExtraido?.Substring(0, Math.Min(50, textoExtraido?.Length ?? 0)));
+                        metodoUsado, textoExtraido?.Substring(0, Math.Min(50, textoExtraido?.Length ?? 0)))
 
                     var response = new
                     {

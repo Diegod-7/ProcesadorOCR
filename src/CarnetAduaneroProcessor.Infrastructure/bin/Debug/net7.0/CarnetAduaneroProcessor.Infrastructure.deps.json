@@ -12,6 +12,8 @@
           "Azure.AI.Vision.ImageAnalysis": "1.0.0",
           "CarnetAduaneroProcessor.Core": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "SkiaSharp": "2.88.7",
+          "SkiaSharp.NativeAssets.Linux": "2.88.7",
           "System.Drawing.Common": "7.0.0",
           "System.Text.Json": "9.0.4",
           "Tesseract": "5.2.0",
@@ -159,7 +161,7 @@
       "iTextSharp.LGPLv2.Core/3.4.15": {
         "dependencies": {
           "BouncyCastle.Cryptography": "2.2.1",
-          "SkiaSharp": "2.88.6",
+          "SkiaSharp": "2.88.7",
           "System.Text.Encoding.CodePages": "7.0.0"
         },
         "runtime": {
@@ -407,19 +409,46 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
-      "SkiaSharp/2.88.6": {
+      "SkiaSharp/2.88.7": {
         "dependencies": {
-          "SkiaSharp.NativeAssets.Win32": "2.88.6",
-          "SkiaSharp.NativeAssets.macOS": "2.88.6"
+          "SkiaSharp.NativeAssets.Win32": "2.88.7",
+          "SkiaSharp.NativeAssets.macOS": "2.88.7"
         },
         "runtime": {
           "lib/net6.0/SkiaSharp.dll": {
             "assemblyVersion": "2.88.0.0",
-            "fileVersion": "2.88.6.0"
+            "fileVersion": "2.88.7.0"
           }
         }
       },
-      "SkiaSharp.NativeAssets.macOS/2.88.6": {
+      "SkiaSharp.NativeAssets.Linux/2.88.7": {
+        "dependencies": {
+          "SkiaSharp": "2.88.7"
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libSkiaSharp.so": {
+            "rid": "linux-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm64/native/libSkiaSharp.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-musl-x64/native/libSkiaSharp.so": {
+            "rid": "linux-musl-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libSkiaSharp.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/2.88.7": {
         "runtimeTargets": {
           "runtimes/osx/native/libSkiaSharp.dylib": {
             "rid": "osx",
@@ -428,7 +457,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Win32/2.88.6": {
+      "SkiaSharp.NativeAssets.Win32/2.88.7": {
         "runtimeTargets": {
           "runtimes/win-arm64/native/libSkiaSharp.dll": {
             "rid": "win-arm64",
@@ -1367,26 +1396,33 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
     },
-    "SkiaSharp/2.88.6": {
+    "SkiaSharp/2.88.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wdfeBAQrEQCbJIRgAiargzP1Uy+0grZiG4CSgBnhAgcJTsPzlifIaO73JRdwIlT3TyBoeU9jEqzwFUhl4hTYnQ==",
-      "path": "skiasharp/2.88.6",
-      "hashPath": "skiasharp.2.88.6.nupkg.sha512"
+      "sha512": "sha512-LJHAMrbWO00J7jXWLWehyjqFo29T4VzABimfJb4nICqpEe3c/KvQGWL4ItON8ymzhxYOeFgyxeRzuNzO4GHSug==",
+      "path": "skiasharp/2.88.7",
+      "hashPath": "skiasharp.2.88.7.nupkg.sha512"
     },
-    "SkiaSharp.NativeAssets.macOS/2.88.6": {
+    "SkiaSharp.NativeAssets.Linux/2.88.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Sko9LFxRXSjb3OGh5/RxrVRXxYo48tr5NKuuSy6jB85GrYt8WRqVY1iLOLwtjPiVAt4cp+pyD4i30azanS64dw==",
-      "path": "skiasharp.nativeassets.macos/2.88.6",
-      "hashPath": "skiasharp.nativeassets.macos.2.88.6.nupkg.sha512"
+      "sha512": "sha512-i9VitS7/5D8Te3B1Gu7F6kakW9PYVnI3YC6MoR6NidreD9hDl1EIOQEBaa0eBsOsWNX5Bz92OVf6+7KbDrJvyg==",
+      "path": "skiasharp.nativeassets.linux/2.88.7",
+      "hashPath": "skiasharp.nativeassets.linux.2.88.7.nupkg.sha512"
     },
-    "SkiaSharp.NativeAssets.Win32/2.88.6": {
+    "SkiaSharp.NativeAssets.macOS/2.88.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7TzFO0u/g2MpQsTty4fyCDdMcfcWI+aLswwfnYXr3gtNS6VLKdMXPMeKpJa3pJSLnUBN6wD0JjuCe8OoLBQ6cQ==",
-      "path": "skiasharp.nativeassets.win32/2.88.6",
-      "hashPath": "skiasharp.nativeassets.win32.2.88.6.nupkg.sha512"
+      "sha512": "sha512-3jNzco4VjcYPFNxR9aNWcgweFXbTSdM1VpNRzCS4X0i1A1OuNqcaulrAvmntNpujeWxHo9e6WGh6FN8Jf5+XhA==",
+      "path": "skiasharp.nativeassets.macos/2.88.7",
+      "hashPath": "skiasharp.nativeassets.macos.2.88.7.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.Win32/2.88.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BCXmWdQ0oVck9vRwC8U3ocSaTHEx28VB+6qw9OxGIMQ86iO5bp4Flqk3IXH0l9Pbr7vWAUOpI212iaL9mTaUZQ==",
+      "path": "skiasharp.nativeassets.win32/2.88.7",
+      "hashPath": "skiasharp.nativeassets.win32.2.88.7.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",
