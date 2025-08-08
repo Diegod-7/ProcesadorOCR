@@ -658,7 +658,7 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, "Error procesando imagen con Azure Vision");
+                logger.LogError(ex, "Error procesando imagen con SkiaSharp + Azure Vision");
                 return $"Error en Azure Computer Vision: {ex.Message}";
             }
         }

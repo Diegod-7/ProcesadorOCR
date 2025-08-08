@@ -636,10 +636,17 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
 
                 // Intentar directamente con Azure Vision sin SkiaSharp
                 logger.LogInformation("Enviando imagen directamente a Azure Vision sin procesamiento local");
+                return await ProcessDirectlyWithAzureVisionAsync(imageStream, azureVisionKey, azureVisionEndpoint, logger);
+
                 var credential = new Azure.AzureKeyCredential(azureVisionKey);
                 var client = new ImageAnalysisClient(new Uri(azureVisionEndpoint), credential);
 
-                var imageData = BinaryData.FromStream(imageStream);
+                // Convertir SKBitmap a stream para Azure
+                using var image = SKImage.FromBitmap(bitmap);
+                using var data = image.Encode(SKEncodedImageFormat.Png, 100);
+                using var memoryStream = new MemoryStream(data.ToArray());
+
+                var imageData = BinaryData.FromStream(memoryStream);
                 var options = new ImageAnalysisOptions
                 {
                     Language = "es"
@@ -650,7 +657,7 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
                 if (result.Value?.Read?.Blocks != null)
                 {
                     var textoCompleto = string.Join(" ", result.Value.Read.Blocks.SelectMany(b => b.Lines?.Select(l => l.Text) ?? Array.Empty<string>()));
-                    logger.LogInformation("Texto extraído con Azure Vision: {Texto}", textoCompleto.Substring(0, Math.Min(200, textoCompleto.Length)));
+                    logger.LogInformation("Texto extraído con SkiaSharp + Azure Vision: {Texto}", textoCompleto.Substring(0, Math.Min(200, textoCompleto.Length)));
                     return textoCompleto;
                 }
 
@@ -658,7 +665,7 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, "Error procesando imagen con Azure Vision");
+                logger.LogError(ex, "Error procesando imagen con SkiaSharp + Azure Vision");
                 return $"Error en Azure Computer Vision: {ex.Message}";
             }
         }
