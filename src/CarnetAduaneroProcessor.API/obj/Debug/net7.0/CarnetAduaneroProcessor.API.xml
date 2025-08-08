@@ -328,7 +328,7 @@
         </member>
         <member name="M:CarnetAduaneroProcessor.API.Controllers.HomeController.Index">
             <summary>
-            Página principal de la aplicación
+            Página principal de la aplicación - Redirige a Swagger
             </summary>
         </member>
         <member name="T:CarnetAduaneroProcessor.API.Controllers.SeleccionAforoController">

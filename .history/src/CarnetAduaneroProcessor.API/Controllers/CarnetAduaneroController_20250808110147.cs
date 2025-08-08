@@ -273,17 +273,17 @@ namespace CarnetAduaneroProcessor.API.Controllers
                     _logger.LogInformation("Iniciando procesamiento de imagen con SkiaSharp");
                     await using var stream = new FileStream(tempPath, FileMode.Open, FileAccess.Read, FileShare.Read);
                     
-                    // Usar el método correcto que evita System.Drawing
-                    var datosExtraidos = await _processorService.ExtraerDatosAsync(stream, file.FileName);
+                    // Usar el método moderno que evita System.Drawing
+                    var textoExtraido = await _processorService.ProcesarImagenAsync(stream, file.FileName);
                     var metodoUsado = "SkiaSharp + Azure Computer Vision";
                     
-                    _logger.LogInformation("Procesamiento completado con {Metodo}: {DatosCarnet}", 
-                        metodoUsado, datosExtraidos?.NumeroCarne ?? "Sin datos");
+                    _logger.LogInformation("Procesamiento completado con {Metodo}: {Resultado}", 
+                        metodoUsado, textoExtraido?.Substring(0, Math.Min(50, textoExtraido?.Length ?? 0)));
 
                     var response = new
                     {
-                        mensaje = "Datos extraídos exitosamente",
-                        datos = datosExtraidos,
+                        mensaje = "Texto extraído exitosamente",
+                        texto = textoExtraido,
                         metodo = metodoUsado,
                         nombreArchivo = file.FileName,
                         tamanioArchivo = file.Length,

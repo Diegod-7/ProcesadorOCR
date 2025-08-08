@@ -278,12 +278,12 @@ namespace CarnetAduaneroProcessor.API.Controllers
                     var metodoUsado = "SkiaSharp + Azure Computer Vision";
                     
                     _logger.LogInformation("Procesamiento completado con {Metodo}: {DatosCarnet}", 
-                        metodoUsado, datosExtraidos?.NumeroCarne ?? "Sin datos");
+                        metodoUsado, datosExtraidos?.NumeroCarnet ?? "Sin datos");
 
                     var response = new
                     {
-                        mensaje = "Datos extraídos exitosamente",
-                        datos = datosExtraidos,
+                        mensaje = "Texto extraído exitosamente",
+                        texto = textoExtraido,
                         metodo = metodoUsado,
                         nombreArchivo = file.FileName,
                         tamanioArchivo = file.Length,
