@@ -431,9 +431,14 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
         /// <summary>
         /// Extrae campos adicionales del documento de Guía de Despacho
         /// </summary>
-        private async Task ExtraerCamposAdicionalesAsync(GuiaDespacho documento, string texto, bool esFormatoJorgeStein, bool esFormatoAlbertoRubio, bool esFormatoRicardoMewes, bool esFormatoAlexisMontenegro)
+        private async Task ExtraerCamposAdicionalesAsync(GuiaDespacho documento, string texto)
         {
             _logger.LogInformation("Extrayendo campos adicionales de Guía de Despacho");
+
+            // Detectar formato del documento
+            var esFormatoJorgeStein = texto.Contains("Jorge Stein") || texto.Contains("stein.cl");
+            var esFormatoAlbertoRubio = texto.Contains("Alberto Rubio") || texto.Contains("agenciarubio.cl");
+            var esFormatoRicardoMewes = texto.Contains("RICARDO MEWES") || texto.Contains("MEWES SCHNAIDT");
 
             // Extraer nombre del emisor
             string nombreEmisor = string.Empty;
@@ -1522,7 +1527,7 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
         /// <summary>
         /// Búsqueda final de campos críticos que no se pudieron extraer
         /// </summary>
-        private void BusquedaFinalCamposCriticos(GuiaDespacho documento, string texto, bool esFormatoJorgeStein, bool esFormatoAlbertoRubio, bool esFormatoRicardoMewes, bool esFormatoAlexisMontenegro)
+        private void BusquedaFinalCamposCriticos(GuiaDespacho documento, string texto)
         {
             // Búsqueda final para número de guía si aún no se encontró
             if (string.IsNullOrEmpty(documento.NumeroGuia))

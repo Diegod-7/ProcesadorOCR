@@ -384,3 +384,50 @@
 2025-08-11 07:51:05.678 -04:00 [INF] Solicitud completada: POST /api/DeclaracionIngreso/procesar - 200 en 2061.0015ms
 2025-08-11 08:04:47.137 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
 2025-08-11 08:04:50.100 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-11 08:07:04.602 -04:00 [INF] Iniciando solicitud: POST /api/DeclaracionIngreso/procesar
+2025-08-11 08:07:04.735 -04:00 [INF] Procesando Declaración de Ingreso con 2 archivos PNG
+2025-08-11 08:07:04.753 -04:00 [INF] Iniciando extracción de datos de DI desde stream: 1.di_parte1.png
+2025-08-11 08:07:04.826 -04:00 [INF] Stream Length: 303584, Position: 303584
+2025-08-11 08:07:04.828 -04:00 [INF] Enviando imagen directamente a Azure Vision sin procesamiento local
+2025-08-11 08:07:06.208 -04:00 [INF] Texto extraído con Azure Vision: SERVICIO NACIONAL DE ADUANAS / CHILE Form NUMERO DE IDENTIFICACION DECLARACION DE INGRESO 07 15 4700045635-3 15 FECHA DE VENCIMIENTO 1502016 02/04/2025 SAN ANTONIO 25 39 WALTER PEREZ SALAS 26 F70 Tipo
+2025-08-11 08:07:06.214 -04:00 [INF] Iniciando extracción de campos críticos desde texto OCR
+2025-08-11 08:07:06.216 -04:00 [INF] Número de identificación extraído: 4700045635-3
+2025-08-11 08:07:06.217 -04:00 [INF] Tipo de operación extraído: IMPORT.CTDO.ANTIC.
+2025-08-11 08:07:06.219 -04:00 [INF] Código de tipo de operación extraído: 151
+2025-08-11 08:07:06.223 -04:00 [INF] Peso bruto extraído (fallback): 906
+2025-08-11 08:07:06.224 -04:00 [INF] Total a pagar extraído (fallback): 96.707.720
+2025-08-11 08:07:06.226 -04:00 [INF] Nombre del importador extraído: WALTER PEREZ SALAS
+2025-08-11 08:07:06.228 -04:00 [INF] Extracción de campos críticos completada
+2025-08-11 08:07:06.232 -04:00 [INF] Iniciando extracción de campos adicionales desde texto OCR
+2025-08-11 08:07:06.233 -04:00 [INF] Aduana extraída: SAN ANTONIO
+2025-08-11 08:07:06.235 -04:00 [INF] Despachante extraído: WALTER PEREZ SALAS
+2025-08-11 08:07:06.236 -04:00 [INF] Consignatario extraído: JIN & YIN & WANG LIMITADA
+2025-08-11 08:07:06.237 -04:00 [INF] Consignante extraído: BOHUA TRADE CO. LIMITED
+2025-08-11 08:07:06.238 -04:00 [INF] País de origen extraído: CHINA
+2025-08-11 08:07:06.240 -04:00 [INF] Puerto de desembarque extraído: SAN ANTONIO
+2025-08-11 08:07:06.242 -04:00 [INF] Compañía transportista extraída: MEDITERRANEAN SHIPPING CO SAI
+2025-08-11 08:07:06.243 -04:00 [INF] Documento de transporte extraído: MEDUOY612089
+2025-08-11 08:07:06.245 -04:00 [INF] Valor CIF extraído: 906
+2025-08-11 08:07:06.246 -04:00 [INF] Moneda extraída: DOLAR USA
+2025-08-11 08:07:06.248 -04:00 [INF] Cláusula de compra extraída: CFR
+2025-08-11 08:07:06.249 -04:00 [INF] Extracción de campos adicionales completada
+2025-08-11 08:07:06.251 -04:00 [INF] Extracción completada para DI: 4700045635-3
+2025-08-11 08:07:06.252 -04:00 [INF] Archivo PNG procesado: 1.di_parte1.png
+2025-08-11 08:07:06.255 -04:00 [INF] Iniciando extracción de datos de DI desde stream: 1.di_parte2.png
+2025-08-11 08:07:06.257 -04:00 [INF] Stream Length: 183325, Position: 183325
+2025-08-11 08:07:06.259 -04:00 [INF] Enviando imagen directamente a Azure Vision sin procesamiento local
+2025-08-11 08:07:06.884 -04:00 [INF] Texto extraído con Azure Vision: DESCRIPCION DE MERCANCIAS 1 J-1030 EPROTECTORES 95069910 1.297.42 BOHUA-F ACOLCHADO PARA EL CUERPO 0,000000 223 0.00 LOS DEMAS, ARTICULO DE PROTECCION PARA USO DEPORTIVO 19,000000 1 178 246,51 0.00 18
+2025-08-11 08:07:06.886 -04:00 [INF] Iniciando extracción de campos críticos desde texto OCR
+2025-08-11 08:07:06.888 -04:00 [INF] Peso bruto extraído: 4
+2025-08-11 08:07:06.890 -04:00 [INF] Sello del contenedor extraído: MSBU 827710-2 SELLO FX39286687
+2025-08-11 08:07:06.891 -04:00 [INF] Total a pagar extraído (fallback): 18.000.000
+2025-08-11 08:07:06.892 -04:00 [INF] Nombre del importador extraído: PAGAR EN S
+2025-08-11 08:07:06.894 -04:00 [INF] Descripción de mercancías extraída: 1 J-
+2025-08-11 08:07:06.895 -04:00 [INF] Extracción de campos críticos completada
+2025-08-11 08:07:06.896 -04:00 [INF] Iniciando extracción de campos adicionales desde texto OCR
+2025-08-11 08:07:06.897 -04:00 [INF] Valor CIF extraído: 941,75
+2025-08-11 08:07:06.898 -04:00 [INF] Extracción de campos adicionales completada
+2025-08-11 08:07:06.899 -04:00 [INF] Extracción completada para DI: 
+2025-08-11 08:07:06.900 -04:00 [INF] Archivo PNG procesado: 1.di_parte2.png
+2025-08-11 08:07:06.908 -04:00 [INF] Declaración de Ingreso procesada exitosamente: 4700045635-3
+2025-08-11 08:07:06.971 -04:00 [INF] Solicitud completada: POST /api/DeclaracionIngreso/procesar - 200 en 2370.0524ms

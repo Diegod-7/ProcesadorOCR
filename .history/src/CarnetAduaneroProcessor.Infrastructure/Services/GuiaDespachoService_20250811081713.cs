@@ -1522,7 +1522,7 @@ namespace CarnetAduaneroProcessor.Infrastructure.Services
         /// <summary>
         /// Búsqueda final de campos críticos que no se pudieron extraer
         /// </summary>
-        private void BusquedaFinalCamposCriticos(GuiaDespacho documento, string texto, bool esFormatoJorgeStein, bool esFormatoAlbertoRubio, bool esFormatoRicardoMewes, bool esFormatoAlexisMontenegro)
+        private void BusquedaFinalCamposCriticos(GuiaDespacho documento, string texto)
         {
             // Búsqueda final para número de guía si aún no se encontró
             if (string.IsNullOrEmpty(documento.NumeroGuia))
