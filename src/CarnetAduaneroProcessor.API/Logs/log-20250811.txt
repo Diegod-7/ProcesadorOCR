@@ -1,0 +1,386 @@
+2025-08-11 06:48:15.295 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-11 06:48:23.974 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-11 06:51:22.813 -04:00 [INF] Iniciando solicitud: POST /api/DocumentoRecepcion/procesar
+2025-08-11 06:51:22.942 -04:00 [INF] Procesando Documento de Recepción desde archivo PNG: 2.dr_documento_recepcion.png
+2025-08-11 06:51:22.948 -04:00 [INF] Iniciando extracción de datos de DR desde stream: 2.dr_documento_recepcion.png
+2025-08-11 06:51:23.065 -04:00 [INF] Stream Length: 225530, Position: 0
+2025-08-11 06:51:23.070 -04:00 [INF] Enviando imagen directamente a Azure Vision sin procesamiento local
+2025-08-11 06:51:24.472 -04:00 [INF] Texto extraído con Azure Vision: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (A92) Nº D.R .: 2025- 10718 MEDLOG Giro: SERVICIOS EXTRAPORTUARIOS Situación D.R .: NORMAL Manifiesto: 257809 Dirección: CAMINO LAS MERCEDES 14851 - SANTIAGO Fch.
+2025-08-11 06:51:24.475 -04:00 [INF] Texto normalizado: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (A92) Nº D.R .: 2025- 10718 MEDLOG Giro: SERVICIOS EXTRAPORTUARIOS Situación D.R .: NORMAL Manifiesto: 257809 Dirección: CAMINO LAS MERCEDES 14851 - SANTIAGO Fch. Mnfto SNA: 19/06/2025 Emitido por: 12452809-7 el 25-06-2025 15:10:48 (WEB) Fch.Inicio Alm .: 25/06/2025 Inicio 90 Dias: 20/06/2025 Tipo D.R .: CONTENEDOR IMPORTACION - POR MANIFIESTO - INDIRECTO Término 90 Días: 17/09/2025 BL Armador: (M)BAC0549074/ (H)DACA78565 Consignatario: (86963200-7) FORUS S A Forwarder: Dirección: AV LAS CONDES NRO 11281, BLOCK C - SANTIAGO Nave/Viaje: CMA CGM BEIRA / OLISSN1 Linea Operadora: CMA-CGM CHILE S.A Srv. Almacenaje: ALMACENAJE DE CONTENEDOR 40' NORMAL (ZP) Agencia de Aduana: Almacén: PATIO ZONA PRIMARIA Guarda Almacén: MELLA JUAN (13196396-3) Destino Carga: IMPORTACION Pto.Origen: CHITTAGONG Pto.Descarga: SAN ANTONIO Zona: PRIMARIA Pto.Embarque: CHITTAGONG Pto.Destino: SAN ANTONIO Pto. Transbordo: CALLAO Origen: IMPORTACION Tipo Bulto Cantidad Peso Volumen Estado Ubicación Marcas (H40) 40' CONTENEDOR HIGH CUBE STD 1 5.384,03 0,00 BUENO 10010101 CONSIGNATA RIO: FORU S S.A. WW W FORUS Contenedor: CMALJ 650120-0 (FCL) S.A AV. LAS CONDES# 11281 LAS CONDES SA Sellos: M0442444 INTIAGO, 7590992 CHILE MADE IN TATC: 2025391250035445 BANGLADESH TOTALES ... 5.384,03 F (GDI # 67609 - Item 1) MEDLOG CHILE EXTRAPORTUARIOS CARTAGENA 2 5 JUN 2025 CONTROL DE DOCUMENTOS VIGENTE PARA MAYOR INFORMACION, VISITE NUESTRA PAGINA WEB http://www.proycom.cl Op.Complementarias: VISACION DE CONTENEDORES Observaciones DR: SIN OBSERVACION Observacion Ingreso: Q MODULO DE DOCUMENTO DE RECEPCIÓN FECHA: 25-06-2025 15:10:48
+2025-08-11 06:51:24.485 -04:00 [INF] Iniciando extracción de campos críticos desde texto OCR para DR
+2025-08-11 06:51:24.488 -04:00 [INF] Número del documento extraído: 2025-10718
+2025-08-11 06:51:24.491 -04:00 [INF] Situación del documento extraída: NORMAL
+2025-08-11 06:51:24.492 -04:00 [INF] Número de manifiesto extraído: 257809
+2025-08-11 06:51:24.503 -04:00 [INF] Fecha del manifiesto SNA extraída: 19-06-2025
+2025-08-11 06:51:24.506 -04:00 [INF] Fecha de inicio de almacenaje extraída: 25-06-2025
+2025-08-11 06:51:24.508 -04:00 [INF] RUT del consignatario extraído (fallback): 86963200-7
+2025-08-11 06:51:24.510 -04:00 [INF] Puerto de origen extraído: CHITTAGONG
+2025-08-11 06:51:24.512 -04:00 [INF] Puerto de embarque extraído: CHITTAGONG
+2025-08-11 06:51:24.514 -04:00 [INF] Consignatario extraído (específico): FORU S S
+2025-08-11 06:51:24.516 -04:00 [INF] TATC extraído (específico): 2025391250035445
+2025-08-11 06:51:24.517 -04:00 [INF] Puerto de transbordo extraído: CALLAO
+2025-08-11 06:51:24.518 -04:00 [INF] Destino de carga extraído: IMPORTACION
+2025-08-11 06:51:24.520 -04:00 [INF] Zona extraída: PRIMARIA
+2025-08-11 06:51:24.522 -04:00 [INF] Fecha de inicio 90 días extraída: 20-06-2025
+2025-08-11 06:51:24.523 -04:00 [INF] Fecha de término 90 días extraída: 17-09-2025
+2025-08-11 06:51:24.524 -04:00 [INF] Emitido por extraído: RUT 12452809-7, Fecha 25-06-2025 15:10:48, Medio WEB
+2025-08-11 06:51:24.525 -04:00 [INF] TATC extraído: 2025391250035445
+2025-08-11 06:51:24.527 -04:00 [INF] Estado extraído: U
+2025-08-11 06:51:24.528 -04:00 [INF] Extracción de campos críticos completada. Documento válido: true
+2025-08-11 06:51:24.532 -04:00 [INF] Servicio de almacenaje extraído: ALMACENAJE DE CONTENEDOR 40
+2025-08-11 06:51:24.534 -04:00 [INF] Guarda almacén extraído: MELLA JUAN (RUT: 13196396-3)
+2025-08-11 06:51:24.536 -04:00 [INF] Marcas extraídas: (H40) 40
+2025-08-11 06:51:24.537 -04:00 [INF] Contenedor extraído: CMALJ 650120-0
+2025-08-11 06:51:24.538 -04:00 [INF] TATC extraído: 2025391250035445
+2025-08-11 06:51:24.538 -04:00 [INF] Estado extraído: U
+2025-08-11 06:51:24.540 -04:00 [INF] Tipo Bulto extraído: C
+2025-08-11 06:51:24.542 -04:00 [INF] Procesamiento completado exitosamente para DR: 2025-10718
+2025-08-11 06:51:24.544 -04:00 [INF] Extracción completada para DR: 2025-10718
+2025-08-11 06:51:24.546 -04:00 [INF] Documento de Recepción procesado exitosamente: 2025-10718
+2025-08-11 06:51:24.619 -04:00 [INF] Solicitud completada: POST /api/DocumentoRecepcion/procesar - 200 en 1806.0743ms
+2025-08-11 06:59:12.786 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-11 06:59:15.066 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-11 06:59:32.460 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-11 06:59:56.788 -04:00 [INF] Iniciando solicitud: POST /api/DocumentoRecepcion/procesar
+2025-08-11 06:59:56.884 -04:00 [INF] Procesando Documento de Recepción desde archivo PNG: 2.dr_documento_recepcion.png
+2025-08-11 06:59:56.890 -04:00 [INF] Iniciando extracción de datos de DR desde stream: 2.dr_documento_recepcion.png
+2025-08-11 06:59:56.961 -04:00 [INF] Stream Length: 225530, Position: 0
+2025-08-11 06:59:56.965 -04:00 [INF] Enviando imagen directamente a Azure Vision sin procesamiento local
+2025-08-11 06:59:58.349 -04:00 [INF] Texto extraído con Azure Vision: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (A92) Nº D.R .: 2025- 10718 MEDLOG Giro: SERVICIOS EXTRAPORTUARIOS Situación D.R .: NORMAL Manifiesto: 257809 Dirección: CAMINO LAS MERCEDES 14851 - SANTIAGO Fch.
+2025-08-11 06:59:58.352 -04:00 [INF] Texto normalizado: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (A92) Nº D.R .: 2025- 10718 MEDLOG Giro: SERVICIOS EXTRAPORTUARIOS Situación D.R .: NORMAL Manifiesto: 257809 Dirección: CAMINO LAS MERCEDES 14851 - SANTIAGO Fch. Mnfto SNA: 19/06/2025 Emitido por: 12452809-7 el 25-06-2025 15:10:48 (WEB) Fch.Inicio Alm .: 25/06/2025 Inicio 90 Dias: 20/06/2025 Tipo D.R .: CONTENEDOR IMPORTACION - POR MANIFIESTO - INDIRECTO Término 90 Días: 17/09/2025 BL Armador: (M)BAC0549074/ (H)DACA78565 Consignatario: (86963200-7) FORUS S A Forwarder: Dirección: AV LAS CONDES NRO 11281, BLOCK C - SANTIAGO Nave/Viaje: CMA CGM BEIRA / OLISSN1 Linea Operadora: CMA-CGM CHILE S.A Srv. Almacenaje: ALMACENAJE DE CONTENEDOR 40' NORMAL (ZP) Agencia de Aduana: Almacén: PATIO ZONA PRIMARIA Guarda Almacén: MELLA JUAN (13196396-3) Destino Carga: IMPORTACION Pto.Origen: CHITTAGONG Pto.Descarga: SAN ANTONIO Zona: PRIMARIA Pto.Embarque: CHITTAGONG Pto.Destino: SAN ANTONIO Pto. Transbordo: CALLAO Origen: IMPORTACION Tipo Bulto Cantidad Peso Volumen Estado Ubicación Marcas (H40) 40' CONTENEDOR HIGH CUBE STD 1 5.384,03 0,00 BUENO 10010101 CONSIGNATA RIO: FORU S S.A. WW W FORUS Contenedor: CMALJ 650120-0 (FCL) S.A AV. LAS CONDES# 11281 LAS CONDES SA Sellos: M0442444 INTIAGO, 7590992 CHILE MADE IN TATC: 2025391250035445 BANGLADESH TOTALES ... 5.384,03 F (GDI # 67609 - Item 1) MEDLOG CHILE EXTRAPORTUARIOS CARTAGENA 2 5 JUN 2025 CONTROL DE DOCUMENTOS VIGENTE PARA MAYOR INFORMACION, VISITE NUESTRA PAGINA WEB http://www.proycom.cl Op.Complementarias: VISACION DE CONTENEDORES Observaciones DR: SIN OBSERVACION Observacion Ingreso: Q MODULO DE DOCUMENTO DE RECEPCIÓN FECHA: 25-06-2025 15:10:48
+2025-08-11 06:59:58.362 -04:00 [INF] Iniciando extracción de campos críticos desde texto OCR para DR
+2025-08-11 06:59:58.364 -04:00 [INF] Número del documento extraído: 2025-10718
+2025-08-11 06:59:58.366 -04:00 [INF] Situación del documento extraída: NORMAL
+2025-08-11 06:59:58.368 -04:00 [INF] Número de manifiesto extraído: 257809
+2025-08-11 06:59:58.375 -04:00 [INF] Fecha del manifiesto SNA extraída: 19-06-2025
+2025-08-11 06:59:58.376 -04:00 [INF] Fecha de inicio de almacenaje extraída: 25-06-2025
+2025-08-11 06:59:58.378 -04:00 [INF] BL Armador extraído (fallback 2): (M)BAC0549074/ (H)DACA78565
+2025-08-11 06:59:58.379 -04:00 [INF] RUT del consignatario extraído (fallback): 86963200-7
+2025-08-11 06:59:58.380 -04:00 [INF] Puerto de origen extraído: CHITTAGONG
+2025-08-11 06:59:58.382 -04:00 [INF] Puerto de embarque extraído: CHITTAGONG
+2025-08-11 06:59:58.384 -04:00 [INF] Nave/Viaje extraído (fallback 3): CMA CGM BEIRA / OLISSN1
+2025-08-11 06:59:58.385 -04:00 [INF] Consignatario extraído (específico): FORU S S
+2025-08-11 06:59:58.386 -04:00 [INF] TATC extraído (específico): 2025391250035445
+2025-08-11 06:59:58.388 -04:00 [INF] Puerto de transbordo extraído: CALLAO
+2025-08-11 06:59:58.390 -04:00 [INF] Destino de carga extraído: IMPORTACION
+2025-08-11 06:59:58.391 -04:00 [INF] Zona extraída: PRIMARIA
+2025-08-11 06:59:58.392 -04:00 [INF] Fecha de inicio 90 días extraída: 20-06-2025
+2025-08-11 06:59:58.394 -04:00 [INF] Fecha de término 90 días extraída: 17-09-2025
+2025-08-11 06:59:58.396 -04:00 [INF] Emitido por extraído: RUT 12452809-7, Fecha 25-06-2025 15:10:48, Medio WEB
+2025-08-11 06:59:58.398 -04:00 [INF] TATC extraído: 2025391250035445
+2025-08-11 06:59:58.399 -04:00 [INF] Estado extraído: U
+2025-08-11 06:59:58.401 -04:00 [INF] Extracción de campos críticos completada. Documento válido: true
+2025-08-11 06:59:58.406 -04:00 [INF] Servicio de almacenaje extraído: ALMACENAJE DE CONTENEDOR 40
+2025-08-11 06:59:58.407 -04:00 [INF] Guarda almacén extraído: MELLA JUAN (RUT: 13196396-3)
+2025-08-11 06:59:58.409 -04:00 [INF] Marcas extraídas: (H40) 40
+2025-08-11 06:59:58.411 -04:00 [INF] Contenedor extraído: CMALJ 650120-0
+2025-08-11 06:59:58.412 -04:00 [INF] TATC extraído: 2025391250035445
+2025-08-11 06:59:58.413 -04:00 [INF] Estado extraído: U
+2025-08-11 06:59:58.414 -04:00 [INF] Tipo Bulto extraído: C
+2025-08-11 06:59:58.416 -04:00 [INF] Procesamiento completado exitosamente para DR: 2025-10718
+2025-08-11 06:59:58.417 -04:00 [INF] Extracción completada para DR: 2025-10718
+2025-08-11 06:59:58.418 -04:00 [INF] Documento de Recepción procesado exitosamente: 2025-10718
+2025-08-11 06:59:58.483 -04:00 [INF] Solicitud completada: POST /api/DocumentoRecepcion/procesar - 200 en 1695.1327ms
+2025-08-11 07:06:41.277 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-11 07:06:44.135 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-11 07:08:37.981 -04:00 [INF] Iniciando solicitud: POST /api/DocumentoRecepcion/procesar
+2025-08-11 07:08:38.126 -04:00 [INF] Procesando Documento de Recepción desde archivo PNG: 2.dr_documento_recepcion.png
+2025-08-11 07:08:38.133 -04:00 [INF] Iniciando extracción de datos de DR desde stream: 2.dr_documento_recepcion.png
+2025-08-11 07:08:38.228 -04:00 [INF] Stream Length: 225530, Position: 0
+2025-08-11 07:08:38.232 -04:00 [INF] Enviando imagen directamente a Azure Vision sin procesamiento local
+2025-08-11 07:08:39.655 -04:00 [INF] Texto extraído con Azure Vision: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (A92) Nº D.R .: 2025- 10718 MEDLOG Giro: SERVICIOS EXTRAPORTUARIOS Situación D.R .: NORMAL Manifiesto: 257809 Dirección: CAMINO LAS MERCEDES 14851 - SANTIAGO Fch.
+2025-08-11 07:08:39.659 -04:00 [INF] Texto normalizado: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (A92) Nº D.R .: 2025- 10718 MEDLOG Giro: SERVICIOS EXTRAPORTUARIOS Situación D.R .: NORMAL Manifiesto: 257809 Dirección: CAMINO LAS MERCEDES 14851 - SANTIAGO Fch. Mnfto SNA: 19/06/2025 Emitido por: 12452809-7 el 25-06-2025 15:10:48 (WEB) Fch.Inicio Alm .: 25/06/2025 Inicio 90 Dias: 20/06/2025 Tipo D.R .: CONTENEDOR IMPORTACION - POR MANIFIESTO - INDIRECTO Término 90 Días: 17/09/2025 BL Armador: (M)BAC0549074/ (H)DACA78565 Consignatario: (86963200-7) FORUS S A Forwarder: Dirección: AV LAS CONDES NRO 11281, BLOCK C - SANTIAGO Nave/Viaje: CMA CGM BEIRA / OLISSN1 Linea Operadora: CMA-CGM CHILE S.A Srv. Almacenaje: ALMACENAJE DE CONTENEDOR 40' NORMAL (ZP) Agencia de Aduana: Almacén: PATIO ZONA PRIMARIA Guarda Almacén: MELLA JUAN (13196396-3) Destino Carga: IMPORTACION Pto.Origen: CHITTAGONG Pto.Descarga: SAN ANTONIO Zona: PRIMARIA Pto.Embarque: CHITTAGONG Pto.Destino: SAN ANTONIO Pto. Transbordo: CALLAO Origen: IMPORTACION Tipo Bulto Cantidad Peso Volumen Estado Ubicación Marcas (H40) 40' CONTENEDOR HIGH CUBE STD 1 5.384,03 0,00 BUENO 10010101 CONSIGNATA RIO: FORU S S.A. WW W FORUS Contenedor: CMALJ 650120-0 (FCL) S.A AV. LAS CONDES# 11281 LAS CONDES SA Sellos: M0442444 INTIAGO, 7590992 CHILE MADE IN TATC: 2025391250035445 BANGLADESH TOTALES ... 5.384,03 F (GDI # 67609 - Item 1) MEDLOG CHILE EXTRAPORTUARIOS CARTAGENA 2 5 JUN 2025 CONTROL DE DOCUMENTOS VIGENTE PARA MAYOR INFORMACION, VISITE NUESTRA PAGINA WEB http://www.proycom.cl Op.Complementarias: VISACION DE CONTENEDORES Observaciones DR: SIN OBSERVACION Observacion Ingreso: Q MODULO DE DOCUMENTO DE RECEPCIÓN FECHA: 25-06-2025 15:10:48
+2025-08-11 07:08:39.669 -04:00 [INF] Iniciando extracción de campos críticos desde texto OCR para DR
+2025-08-11 07:08:39.671 -04:00 [INF] Número del documento extraído: 2025-10718
+2025-08-11 07:08:39.673 -04:00 [INF] Situación del documento extraída: NORMAL
+2025-08-11 07:08:39.675 -04:00 [INF] Número de manifiesto extraído: 257809
+2025-08-11 07:08:39.681 -04:00 [INF] Fecha del manifiesto SNA extraída: 19-06-2025
+2025-08-11 07:08:39.683 -04:00 [INF] Fecha de inicio de almacenaje extraída: 25-06-2025
+2025-08-11 07:08:39.685 -04:00 [INF] BL Armador extraído (fallback 2): (M)BAC0549074/ (H)DACA78565
+2025-08-11 07:08:39.687 -04:00 [INF] RUT del consignatario extraído (fallback): 86963200-7
+2025-08-11 07:08:39.689 -04:00 [INF] Puerto de origen extraído: CHITTAGONG
+2025-08-11 07:08:39.690 -04:00 [INF] Puerto de embarque extraído: CHITTAGONG
+2025-08-11 07:08:39.691 -04:00 [INF] Nave/Viaje extraído (fallback 3): CMA CGM BEIRA / OLISSN1
+2025-08-11 07:08:39.692 -04:00 [INF] Consignatario extraído (específico): FORU S S
+2025-08-11 07:08:39.694 -04:00 [INF] TATC extraído (específico): 2025391250035445
+2025-08-11 07:08:39.696 -04:00 [INF] Puerto de transbordo extraído: CALLAO
+2025-08-11 07:08:39.697 -04:00 [INF] Destino de carga extraído: IMPORTACION
+2025-08-11 07:08:39.698 -04:00 [INF] Zona extraída: PRIMARIA
+2025-08-11 07:08:39.699 -04:00 [INF] Fecha de inicio 90 días extraída: 20-06-2025
+2025-08-11 07:08:39.702 -04:00 [INF] Fecha de término 90 días extraída: 17-09-2025
+2025-08-11 07:08:39.703 -04:00 [INF] Emitido por extraído: RUT 12452809-7, Fecha 25-06-2025 15:10:48, Medio WEB
+2025-08-11 07:08:39.705 -04:00 [INF] TATC extraído: 2025391250035445
+2025-08-11 07:08:39.706 -04:00 [INF] Cantidad extraída (fallback tabla): 1
+2025-08-11 07:08:39.707 -04:00 [INF] Peso extraído (fallback tabla): 5.384,03
+2025-08-11 07:08:39.709 -04:00 [INF] Estado extraído: U
+2025-08-11 07:08:39.711 -04:00 [INF] Extracción de campos críticos completada. Documento válido: true
+2025-08-11 07:08:39.715 -04:00 [INF] Servicio de almacenaje extraído: ALMACENAJE DE CONTENEDOR 40
+2025-08-11 07:08:39.717 -04:00 [INF] Guarda almacén extraído: MELLA JUAN (RUT: 13196396-3)
+2025-08-11 07:08:39.718 -04:00 [INF] Marcas extraídas: (H40) 40
+2025-08-11 07:08:39.719 -04:00 [INF] Contenedor extraído: CMALJ 650120-0
+2025-08-11 07:08:39.721 -04:00 [INF] TATC extraído: 2025391250035445
+2025-08-11 07:08:39.722 -04:00 [INF] Estado extraído: U
+2025-08-11 07:08:39.724 -04:00 [INF] Tipo Bulto extraído: C
+2025-08-11 07:08:39.725 -04:00 [INF] Procesamiento completado exitosamente para DR: 2025-10718
+2025-08-11 07:08:39.726 -04:00 [INF] Extracción completada para DR: 2025-10718
+2025-08-11 07:08:39.727 -04:00 [INF] Documento de Recepción procesado exitosamente: 2025-10718
+2025-08-11 07:08:39.786 -04:00 [INF] Solicitud completada: POST /api/DocumentoRecepcion/procesar - 200 en 1805.4078ms
+2025-08-11 07:09:55.098 -04:00 [INF] Iniciando solicitud: POST /api/SeleccionAforo/procesar
+2025-08-11 07:09:55.166 -04:00 [INF] Iniciando procesamiento de archivo PNG de Selección de Aforo: 3.seleccion_aforo.png
+2025-08-11 07:09:55.176 -04:00 [INF] Iniciando extracción de datos de Selección de Aforo desde archivo: C:\Users\Diego\AppData\Local\Temp\tmpD19D.tmp
+2025-08-11 07:09:55.182 -04:00 [INF] Iniciando extracción de datos de Selección de Aforo desde stream: tmpD19D.tmp
+2025-08-11 07:09:55.187 -04:00 [INF] Stream Length: 131856, Position: 0
+2025-08-11 07:09:55.189 -04:00 [INF] Enviando imagen directamente a Azure Vision sin procesamiento local
+2025-08-11 07:09:56.099 -04:00 [INF] Texto extraído con Azure Vision: COMPROBANTE DE TIPO DE SELECCION DE AFORO Declaración de Ingreso Nro. DIN: icha de Aceptación: Nro. Encriptado: 2120204867 3022025 47144496 Agente Codigo: Nombre 812 ALEXIS MONTENEGRO P Aduana Tramita
+2025-08-11 07:09:56.101 -04:00 [INF] Texto extraído de Selección de Aforo: COMPROBANTE DE TIPO DE SELECCION DE AFORO Declaración de Ingreso Nro. DIN: icha de Aceptación: Nro. 
+2025-08-11 07:09:56.104 -04:00 [INF] Iniciando procesamiento de texto OCR para Selección de Aforo
+2025-08-11 07:09:56.108 -04:00 [INF] Texto normalizado: COMPROBANTE DE TIPO DE SELECCION DE AFORO Declaración de Ingreso Nro. DIN: icha de Aceptación: Nro. Encriptado: 2120204867 3022025 47144496 Agente Codigo: Nombre 812 ALEXIS MONTENEGRO P Aduana Tramitación Codigo: Nombre 39 SAN ANTONIO Tipo Revisión FISICO GONZALO GONZÁLEZ PINO RUT: 15.970.128-K N°8687 AGENCIA ALEXIS MONTENEGRO Nombre y Firma Imprimir Cerrar
+2025-08-11 07:09:56.111 -04:00 [INF] Extrayendo campos críticos de Selección de Aforo
+2025-08-11 07:09:56.114 -04:00 [INF] Número encriptado extraído (fallback): 2120204867
+2025-08-11 07:09:56.117 -04:00 [INF] Nombre del firmante extraído (nuevo formato): AGENCIA ALEXIS MONTENEGRO
+2025-08-11 07:09:56.119 -04:00 [INF] Nombre de agencia extraído (específico): AGENCIA ALEXIS MONTENEGRO Nombre y Firma Imprimir Cerrar
+2025-08-11 07:09:56.122 -04:00 [INF] Extrayendo campos adicionales de Selección de Aforo
+2025-08-11 07:09:56.125 -04:00 [INF] Código del agente extraído: Nombre
+2025-08-11 07:09:56.126 -04:00 [INF] Nombre de aduana extraído: SAN ANTONIO
+2025-08-11 07:09:56.127 -04:00 [INF] Tipo de revisión extraído: FISICO
+2025-08-11 07:09:56.129 -04:00 [INF] Información del firmante extraída: SAN ANTONIO Tipo Revisión FISICO GONZALO GONZÁLEZ PINO, RUT: 15.970.128-K, Agencia: AGENCIA ALEXIS MONTENEGRO
+2025-08-11 07:09:56.131 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento de Selección de Aforo
+2025-08-11 07:09:56.132 -04:00 [INF] Extracción completada para Selección de Aforo: 
+2025-08-11 07:09:56.133 -04:00 [INF] Selección de Aforo procesada exitosamente: 
+2025-08-11 07:09:56.165 -04:00 [INF] Solicitud completada: POST /api/SeleccionAforo/procesar - 201 en 1067.4156ms
+2025-08-11 07:11:59.464 -04:00 [INF] Iniciando solicitud: POST /api/SeleccionAforo/procesar
+2025-08-11 07:11:59.502 -04:00 [INF] Iniciando procesamiento de archivo PNG de Selección de Aforo: 3.seleccion_aforo.png
+2025-08-11 07:11:59.510 -04:00 [INF] Iniciando extracción de datos de Selección de Aforo desde archivo: C:\Users\Diego\AppData\Local\Temp\tmpB746.tmp
+2025-08-11 07:11:59.515 -04:00 [INF] Iniciando extracción de datos de Selección de Aforo desde stream: tmpB746.tmp
+2025-08-11 07:11:59.518 -04:00 [INF] Stream Length: 131856, Position: 0
+2025-08-11 07:11:59.520 -04:00 [INF] Enviando imagen directamente a Azure Vision sin procesamiento local
+2025-08-11 07:12:00.413 -04:00 [INF] Texto extraído con Azure Vision: COMPROBANTE DE TIPO DE SELECCION DE AFORO Declaración de Ingreso Nro. DIN: icha de Aceptación: Nro. Encriptado: 2120204867 3022025 47144496 Agente Codigo: Nombre 812 ALEXIS MONTENEGRO P Aduana Tramita
+2025-08-11 07:12:00.414 -04:00 [INF] Texto extraído de Selección de Aforo: COMPROBANTE DE TIPO DE SELECCION DE AFORO Declaración de Ingreso Nro. DIN: icha de Aceptación: Nro. 
+2025-08-11 07:12:00.416 -04:00 [INF] Iniciando procesamiento de texto OCR para Selección de Aforo
+2025-08-11 07:12:00.417 -04:00 [INF] Texto normalizado: COMPROBANTE DE TIPO DE SELECCION DE AFORO Declaración de Ingreso Nro. DIN: icha de Aceptación: Nro. Encriptado: 2120204867 3022025 47144496 Agente Codigo: Nombre 812 ALEXIS MONTENEGRO P Aduana Tramitación Codigo: Nombre 39 SAN ANTONIO Tipo Revisión FISICO GONZALO GONZÁLEZ PINO RUT: 15.970.128-K N°8687 AGENCIA ALEXIS MONTENEGRO Nombre y Firma Imprimir Cerrar
+2025-08-11 07:12:00.420 -04:00 [INF] Extrayendo campos críticos de Selección de Aforo
+2025-08-11 07:12:00.422 -04:00 [INF] Número encriptado extraído (fallback): 2120204867
+2025-08-11 07:12:00.424 -04:00 [INF] Nombre del firmante extraído (nuevo formato): AGENCIA ALEXIS MONTENEGRO
+2025-08-11 07:12:00.426 -04:00 [INF] Nombre de agencia extraído (específico): AGENCIA ALEXIS MONTENEGRO Nombre y Firma Imprimir Cerrar
+2025-08-11 07:12:00.428 -04:00 [INF] Extrayendo campos adicionales de Selección de Aforo
+2025-08-11 07:12:00.429 -04:00 [INF] Código del agente extraído: Nombre
+2025-08-11 07:12:00.430 -04:00 [INF] Nombre de aduana extraído: SAN ANTONIO
+2025-08-11 07:12:00.432 -04:00 [INF] Tipo de revisión extraído: FISICO
+2025-08-11 07:12:00.434 -04:00 [INF] Información del firmante extraída: SAN ANTONIO Tipo Revisión FISICO GONZALO GONZÁLEZ PINO, RUT: 15.970.128-K, Agencia: AGENCIA ALEXIS MONTENEGRO
+2025-08-11 07:12:00.435 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento de Selección de Aforo
+2025-08-11 07:12:00.436 -04:00 [INF] Extracción completada para Selección de Aforo: 
+2025-08-11 07:12:00.437 -04:00 [INF] Selección de Aforo procesada exitosamente: 
+2025-08-11 07:12:00.442 -04:00 [INF] Solicitud completada: POST /api/SeleccionAforo/procesar - 201 en 977.6338ms
+2025-08-11 07:18:12.171 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-11 07:18:15.220 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-11 07:18:40.847 -04:00 [INF] Iniciando solicitud: POST /api/SeleccionAforo/procesar
+2025-08-11 07:18:40.972 -04:00 [INF] Iniciando procesamiento de archivo PNG de Selección de Aforo: 3.seleccion_aforo.png
+2025-08-11 07:18:40.985 -04:00 [INF] Iniciando extracción de datos de Selección de Aforo desde archivo: C:\Users\Diego\AppData\Local\Temp\tmpD781.tmp
+2025-08-11 07:18:40.994 -04:00 [INF] Iniciando extracción de datos de Selección de Aforo desde stream: tmpD781.tmp
+2025-08-11 07:18:41.036 -04:00 [INF] Stream Length: 131856, Position: 0
+2025-08-11 07:18:41.040 -04:00 [INF] Enviando imagen directamente a Azure Vision sin procesamiento local
+2025-08-11 07:18:41.953 -04:00 [INF] Texto extraído con Azure Vision: COMPROBANTE DE TIPO DE SELECCION DE AFORO Declaración de Ingreso Nro. DIN: icha de Aceptación: Nro. Encriptado: 2120204867 3022025 47144496 Agente Codigo: Nombre 812 ALEXIS MONTENEGRO P Aduana Tramita
+2025-08-11 07:18:41.955 -04:00 [INF] Texto extraído de Selección de Aforo: COMPROBANTE DE TIPO DE SELECCION DE AFORO Declaración de Ingreso Nro. DIN: icha de Aceptación: Nro. 
+2025-08-11 07:18:41.957 -04:00 [INF] Iniciando procesamiento de texto OCR para Selección de Aforo
+2025-08-11 07:18:41.961 -04:00 [INF] Texto normalizado: COMPROBANTE DE TIPO DE SELECCION DE AFORO Declaración de Ingreso Nro. DIN: icha de Aceptación: Nro. Encriptado: 2120204867 3022025 47144496 Agente Codigo: Nombre 812 ALEXIS MONTENEGRO P Aduana Tramitación Codigo: Nombre 39 SAN ANTONIO Tipo Revisión FISICO GONZALO GONZÁLEZ PINO RUT: 15.970.128-K N°8687 AGENCIA ALEXIS MONTENEGRO Nombre y Firma Imprimir Cerrar
+2025-08-11 07:18:41.965 -04:00 [INF] Extrayendo campos críticos de Selección de Aforo
+2025-08-11 07:18:41.969 -04:00 [INF] Número DIN extraído (muy agresivo): 2120204867
+2025-08-11 07:18:41.975 -04:00 [INF] Número encriptado extraído (fallback): 2120204867
+2025-08-11 07:18:41.977 -04:00 [INF] Nombre del firmante extraído (nuevo formato): AGENCIA ALEXIS MONTENEGRO
+2025-08-11 07:18:41.980 -04:00 [INF] Nombre de agencia extraído (específico): AGENCIA ALEXIS MONTENEGRO Nombre y Firma Imprimir Cerrar
+2025-08-11 07:18:41.983 -04:00 [INF] Extrayendo campos adicionales de Selección de Aforo
+2025-08-11 07:18:41.984 -04:00 [INF] Código del agente extraído: Nombre
+2025-08-11 07:18:41.986 -04:00 [INF] Nombre de aduana extraído: SAN ANTONIO
+2025-08-11 07:18:41.988 -04:00 [INF] Tipo de revisión extraído: FISICO
+2025-08-11 07:18:41.989 -04:00 [INF] Información del firmante extraída: SAN ANTONIO Tipo Revisión FISICO GONZALO GONZÁLEZ PINO, RUT: 15.970.128-K, Agencia: AGENCIA ALEXIS MONTENEGRO
+2025-08-11 07:18:41.991 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento de Selección de Aforo
+2025-08-11 07:18:41.992 -04:00 [INF] Extracción completada para Selección de Aforo: 2120204867
+2025-08-11 07:18:41.994 -04:00 [INF] Selección de Aforo procesada exitosamente: 2120204867
+2025-08-11 07:18:42.040 -04:00 [INF] Solicitud completada: POST /api/SeleccionAforo/procesar - 201 en 1194.1207ms
+2025-08-11 07:20:40.110 -04:00 [INF] Iniciando solicitud: POST /api/ComprobanteTransaccion/procesar
+2025-08-11 07:20:40.133 -04:00 [INF] Iniciando procesamiento de documento de Comprobante de Transacción: 4.comprobante_transaccion.png
+2025-08-11 07:20:40.136 -04:00 [INF] Iniciando extracción de datos de Comprobante de Transacción desde stream: 4.comprobante_transaccion.png
+2025-08-11 07:20:40.153 -04:00 [INF] Stream Length: 112001, Position: 0
+2025-08-11 07:20:40.155 -04:00 [INF] Enviando imagen directamente a Azure Vision sin procesamiento local
+2025-08-11 07:20:41.009 -04:00 [INF] Texto extraído con Azure Vision: TGR COMPROBANTE DE TRANSACCION Tesorería General de la República Rut - Rol 77591058-5 Formulario 15 Folio 4560010758 Vencimiento 09-07-2025 Moneda de Pago CLP Total Pagado 8.153.962 Fecha Pago 24-06-2
+2025-08-11 07:20:41.011 -04:00 [INF] Texto extraído de Comprobante de Transacción: TGR COMPROBANTE DE TRANSACCION Tesorería General de la República Rut - Rol 77591058-5 Formulario 15 
+2025-08-11 07:20:41.013 -04:00 [INF] Iniciando procesamiento de texto OCR para documento de Comprobante de Transacción
+2025-08-11 07:20:41.015 -04:00 [INF] Texto normalizado: TGR COMPROBANTE DE TRANSACCION Tesorería General de la República Rut - Rol 77591058-5 Formulario 15 Folio 4560010758 Vencimiento 09-07-2025 Moneda de Pago CLP Total Pagado 8.153.962 Fecha Pago 24-06-2025 17:44:12 Institución Recaudadora BANCO ITAU Identificador de Transacción 02847341-57208059 No válido para pago en Instituciones Recaudadoras 06240508201625063001504715 GENERAL DE REPUBLICA OPERACIONES TESOR +
+2025-08-11 07:20:41.017 -04:00 [INF] Extrayendo campos críticos de Comprobante de Transacción
+2025-08-11 07:20:41.018 -04:00 [INF] Número de folio extraído: 4560010758
+2025-08-11 07:20:41.019 -04:00 [INF] Total pagado extraído: 8153962
+2025-08-11 07:20:41.022 -04:00 [INF] Extrayendo campos adicionales de Comprobante de Transacción
+2025-08-11 07:20:41.023 -04:00 [INF] RUT extraído: 77591058-5
+2025-08-11 07:20:41.027 -04:00 [INF] Institución recaudadora extraída: BANCO ITAU Identificador de Transacci
+2025-08-11 07:20:41.029 -04:00 [INF] Identificador de transacción extraído: 02847341-57208059
+2025-08-11 07:20:41.030 -04:00 [INF] Código de barras extraído: 06240508201625063001504715
+2025-08-11 07:20:41.031 -04:00 [INF] Número de referencia extraído: 06240508201625063001504715
+2025-08-11 07:20:41.032 -04:00 [INF] Procesamiento completado exitosamente para Comprobante de Transacción: 4560010758
+2025-08-11 07:20:41.033 -04:00 [INF] Extracción completada para Comprobante de Transacción: 4560010758
+2025-08-11 07:20:41.034 -04:00 [INF] Documento de Comprobante de Transacción procesado exitosamente: 4560010758
+2025-08-11 07:20:41.039 -04:00 [INF] Solicitud completada: POST /api/ComprobanteTransaccion/procesar - 200 en 929.1393ms
+2025-08-11 07:22:43.499 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-11 07:22:43.533 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC: 5.TATC.png
+2025-08-11 07:22:43.535 -04:00 [INF] Iniciando extracción de datos de TACT/ADC desde stream: 5.TATC.png
+2025-08-11 07:22:43.544 -04:00 [INF] Stream Length: 239896, Position: 0
+2025-08-11 07:22:43.546 -04:00 [INF] Enviando imagen directamente a Azure Vision sin procesamiento local
+2025-08-11 07:22:44.699 -04:00 [INF] Texto extraído con Azure Vision: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (A92) Nº D.R .: 2025- 10718 MEDLOG Giro: SERVICIOS EXTRAPORTUARIOS Situación D.R .: NORMAL Manifiesto: 257809 Dirección: CAMINO LAS MERCEDES 14851 - SANTIAGO Fch.
+2025-08-11 07:22:44.701 -04:00 [INF] Texto extraído de TACT/ADC: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (A92) Nº D.R .: 2025- 10718 MEDLOG Giro: SERVICIOS EXTRAPORTUA
+2025-08-11 07:22:44.703 -04:00 [INF] Iniciando procesamiento de texto OCR para documento TACT/ADC
+2025-08-11 07:22:44.704 -04:00 [INF] Texto normalizado: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (A92) Nº D.R .: 2025- 10718 MEDLOG Giro: SERVICIOS EXTRAPORTUARIOS Situación D.R .: NORMAL Manifiesto: 257809 Dirección: CAMINO LAS MERCEDES 14851 - SANTIAGO Fch. Mnfto SNA: 19/06/2025 Emitido por: 12452809-7 el 25-06-2025 15:10:48 (WEB) Fch.Inicio Alm .: 25/06/2025 Inicio 90 Dias: 20/06/2025 Tipo D.R .: CONTENEDOR IMPORTACION - POR MANIFIESTO - INDIRECTO Término 90 Días: 17/09/2025 BL Armador: (M)BAC0549074/ (H)DACA78565 Consignatario: (86963200-7) FORUS S A Forwarder: Dirección: AV LAS CONDES NRO 11281, BLOCK C - SANTIAGO Nave/Viaje: CMA CGM BEIRA / OLISSN1 Linea Operadora: CMA-CGM CHILE S.A Srv. Almacenaje: ALMACENAJE DE CONTENEDOR 40' NORMAL (ZP) Agencia de Aduana: Almacén: PATIO ZONA PRIMARIA Guarda Almacén: MELLA JUAN (13196396-3) Destino Carga: IMPORTACION Pto.Origen: CHITTAGONG Pto.Descarga: SAN ANTONIO Zona: PRIMARIA Pto.Embarque: CHITTAGONG Pto.Destino: SAN ANTONIO Pto. Transbordo: CALLAO Origen: IMPORTACION Tipo Bulto Cantidad Peso Volumen Estado Ubicación Marcas (H40) 40' CONTENEDOR HIGH CUBE STD 1 5.384,03 0,00 BUENO 10010101 CONSIGNATA RIO: FORU S S.A. WW W FORUS Contenedor: CMALJ 650120-0 (FCL) S.A AV. LAS CONDES# 11281 LAS CONDES SA Sellos: M0442444 INTIAGO, 7590992 CHILE MADE IN TATC: 2025391250035445 BANGLADESH TOTALES ... 5.384,03 F (GDI # 67609 - Item 1) MEDLOG CHILE EXTRAPORTUARIOS CARTAGENA 2 5 JUN 2025 CONTROL DE DOCUMENTOS VIGENTE PARA MAYOR INFORMACION, VISITE NUESTRA PAGINA WEB http://www.proycom.cl Op.Complementarias: VISACION DE CONTENEDORES Observaciones DR: SIN OBSERVACION Observacion Ingreso: Q MODULO DE DOCUMENTO DE RECEPCIÓN FECHA: 25-06-2025 15:10:48
+2025-08-11 07:22:44.708 -04:00 [INF] Extrayendo campos críticos de TACT/ADC
+2025-08-11 07:22:44.709 -04:00 [INF] Número TATC extraído de tabla: 2025391250035445
+2025-08-11 07:22:44.710 -04:00 [INF] Número de sellos extraído: M0442444
+2025-08-11 07:22:44.714 -04:00 [INF] Extrayendo campos adicionales de TACT/ADC
+2025-08-11 07:22:44.715 -04:00 [INF] BL extraído: Armador
+2025-08-11 07:22:44.717 -04:00 [INF] Estado del documento: AUTORIZADO
+2025-08-11 07:22:44.718 -04:00 [INF] Guarda almacén extraído: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA
+2025-08-11 07:22:44.719 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento TACT/ADC (Autorización de Despacho de Contenedores)
+2025-08-11 07:22:44.720 -04:00 [INF] Extracción completada para TACT/ADC: 2025391250035445
+2025-08-11 07:22:44.722 -04:00 [INF] Documento TACT/ADC procesado exitosamente: 2025391250035445
+2025-08-11 07:22:44.728 -04:00 [INF] Solicitud completada: POST /api/TactAdc/procesar - 200 en 1228.3566ms
+2025-08-11 07:33:02.270 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-11 07:33:05.301 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-11 07:34:06.721 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-11 07:34:06.815 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC: 5.TATC.png
+2025-08-11 07:34:06.819 -04:00 [INF] Iniciando extracción de datos de TACT/ADC desde stream: 5.TATC.png
+2025-08-11 07:34:06.898 -04:00 [INF] Stream Length: 239896, Position: 0
+2025-08-11 07:34:06.902 -04:00 [INF] Enviando imagen directamente a Azure Vision sin procesamiento local
+2025-08-11 07:34:08.149 -04:00 [INF] Texto extraído con Azure Vision: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (A92) Nº D.R .: 2025- 10718 MEDLOG Giro: SERVICIOS EXTRAPORTUARIOS Situación D.R .: NORMAL Manifiesto: 257809 Dirección: CAMINO LAS MERCEDES 14851 - SANTIAGO Fch.
+2025-08-11 07:34:08.150 -04:00 [INF] Texto extraído de TACT/ADC: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (A92) Nº D.R .: 2025- 10718 MEDLOG Giro: SERVICIOS EXTRAPORTUA
+2025-08-11 07:34:08.153 -04:00 [INF] Iniciando procesamiento de texto OCR para documento TACT/ADC
+2025-08-11 07:34:08.154 -04:00 [INF] Texto normalizado: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (A92) Nº D.R .: 2025- 10718 MEDLOG Giro: SERVICIOS EXTRAPORTUARIOS Situación D.R .: NORMAL Manifiesto: 257809 Dirección: CAMINO LAS MERCEDES 14851 - SANTIAGO Fch. Mnfto SNA: 19/06/2025 Emitido por: 12452809-7 el 25-06-2025 15:10:48 (WEB) Fch.Inicio Alm .: 25/06/2025 Inicio 90 Dias: 20/06/2025 Tipo D.R .: CONTENEDOR IMPORTACION - POR MANIFIESTO - INDIRECTO Término 90 Días: 17/09/2025 BL Armador: (M)BAC0549074/ (H)DACA78565 Consignatario: (86963200-7) FORUS S A Forwarder: Dirección: AV LAS CONDES NRO 11281, BLOCK C - SANTIAGO Nave/Viaje: CMA CGM BEIRA / OLISSN1 Linea Operadora: CMA-CGM CHILE S.A Srv. Almacenaje: ALMACENAJE DE CONTENEDOR 40' NORMAL (ZP) Agencia de Aduana: Almacén: PATIO ZONA PRIMARIA Guarda Almacén: MELLA JUAN (13196396-3) Destino Carga: IMPORTACION Pto.Origen: CHITTAGONG Pto.Descarga: SAN ANTONIO Zona: PRIMARIA Pto.Embarque: CHITTAGONG Pto.Destino: SAN ANTONIO Pto. Transbordo: CALLAO Origen: IMPORTACION Tipo Bulto Cantidad Peso Volumen Estado Ubicación Marcas (H40) 40' CONTENEDOR HIGH CUBE STD 1 5.384,03 0,00 BUENO 10010101 CONSIGNATA RIO: FORU S S.A. WW W FORUS Contenedor: CMALJ 650120-0 (FCL) S.A AV. LAS CONDES# 11281 LAS CONDES SA Sellos: M0442444 INTIAGO, 7590992 CHILE MADE IN TATC: 2025391250035445 BANGLADESH TOTALES ... 5.384,03 F (GDI # 67609 - Item 1) MEDLOG CHILE EXTRAPORTUARIOS CARTAGENA 2 5 JUN 2025 CONTROL DE DOCUMENTOS VIGENTE PARA MAYOR INFORMACION, VISITE NUESTRA PAGINA WEB http://www.proycom.cl Op.Complementarias: VISACION DE CONTENEDORES Observaciones DR: SIN OBSERVACION Observacion Ingreso: Q MODULO DE DOCUMENTO DE RECEPCIÓN FECHA: 25-06-2025 15:10:48
+2025-08-11 07:34:08.157 -04:00 [INF] Extrayendo campos críticos de TACT/ADC
+2025-08-11 07:34:08.160 -04:00 [INF] Número TATC extraído de tabla: 2025391250035445
+2025-08-11 07:34:08.162 -04:00 [INF] Número de contenedor extraído: CMALJ 650120-0 (FCL) S
+2025-08-11 07:34:08.164 -04:00 [INF] Número de sellos extraído: M0442444
+2025-08-11 07:34:08.168 -04:00 [INF] Extrayendo campos adicionales de TACT/ADC
+2025-08-11 07:34:08.171 -04:00 [INF] BL extraído: Armador
+2025-08-11 07:34:08.173 -04:00 [INF] Servicio de almacenaje derivado del prefijo del contenedor: CMAL
+2025-08-11 07:34:08.175 -04:00 [INF] Estado del documento: AUTORIZADO
+2025-08-11 07:34:08.176 -04:00 [INF] Guarda almacén extraído: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA
+2025-08-11 07:34:08.178 -04:00 [INF] Procesamiento completado exitosamente para TACT/ADC: 2025391250035445
+2025-08-11 07:34:08.180 -04:00 [INF] Extracción completada para TACT/ADC: 2025391250035445
+2025-08-11 07:34:08.181 -04:00 [INF] Documento TACT/ADC procesado exitosamente: 2025391250035445
+2025-08-11 07:34:08.211 -04:00 [INF] Solicitud completada: POST /api/TactAdc/procesar - 200 en 1490.375ms
+2025-08-11 07:35:44.854 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-11 07:35:54.665 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-11 07:35:54.678 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmp9D69.tmp
+2025-08-11 07:35:54.686 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmp9D69.tmp
+2025-08-11 07:35:55.965 -04:00 [INF] Texto extraído con Azure Vision: CARNÉ anagena ADUANERO asociación nacional de agentes de aduanas N8687 Nombre .... OLIZALO .ADOLFO GONZALO ADOLFO GONZALEZ .. PINO GONZALEZ PINO 15.970.128-K RUT. 15 ... 970 128-K. Resol. 01.4.2. Fech
+2025-08-11 07:35:55.968 -04:00 [INF] Texto extraído de carné aduanero: CARNÉ anagena ADUANERO asociación nacional de agentes de aduanas N8687 Nombre .... OLIZALO .ADOLFO G
+2025-08-11 07:35:55.971 -04:00 [INF] Iniciando procesamiento de texto OCR para carné aduanero
+2025-08-11 07:35:55.972 -04:00 [INF] Texto normalizado: CARNÉ anagena ADUANERO asociación nacional de agentes de aduanas N8687 Nombre .... OLIZALO .ADOLFO GONZALO ADOLFO GONZALEZ .. PINO GONZALEZ PINO 15.970.128-K RUT. 15 ... 970 128-K. Resol. 01.4.2. Fecha 17 .... 01 ... 2024 AGAD Cod .... B .... 1 .. 2 Nombre ALEXIS AGAD Cod. A Nombre MONTENEGRO AGAD Cod Nombre
+2025-08-11 07:35:55.975 -04:00 [INF] Título extraído: CARNÉ ADUANERO
+2025-08-11 07:35:55.980 -04:00 [INF] Nombre extraído: GONZALO ADOLFO GONZALEZ PINO
+2025-08-11 07:35:55.982 -04:00 [INF] RUT extraído: 15.970.128-K
+2025-08-11 07:35:55.984 -04:00 [INF] Número de carné extraído: N8687
+2025-08-11 07:35:55.986 -04:00 [INF] Fecha extraída: 17.01.2024
+2025-08-11 07:35:55.988 -04:00 [INF] Resolución extraída: Resol. 01
+2025-08-11 07:35:55.989 -04:00 [INF] Procesamiento completado exitosamente
+2025-08-11 07:35:55.991 -04:00 [INF] Extracción completada para carné aduanero: N8687
+2025-08-11 07:35:55.992 -04:00 [INF] Carné procesado exitosamente: N8687
+2025-08-11 07:35:55.996 -04:00 [INF] Solicitud completada: POST /api/CarnetAduanero/procesar - 200 en 11141.9463ms
+2025-08-11 07:37:17.769 -04:00 [INF] Iniciando solicitud: POST /api/GuiaDespacho/procesar
+2025-08-11 07:37:17.787 -04:00 [INF] Iniciando procesamiento de archivo PNG de Guía de Despacho: 7.guia_despacho.png
+2025-08-11 07:37:17.795 -04:00 [INF] Iniciando extracción de datos de Guía de Despacho desde archivo: C:\Users\Diego\AppData\Local\Temp\tmpE20F.tmp
+2025-08-11 07:37:17.801 -04:00 [INF] Iniciando extracción de datos de Guía de Despacho desde stream: tmpE20F.tmp
+2025-08-11 07:37:17.805 -04:00 [INF] Stream Length: 150504, Position: 0
+2025-08-11 07:37:17.806 -04:00 [INF] Enviando imagen directamente a Azure Vision sin procesamiento local
+2025-08-11 07:37:18.928 -04:00 [INF] Texto extraído con Azure Vision: R.U.T .: 13.021.175-5 ALEXIS MONTENEGRO PONCE GUIA DE DESPACHO GIRO: AGENCIA DE ADUANA Y ASESORIAS ELECTRONICA Casa Matriz: ESMERALDA 940 OF.111-B - VALPARAISO Nº44172 S.IL- SANTIAGO CENTRO Fecha Tras
+2025-08-11 07:37:18.930 -04:00 [INF] Texto extraído de Guía de Despacho: R.U.T .: 13.021.175-5 ALEXIS MONTENEGRO PONCE GUIA DE DESPACHO GIRO: AGENCIA DE ADUANA Y ASESORIAS E
+2025-08-11 07:37:18.932 -04:00 [INF] Iniciando procesamiento de texto OCR para documento de Guía de Despacho
+2025-08-11 07:37:18.933 -04:00 [INF] Texto normalizado: R.U.T .: 13.021.175-5 ALEXIS MONTENEGRO PONCE GUIA DE DESPACHO GIRO: AGENCIA DE ADUANA Y ASESORIAS ELECTRONICA Casa Matriz: ESMERALDA 940 OF.111-B - VALPARAISO Nº44172 S.IL- SANTIAGO CENTRO Fecha Trasportiett COMERCIAL CASA NOVEDAD LIMITADA LAS ORQUIDEAS IN - COQUIMBO Chudut: COQUIMBO Comune: COQUIMBO Origen MEDLOG SAN ANTONIO COMERCINE LAS ORQUIDEAS EM SANTIAGO IMPORT. CTDOI ANTIC. DAU Conocimiento: Observaciones: CAAU 300268-3 SELLO ML-CN9954202 47 CONTENEDO 784 CAJAS CARTONGHZ) - PELOTAS DE FUTBOL YIMILLE INFLABLES ARTULOS PARA LA PRACTICA DEPORTIVA BOMBAS VILLE DE AQUA LAS DEMAS BOMBAS PARA LIQUIDOS 1.500 20 PANTUFLAS YIMLHE UNISEX LOS DEMAS CALZADOS CON PLANTA DE PLASTICO Y PARTE SUPERI 541.10 ..... PANTUFLAS YARAL# LASEXLOS DEMAS CALZADOS CON PLANTA DE PLASTICO Y PARTE SUPERI 1.87 20 PLAS YIMAF SECAS DE TENSION NOMINAL DE 1 8 VOLTS 9.000 20 GOMA EVA VIVILLE DE PLASTICO LAS DEMAS MANUFACTURAS DE PLASTICO GOMA EVA VIMALE DE PLASTICO LAS DEMAS MANUFACTURAS DE PLASTICO. ARTICULOS DOMESTICOS YIWULF DE PLASTICO LOS DEMAS ARTICULOS DE USO DOMESTICO ARTICULOS DOMESTICOS VILLE DE PLASTICO LOS DEMAS ARTICULOS DE USO DOMESTICO CANTIDAD TIPO NA: 4 CONTNOESP --
+2025-08-11 07:37:18.937 -04:00 [INF] Extrayendo campos críticos de Guía de Despacho
+2025-08-11 07:37:18.937 -04:00 [INF] Formato detectado - Jorge Stein: false, Alberto Rubio: false, Ricardo Mewes: false
+2025-08-11 07:37:18.940 -04:00 [INF] Número de guía (fallback) extraído: 44172
+2025-08-11 07:37:18.941 -04:00 [INF] RUT del emisor (fallback) extraído: 13.021.175-5
+2025-08-11 07:37:18.943 -04:00 [WRN] No se pudo extraer la fecha del documento
+2025-08-11 07:37:18.952 -04:00 [INF] Extrayendo campos adicionales de Guía de Despacho
+2025-08-11 07:37:18.955 -04:00 [WRN] No se pudo extraer el nombre del emisor
+2025-08-11 07:37:18.956 -04:00 [WRN] No se pudo extraer el nombre del receptor
+2025-08-11 07:37:18.957 -04:00 [WRN] No se pudo extraer el RUT del receptor
+2025-08-11 07:37:18.958 -04:00 [INF] Origen establecido por defecto: N
+2025-08-11 07:37:18.959 -04:00 [INF] Conocimiento de embarque establecido por defecto: N
+2025-08-11 07:37:18.961 -04:00 [INF] Tipo de bulto establecido por defecto: DESPACHO
+2025-08-11 07:37:18.963 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento de Guía de Despacho
+2025-08-11 07:37:18.964 -04:00 [INF] Extracción completada para Guía de Despacho: 44172
+2025-08-11 07:37:18.965 -04:00 [INF] Guía de Despacho procesada exitosamente: 44172
+2025-08-11 07:37:18.990 -04:00 [INF] Solicitud completada: POST /api/GuiaDespacho/procesar - 201 en 1221.2408ms
+2025-08-11 07:48:12.047 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-11 07:48:14.809 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-11 07:49:08.509 -04:00 [INF] Iniciando solicitud: POST /api/GuiaDespacho/procesar
+2025-08-11 07:49:08.724 -04:00 [INF] Iniciando procesamiento de archivo PNG de Guía de Despacho: 7.guia_despacho.png
+2025-08-11 07:49:08.741 -04:00 [INF] Iniciando extracción de datos de Guía de Despacho desde archivo: C:\Users\Diego\AppData\Local\Temp\tmpBB27.tmp
+2025-08-11 07:49:08.753 -04:00 [INF] Iniciando extracción de datos de Guía de Despacho desde stream: tmpBB27.tmp
+2025-08-11 07:49:08.817 -04:00 [INF] Stream Length: 150504, Position: 0
+2025-08-11 07:49:08.822 -04:00 [INF] Enviando imagen directamente a Azure Vision sin procesamiento local
+2025-08-11 07:49:10.183 -04:00 [INF] Texto extraído con Azure Vision: R.U.T .: 13.021.175-5 ALEXIS MONTENEGRO PONCE GUIA DE DESPACHO GIRO: AGENCIA DE ADUANA Y ASESORIAS ELECTRONICA Casa Matriz: ESMERALDA 940 OF.111-B - VALPARAISO Nº44172 S.IL- SANTIAGO CENTRO Fecha Tras
+2025-08-11 07:49:10.185 -04:00 [INF] Texto extraído de Guía de Despacho: R.U.T .: 13.021.175-5 ALEXIS MONTENEGRO PONCE GUIA DE DESPACHO GIRO: AGENCIA DE ADUANA Y ASESORIAS E
+2025-08-11 07:49:10.188 -04:00 [INF] Iniciando procesamiento de texto OCR para documento de Guía de Despacho
+2025-08-11 07:49:10.193 -04:00 [INF] Texto normalizado: R.U.T .: 13.021.175-5 ALEXIS MONTENEGRO PONCE GUIA DE DESPACHO GIRO: AGENCIA DE ADUANA Y ASESORIAS ELECTRONICA Casa Matriz: ESMERALDA 940 OF.111-B - VALPARAISO Nº44172 S.IL- SANTIAGO CENTRO Fecha Trasportiett COMERCIAL CASA NOVEDAD LIMITADA LAS ORQUIDEAS IN - COQUIMBO Chudut: COQUIMBO Comune: COQUIMBO Origen MEDLOG SAN ANTONIO COMERCINE LAS ORQUIDEAS EM SANTIAGO IMPORT. CTDOI ANTIC. DAU Conocimiento: Observaciones: CAAU 300268-3 SELLO ML-CN9954202 47 CONTENEDO 784 CAJAS CARTONGHZ) - PELOTAS DE FUTBOL YIMILLE INFLABLES ARTULOS PARA LA PRACTICA DEPORTIVA BOMBAS VILLE DE AQUA LAS DEMAS BOMBAS PARA LIQUIDOS 1.500 20 PANTUFLAS YIMLHE UNISEX LOS DEMAS CALZADOS CON PLANTA DE PLASTICO Y PARTE SUPERI 541.10 ..... PANTUFLAS YARAL# LASEXLOS DEMAS CALZADOS CON PLANTA DE PLASTICO Y PARTE SUPERI 1.87 20 PLAS YIMAF SECAS DE TENSION NOMINAL DE 1 8 VOLTS 9.000 20 GOMA EVA VIVILLE DE PLASTICO LAS DEMAS MANUFACTURAS DE PLASTICO GOMA EVA VIMALE DE PLASTICO LAS DEMAS MANUFACTURAS DE PLASTICO. ARTICULOS DOMESTICOS YIWULF DE PLASTICO LOS DEMAS ARTICULOS DE USO DOMESTICO ARTICULOS DOMESTICOS VILLE DE PLASTICO LOS DEMAS ARTICULOS DE USO DOMESTICO CANTIDAD TIPO NA: 4 CONTNOESP --
+2025-08-11 07:49:10.196 -04:00 [INF] Extrayendo campos críticos de Guía de Despacho
+2025-08-11 07:49:10.197 -04:00 [INF] Formato detectado - Jorge Stein: false, Alberto Rubio: false, Ricardo Mewes: false
+2025-08-11 07:49:10.200 -04:00 [INF] Número de guía (fallback) extraído: 44172
+2025-08-11 07:49:10.202 -04:00 [INF] RUT del emisor (fallback) extraído: 13.021.175-5
+2025-08-11 07:49:10.204 -04:00 [WRN] No se pudo extraer la fecha del documento
+2025-08-11 07:49:10.212 -04:00 [INF] Extrayendo campos adicionales de Guía de Despacho
+2025-08-11 07:49:10.216 -04:00 [WRN] No se pudo extraer el nombre del emisor
+2025-08-11 07:49:10.218 -04:00 [WRN] No se pudo extraer el nombre del receptor
+2025-08-11 07:49:10.219 -04:00 [WRN] No se pudo extraer el RUT del receptor
+2025-08-11 07:49:10.221 -04:00 [INF] Origen establecido por defecto: N
+2025-08-11 07:49:10.223 -04:00 [INF] Conocimiento de embarque establecido por defecto: N
+2025-08-11 07:49:10.224 -04:00 [INF] Tipo de bulto establecido por defecto: DESPACHO
+2025-08-11 07:49:10.225 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento de Guía de Despacho
+2025-08-11 07:49:10.226 -04:00 [INF] Extracción completada para Guía de Despacho: 44172
+2025-08-11 07:49:10.227 -04:00 [INF] Guía de Despacho procesada exitosamente: 44172
+2025-08-11 07:49:10.282 -04:00 [INF] Solicitud completada: POST /api/GuiaDespacho/procesar - 201 en 1774.457ms
+2025-08-11 07:51:03.617 -04:00 [INF] Iniciando solicitud: POST /api/DeclaracionIngreso/procesar
+2025-08-11 07:51:03.646 -04:00 [INF] Procesando Declaración de Ingreso con 2 archivos PNG
+2025-08-11 07:51:03.660 -04:00 [INF] Iniciando extracción de datos de DI desde stream: 1.di_parte1.png
+2025-08-11 07:51:03.666 -04:00 [INF] Stream Length: 303584, Position: 303584
+2025-08-11 07:51:03.667 -04:00 [INF] Enviando imagen directamente a Azure Vision sin procesamiento local
+2025-08-11 07:51:04.955 -04:00 [INF] Texto extraído con Azure Vision: SERVICIO NACIONAL DE ADUANAS / CHILE Form NUMERO DE IDENTIFICACION DECLARACION DE INGRESO 07 15 4700045635-3 15 FECHA DE VENCIMIENTO 1502016 02/04/2025 SAN ANTONIO 25 39 WALTER PEREZ SALAS 26 F70 Tipo
+2025-08-11 07:51:04.961 -04:00 [INF] Iniciando extracción de campos críticos desde texto OCR
+2025-08-11 07:51:04.963 -04:00 [INF] Número de identificación extraído: 4700045635-3
+2025-08-11 07:51:04.964 -04:00 [INF] Tipo de operación extraído: IMPORT.CTDO.ANTIC.
+2025-08-11 07:51:04.965 -04:00 [INF] Código de tipo de operación extraído: 151
+2025-08-11 07:51:04.966 -04:00 [INF] Peso bruto extraído (fallback): 906
+2025-08-11 07:51:04.968 -04:00 [INF] Total a pagar extraído (fallback): 96.707.720
+2025-08-11 07:51:04.970 -04:00 [INF] Nombre del importador extraído: WALTER PEREZ SALAS
+2025-08-11 07:51:04.971 -04:00 [INF] Extracción de campos críticos completada
+2025-08-11 07:51:04.974 -04:00 [INF] Iniciando extracción de campos adicionales desde texto OCR
+2025-08-11 07:51:04.976 -04:00 [INF] Aduana extraída: SAN ANTONIO
+2025-08-11 07:51:04.977 -04:00 [INF] Despachante extraído: WALTER PEREZ SALAS
+2025-08-11 07:51:04.977 -04:00 [INF] Consignatario extraído: JIN & YIN & WANG LIMITADA
+2025-08-11 07:51:04.978 -04:00 [INF] Consignante extraído: BOHUA TRADE CO. LIMITED
+2025-08-11 07:51:04.979 -04:00 [INF] País de origen extraído: CHINA
+2025-08-11 07:51:04.980 -04:00 [INF] Puerto de desembarque extraído: SAN ANTONIO
+2025-08-11 07:51:04.981 -04:00 [INF] Compañía transportista extraída: MEDITERRANEAN SHIPPING CO SAI
+2025-08-11 07:51:04.982 -04:00 [INF] Documento de transporte extraído: MEDUOY612089
+2025-08-11 07:51:04.983 -04:00 [INF] Valor CIF extraído: 906
+2025-08-11 07:51:04.984 -04:00 [INF] Moneda extraída: DOLAR USA
+2025-08-11 07:51:04.985 -04:00 [INF] Cláusula de compra extraída: CFR
+2025-08-11 07:51:04.986 -04:00 [INF] Extracción de campos adicionales completada
+2025-08-11 07:51:04.987 -04:00 [INF] Extracción completada para DI: 4700045635-3
+2025-08-11 07:51:04.989 -04:00 [INF] Archivo PNG procesado: 1.di_parte1.png
+2025-08-11 07:51:04.991 -04:00 [INF] Iniciando extracción de datos de DI desde stream: 1.di_parte2.png
+2025-08-11 07:51:04.992 -04:00 [INF] Stream Length: 183325, Position: 183325
+2025-08-11 07:51:04.993 -04:00 [INF] Enviando imagen directamente a Azure Vision sin procesamiento local
+2025-08-11 07:51:05.631 -04:00 [INF] Texto extraído con Azure Vision: DESCRIPCION DE MERCANCIAS 1 J-1030 EPROTECTORES 95069910 1.297.42 BOHUA-F ACOLCHADO PARA EL CUERPO 0,000000 223 0.00 LOS DEMAS, ARTICULO DE PROTECCION PARA USO DEPORTIVO 19,000000 1 178 246,51 0.00 18
+2025-08-11 07:51:05.632 -04:00 [INF] Iniciando extracción de campos críticos desde texto OCR
+2025-08-11 07:51:05.634 -04:00 [INF] Peso bruto extraído: 4
+2025-08-11 07:51:05.635 -04:00 [INF] Sello del contenedor extraído: MSBU 827710-2 SELLO FX39286687
+2025-08-11 07:51:05.636 -04:00 [INF] Total a pagar extraído (fallback): 18.000.000
+2025-08-11 07:51:05.637 -04:00 [INF] Nombre del importador extraído: PAGAR EN S
+2025-08-11 07:51:05.638 -04:00 [INF] Descripción de mercancías extraída: 1 J-
+2025-08-11 07:51:05.638 -04:00 [INF] Extracción de campos críticos completada
+2025-08-11 07:51:05.639 -04:00 [INF] Iniciando extracción de campos adicionales desde texto OCR
+2025-08-11 07:51:05.640 -04:00 [INF] Valor CIF extraído: 941,75
+2025-08-11 07:51:05.642 -04:00 [INF] Extracción de campos adicionales completada
+2025-08-11 07:51:05.643 -04:00 [INF] Extracción completada para DI: 
+2025-08-11 07:51:05.644 -04:00 [INF] Archivo PNG procesado: 1.di_parte2.png
+2025-08-11 07:51:05.651 -04:00 [INF] Declaración de Ingreso procesada exitosamente: 4700045635-3
+2025-08-11 07:51:05.678 -04:00 [INF] Solicitud completada: POST /api/DeclaracionIngreso/procesar - 200 en 2061.0015ms
+2025-08-11 08:04:47.137 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-11 08:04:50.100 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
