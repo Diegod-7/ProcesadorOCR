@@ -1,0 +1,67 @@
+2025-08-21 07:55:11.304 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 07:55:40.289 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-21 07:55:40.429 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-21 07:55:40.448 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmp1996.tmp
+2025-08-21 07:55:40.456 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmp1996.tmp
+2025-08-21 07:55:42.706 -04:00 [ERR] Error en extracción con Azure Vision (SkiaSharp)
+Azure.RequestFailedException: Service request failed.
+Status: 401 (PermissionDenied)
+
+Content:
+{"error":{"code":"401","message":"Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource."}}
+
+Headers:
+apim-request-id: REDACTED
+Date: Thu, 21 Aug 2025 11:55:41 GMT
+Content-Length: 224
+Content-Type: application/json
+
+   at Azure.Core.HttpPipelineExtensions.ProcessMessageAsync(HttpPipeline pipeline, HttpMessage message, RequestContext requestContext, CancellationToken cancellationToken)
+   at Azure.AI.Vision.ImageAnalysis.ImageAnalysisClient.AnalyzeFromImageDataAsync(IEnumerable`1 visualFeatures, RequestContent content, String language, Nullable`1 genderNeutralCaption, IEnumerable`1 smartCropsAspectRatios, String modelVersion, RequestContext context)
+   at Azure.AI.Vision.ImageAnalysis.ImageAnalysisClient.AnalyzeFromImageDataAsync(IEnumerable`1 visualFeatures, BinaryData imageData, String language, Nullable`1 genderNeutralCaption, IEnumerable`1 smartCropsAspectRatios, String modelVersion, CancellationToken cancellationToken)
+   at CarnetAduaneroProcessor.Infrastructure.Services.CarnetAduaneroProcessorService.ExtraerTextoConAzureVisionSkiaAsync(SKBitmap bitmap) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\CarnetAduaneroProcessorService.cs:line 467
+2025-08-21 07:55:42.834 -04:00 [WRN] SkiaSharp falló, usando Azure Vision directamente
+Azure.RequestFailedException: Service request failed.
+Status: 401 (PermissionDenied)
+
+Content:
+{"error":{"code":"401","message":"Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource."}}
+
+Headers:
+apim-request-id: REDACTED
+Date: Thu, 21 Aug 2025 11:55:41 GMT
+Content-Length: 224
+Content-Type: application/json
+
+   at Azure.Core.HttpPipelineExtensions.ProcessMessageAsync(HttpPipeline pipeline, HttpMessage message, RequestContext requestContext, CancellationToken cancellationToken)
+   at Azure.AI.Vision.ImageAnalysis.ImageAnalysisClient.AnalyzeFromImageDataAsync(IEnumerable`1 visualFeatures, RequestContent content, String language, Nullable`1 genderNeutralCaption, IEnumerable`1 smartCropsAspectRatios, String modelVersion, RequestContext context)
+   at Azure.AI.Vision.ImageAnalysis.ImageAnalysisClient.AnalyzeFromImageDataAsync(IEnumerable`1 visualFeatures, BinaryData imageData, String language, Nullable`1 genderNeutralCaption, IEnumerable`1 smartCropsAspectRatios, String modelVersion, CancellationToken cancellationToken)
+   at CarnetAduaneroProcessor.Infrastructure.Services.CarnetAduaneroProcessorService.ExtraerTextoConAzureVisionSkiaAsync(SKBitmap bitmap) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\CarnetAduaneroProcessorService.cs:line 467
+   at CarnetAduaneroProcessor.Infrastructure.Services.CarnetAduaneroProcessorService.ExtraerTextoPngAsync(Stream fileStream) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\CarnetAduaneroProcessorService.cs:line 424
+2025-08-21 07:55:42.897 -04:00 [ERR] Error extrayendo texto de PNG con Azure Vision
+System.ObjectDisposedException: Cannot access a closed Stream.
+   at System.IO.Strategies.BufferedFileStreamStrategy.Seek(Int64 offset, SeekOrigin origin)
+   at System.IO.FileStream.set_Position(Int64 value)
+   at CarnetAduaneroProcessor.Infrastructure.Services.CarnetAduaneroProcessorService.ExtraerTextoPngAsync(Stream fileStream) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\CarnetAduaneroProcessorService.cs:line 430
+2025-08-21 07:55:43.012 -04:00 [ERR] Error extrayendo datos de carné aduanero desde stream: tmp1996.tmp
+System.ObjectDisposedException: Cannot access a closed Stream.
+   at System.IO.Strategies.BufferedFileStreamStrategy.Seek(Int64 offset, SeekOrigin origin)
+   at System.IO.FileStream.set_Position(Int64 value)
+   at CarnetAduaneroProcessor.Infrastructure.Services.CarnetAduaneroProcessorService.ExtraerTextoPngAsync(Stream fileStream) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\CarnetAduaneroProcessorService.cs:line 430
+   at CarnetAduaneroProcessor.Infrastructure.Services.CarnetAduaneroProcessorService.ExtraerDatosAsync(Stream fileStream, String fileName) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\CarnetAduaneroProcessorService.cs:line 382
+2025-08-21 07:55:43.135 -04:00 [ERR] Error extrayendo datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmp1996.tmp
+System.ObjectDisposedException: Cannot access a closed Stream.
+   at System.IO.Strategies.BufferedFileStreamStrategy.Seek(Int64 offset, SeekOrigin origin)
+   at System.IO.FileStream.set_Position(Int64 value)
+   at CarnetAduaneroProcessor.Infrastructure.Services.CarnetAduaneroProcessorService.ExtraerTextoPngAsync(Stream fileStream) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\CarnetAduaneroProcessorService.cs:line 430
+   at CarnetAduaneroProcessor.Infrastructure.Services.CarnetAduaneroProcessorService.ExtraerDatosAsync(Stream fileStream, String fileName) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\CarnetAduaneroProcessorService.cs:line 382
+   at CarnetAduaneroProcessor.Infrastructure.Services.CarnetAduaneroProcessorService.ExtraerDatosAsync(String filePath) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\CarnetAduaneroProcessorService.cs:line 359
+2025-08-21 07:55:43.274 -04:00 [ERR] Error al procesar archivo: 6.carne.png
+System.ObjectDisposedException: Cannot access a closed Stream.
+   at System.IO.Strategies.BufferedFileStreamStrategy.Seek(Int64 offset, SeekOrigin origin)
+   at System.IO.FileStream.set_Position(Int64 value)
+   at CarnetAduaneroProcessor.Infrastructure.Services.CarnetAduaneroProcessorService.ExtraerTextoPngAsync(Stream fileStream) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\CarnetAduaneroProcessorService.cs:line 430
+   at CarnetAduaneroProcessor.Infrastructure.Services.CarnetAduaneroProcessorService.ExtraerDatosAsync(Stream fileStream, String fileName) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\CarnetAduaneroProcessorService.cs:line 382
+   at CarnetAduaneroProcessor.Infrastructure.Services.CarnetAduaneroProcessorService.ExtraerDatosAsync(String filePath) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\CarnetAduaneroProcessorService.cs:line 359
+   at CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.ProcesarPng(IFormFile file) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\Controllers\CarnetAduaneroController.cs:line 74
+2025-08-21 07:55:43.300 -04:00 [INF] Solicitud completada: POST /api/CarnetAduanero/procesar - 500 en 3011.7489ms

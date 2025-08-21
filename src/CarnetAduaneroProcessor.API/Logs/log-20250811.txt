@@ -431,3 +431,5 @@
 2025-08-11 08:07:06.900 -04:00 [INF] Archivo PNG procesado: 1.di_parte2.png
 2025-08-11 08:07:06.908 -04:00 [INF] Declaración de Ingreso procesada exitosamente: 4700045635-3
 2025-08-11 08:07:06.971 -04:00 [INF] Solicitud completada: POST /api/DeclaracionIngreso/procesar - 200 en 2370.0524ms
+2025-08-11 08:30:29.113 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-11 08:30:36.834 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
