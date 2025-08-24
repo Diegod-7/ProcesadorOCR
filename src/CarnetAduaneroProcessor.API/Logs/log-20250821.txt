@@ -65,3 +65,1042 @@ System.ObjectDisposedException: Cannot access a closed Stream.
    at CarnetAduaneroProcessor.Infrastructure.Services.CarnetAduaneroProcessorService.ExtraerDatosAsync(String filePath) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\CarnetAduaneroProcessorService.cs:line 359
    at CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.ProcesarPng(IFormFile file) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\Controllers\CarnetAduaneroController.cs:line 74
 2025-08-21 07:55:43.300 -04:00 [INF] Solicitud completada: POST /api/CarnetAduanero/procesar - 500 en 3011.7489ms
+2025-08-21 08:02:55.255 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 08:02:59.231 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 08:03:19.923 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-21 08:03:20.074 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-21 08:03:20.093 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmp1D0F.tmp
+2025-08-21 08:03:20.106 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmp1D0F.tmp
+2025-08-21 08:03:22.609 -04:00 [INF] Texto extraído con Azure Vision: CARNÉ anagena ADUANERO asociación nacional de agentes de aduanas N8687 Nombre .... OLIZALO .ADOLFO GONZALO ADOLFO GONZALEZ .. PINO GONZALEZ PINO 15.970.128-K RUT. 15 ... 970 128-K. Resol. 01.4.2. Fech
+2025-08-21 08:03:22.613 -04:00 [INF] Texto extraído de carné aduanero: CARNÉ anagena ADUANERO asociación nacional de agentes de aduanas N8687 Nombre .... OLIZALO .ADOLFO G
+2025-08-21 08:03:22.615 -04:00 [INF] Iniciando procesamiento de texto OCR para carné aduanero
+2025-08-21 08:03:22.616 -04:00 [INF] Texto normalizado: CARNÉ anagena ADUANERO asociación nacional de agentes de aduanas N8687 Nombre .... OLIZALO .ADOLFO GONZALO ADOLFO GONZALEZ .. PINO GONZALEZ PINO 15.970.128-K RUT. 15 ... 970 128-K. Resol. 01.4.2. Fecha 17 .... 01 ... 2024 AGAD Cod .... B .... 1 .. 2 Nombre ALEXIS AGAD Cod. A Nombre MONTENEGRO AGAD Cod Nombre
+2025-08-21 08:03:22.619 -04:00 [INF] Título extraído: CARNÉ ADUANERO
+2025-08-21 08:03:22.627 -04:00 [INF] Nombre extraído: GONZALO ADOLFO GONZALEZ PINO
+2025-08-21 08:03:22.630 -04:00 [INF] RUT extraído: 15.970.128-K
+2025-08-21 08:03:22.631 -04:00 [INF] Número de carné extraído: N8687
+2025-08-21 08:03:22.633 -04:00 [INF] Fecha extraída: 17.01.2024
+2025-08-21 08:03:22.635 -04:00 [INF] Resolución extraída: Resol. 01
+2025-08-21 08:03:22.636 -04:00 [INF] Procesamiento completado exitosamente
+2025-08-21 08:03:22.637 -04:00 [INF] Extracción completada para carné aduanero: N8687
+2025-08-21 08:03:22.638 -04:00 [INF] Carné procesado exitosamente: N8687
+2025-08-21 08:03:22.667 -04:00 [INF] Solicitud completada: POST /api/CarnetAduanero/procesar - 200 en 2744.3395ms
+2025-08-21 13:26:10.451 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 13:26:17.399 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 13:26:33.660 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-21 13:26:33.813 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-21 13:26:33.831 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmpA04.tmp
+2025-08-21 13:26:33.840 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmpA04.tmp
+2025-08-21 13:26:35.860 -04:00 [INF] Texto extraído con Azure Vision: CARNÉ anagena ADUANERO asociación nacional de agentes de aduanas N8687 Nombre .... OLIZALO .ADOLFO GONZALO ADOLFO GONZALEZ .. PINO GONZALEZ PINO 15.970.128-K RUT. 15 ... 970 128-K. Resol. 01.4.2. Fech
+2025-08-21 13:26:35.865 -04:00 [INF] Texto extraído de carné aduanero: CARNÉ anagena ADUANERO asociación nacional de agentes de aduanas N8687 Nombre .... OLIZALO .ADOLFO G
+2025-08-21 13:26:35.868 -04:00 [INF] Iniciando procesamiento de texto OCR para carné aduanero
+2025-08-21 13:26:35.870 -04:00 [INF] Texto normalizado: CARNÉ anagena ADUANERO asociación nacional de agentes de aduanas N8687 Nombre .... OLIZALO .ADOLFO GONZALO ADOLFO GONZALEZ .. PINO GONZALEZ PINO 15.970.128-K RUT. 15 ... 970 128-K. Resol. 01.4.2. Fecha 17 .... 01 ... 2024 AGAD Cod .... B .... 1 .. 2 Nombre ALEXIS AGAD Cod. A Nombre MONTENEGRO AGAD Cod Nombre
+2025-08-21 13:26:35.873 -04:00 [INF] Título extraído: CARNÉ ADUANERO
+2025-08-21 13:26:35.881 -04:00 [INF] Nombre extraído: GONZALO ADOLFO GONZALEZ PINO
+2025-08-21 13:26:35.886 -04:00 [INF] RUT extraído: 15.970.128-K
+2025-08-21 13:26:35.887 -04:00 [INF] Número de carné extraído: N8687
+2025-08-21 13:26:35.888 -04:00 [INF] Fecha extraída: 17.01.2024
+2025-08-21 13:26:35.891 -04:00 [INF] Resolución extraída: Resol. 01
+2025-08-21 13:26:35.893 -04:00 [INF] Procesamiento completado exitosamente
+2025-08-21 13:26:35.894 -04:00 [INF] Extracción completada para carné aduanero: N8687
+2025-08-21 13:26:35.895 -04:00 [INF] Carné procesado exitosamente: N8687
+2025-08-21 13:26:35.931 -04:00 [INF] Solicitud completada: POST /api/CarnetAduanero/procesar - 200 en 2271.3344ms
+2025-08-21 13:26:53.817 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-21 13:26:58.385 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-21 13:27:26.704 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmp80AC.tmp
+2025-08-21 13:27:30.331 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmp80AC.tmp
+2025-08-21 13:27:31.523 -04:00 [INF] Texto extraído con Azure Vision: CARNÉ anagena ADUANERO asociación nacional de agentes de aduanas N8687 Nombre .... OLIZALO .ADOLFO GONZALO ADOLFO GONZALEZ .. PINO GONZALEZ PINO 15.970.128-K RUT. 15 ... 970 128-K. Resol. 01.4.2. Fech
+2025-08-21 13:27:31.526 -04:00 [INF] Texto extraído de carné aduanero: CARNÉ anagena ADUANERO asociación nacional de agentes de aduanas N8687 Nombre .... OLIZALO .ADOLFO G
+2025-08-21 13:27:31.527 -04:00 [INF] Iniciando procesamiento de texto OCR para carné aduanero
+2025-08-21 13:27:31.529 -04:00 [INF] Texto normalizado: CARNÉ anagena ADUANERO asociación nacional de agentes de aduanas N8687 Nombre .... OLIZALO .ADOLFO GONZALO ADOLFO GONZALEZ .. PINO GONZALEZ PINO 15.970.128-K RUT. 15 ... 970 128-K. Resol. 01.4.2. Fecha 17 .... 01 ... 2024 AGAD Cod .... B .... 1 .. 2 Nombre ALEXIS AGAD Cod. A Nombre MONTENEGRO AGAD Cod Nombre
+2025-08-21 13:27:31.530 -04:00 [INF] Título extraído: CARNÉ ADUANERO
+2025-08-21 13:27:31.532 -04:00 [INF] Nombre extraído: GONZALO ADOLFO GONZALEZ PINO
+2025-08-21 13:27:31.533 -04:00 [INF] RUT extraído: 15.970.128-K
+2025-08-21 13:27:31.535 -04:00 [INF] Número de carné extraído: N8687
+2025-08-21 13:27:31.536 -04:00 [INF] Fecha extraída: 17.01.2024
+2025-08-21 13:27:31.538 -04:00 [INF] Resolución extraída: Resol. 01
+2025-08-21 13:27:31.540 -04:00 [INF] Procesamiento completado exitosamente
+2025-08-21 13:27:31.541 -04:00 [INF] Extracción completada para carné aduanero: N8687
+2025-08-21 13:27:34.234 -04:00 [INF] Carné procesado exitosamente: N8687
+2025-08-21 13:28:41.790 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 13:28:44.461 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 13:47:10.078 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 13:47:13.179 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 13:47:28.554 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-21 13:47:28.624 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 13:47:28.629 -04:00 [WRN] No se encontraron archivos de idioma de Tesseract. Usando Azure Computer Vision como fallback.
+2025-08-21 13:47:31.415 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-21 13:47:31.430 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmp3A9D.tmp
+2025-08-21 13:47:31.438 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmp3A9D.tmp
+2025-08-21 13:55:16.661 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 13:55:20.446 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 13:55:46.448 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-21 13:55:46.486 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 13:55:46.488 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 13:55:46.492 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 13:55:46.494 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 13:55:47.455 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 13:55:59.243 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-21 13:55:59.257 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmpFA51.tmp
+2025-08-21 13:55:59.265 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmpFA51.tmp
+2025-08-21 13:57:04.264 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 13:57:08.478 -04:00 [INF] Texto extraído con servicio híbrido: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº ................ GONZALEZ..PJ.NO.--.......-
+
+15.970178K RUT.15..97.0-:-128—K----------...
+
+Resol. 01.
+2025-08-21 13:57:22.307 -04:00 [INF] Texto extraído de carné aduanero: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº .
+2025-08-21 13:57:27.680 -04:00 [INF] Iniciando procesamiento de texto OCR para carné aduanero
+2025-08-21 13:57:27.682 -04:00 [INF] Texto normalizado: * CARNÉ /Óanagena ADUANERO N868 7 ,   Nºmbre"'-0E3'ZÁfgO"lkmhm ........... ºg:5;¿—f£ ;ºp?:;gº ................ GONZALEZ..PJ.NO.--.......- 15.970178K RUT.15..97.0-:-128—K----------... Resol. 01.42.-...........e.eee.— Fecha ..17..01..2024.............. AGAD Cod...B:=.].2..........e.e.e.... Nombre .ALEX-IG-..........e e. AGAD Cod.... e MO     ..................... Nombre >”. AGAD CÓ07—neeneenecnriaanneneas Nombré eeec anannnnnnnes
+2025-08-21 13:57:27.684 -04:00 [INF] Título extraído: CARNÉ ADUANERO
+2025-08-21 13:57:27.691 -04:00 [INF] Nombre extraído: neeneenecnriaanneneas Nombré eeec anannnnnnnes
+2025-08-21 13:57:27.694 -04:00 [INF] RUT extraído: 15.970178K
+2025-08-21 13:57:27.696 -04:00 [INF] Número de carné extraído: N868
+2025-08-21 13:57:27.697 -04:00 [INF] Fecha extraída: 17.01.2024
+2025-08-21 13:57:27.698 -04:00 [INF] Resolución extraída: Resol. 01
+2025-08-21 13:57:27.700 -04:00 [INF] Procesamiento completado exitosamente
+2025-08-21 13:57:45.686 -04:00 [INF] Extracción completada para carné aduanero: N868
+2025-08-21 13:57:45.687 -04:00 [INF] Carné procesado exitosamente: N868
+2025-08-21 13:57:45.726 -04:00 [INF] Solicitud completada: POST /api/CarnetAduanero/procesar - 200 en 119278.7032ms
+2025-08-21 14:12:21.848 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 14:12:23.745 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 14:17:44.942 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-21 14:17:44.979 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 14:17:44.982 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 14:17:44.986 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 14:17:44.988 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 14:17:45.814 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 14:17:51.341 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-21 14:17:51.357 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmpFFCE.tmp
+2025-08-21 14:17:51.369 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmpFFCE.tmp
+2025-08-21 14:17:54.482 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 14:17:54.485 -04:00 [INF] Texto extraído con servicio híbrido: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº ................ GONZALEZ..PJ.NO.--.......-
+
+15.970178K RUT.15..97.0-:-128—K----------...
+
+Resol. 01.
+2025-08-21 14:17:54.488 -04:00 [INF] Texto extraído de carné aduanero: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº .
+2025-08-21 14:17:54.491 -04:00 [INF] Iniciando procesamiento de texto OCR para carné aduanero
+2025-08-21 14:17:54.492 -04:00 [INF] Texto normalizado: * CARNÉ /Óanagena ADUANERO N868 7 ,   Nºmbre"'-0E3'ZÁfgO"lkmhm ........... ºg:5;¿—f£ ;ºp?:;gº ................ GONZALEZ..PJ.NO.--.......- 15.970178K RUT.15..97.0-:-128—K----------... Resol. 01.42.-...........e.eee.— Fecha ..17..01..2024.............. AGAD Cod...B:=.].2..........e.e.e.... Nombre .ALEX-IG-..........e e. AGAD Cod.... e MO     ..................... Nombre >”. AGAD CÓ07—neeneenecnriaanneneas Nombré eeec anannnnnnnes
+2025-08-21 14:17:54.494 -04:00 [INF] Título extraído: CARNÉ ADUANERO
+2025-08-21 14:17:54.500 -04:00 [INF] Nombre extraído: neeneenecnriaanneneas Nombré eeec anannnnnnnes
+2025-08-21 14:17:54.502 -04:00 [INF] RUT extraído: 15.970178K
+2025-08-21 14:17:54.503 -04:00 [INF] Número de carné extraído: N868
+2025-08-21 14:17:54.505 -04:00 [INF] Fecha extraída: 17.01.2024
+2025-08-21 14:17:54.507 -04:00 [INF] Resolución extraída: Resol. 01
+2025-08-21 14:17:54.508 -04:00 [INF] Procesamiento completado exitosamente
+2025-08-21 14:17:54.509 -04:00 [INF] Extracción completada para carné aduanero: N868
+2025-08-21 14:17:54.510 -04:00 [INF] Carné procesado exitosamente: N868
+2025-08-21 14:17:54.536 -04:00 [INF] Solicitud completada: POST /api/CarnetAduanero/procesar - 200 en 9594.5123ms
+2025-08-21 14:18:43.083 -04:00 [INF] Iniciando solicitud: POST /api/ComprobanteTransaccion/procesar
+2025-08-21 14:18:43.090 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 14:18:43.091 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 14:18:43.094 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 14:18:43.095 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 14:18:43.204 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 14:18:43.220 -04:00 [INF] Iniciando procesamiento de documento de Comprobante de Transacción: 4.comprobante_transaccion.png
+2025-08-21 14:18:43.224 -04:00 [INF] Iniciando extracción de datos de Comprobante de Transacción desde stream: 4.comprobante_transaccion.png
+2025-08-21 14:18:43.513 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 14:18:43.515 -04:00 [INF] Texto extraído de Comprobante de Transacción:  
+
+*TGR COMPROBANTE DE TRANSACCION
+
+Tesorería Genera
+de la República
+
+ 
+
+ 
+
+Rut - Rol
+
+Formulario
+
+F
+2025-08-21 14:18:43.518 -04:00 [INF] Iniciando procesamiento de texto OCR para documento de Comprobante de Transacción
+2025-08-21 14:18:43.519 -04:00 [INF] Texto normalizado: *TGR COMPROBANTE DE TRANSACCION Tesorería Genera de la República    Rut - Rol Formulario Folio Vencimiento Moneda de Pago Total Pagado Fecha Pago Institución Recaudadora Identificador de Transacción 77591058-5 15 4560010758 09-07-2025 CLP 8.153.962 24-06-2025 17:44:12 BANCO ITAU 02847341-57208059    No válido para pago en Instituciones Recaudadoras 06240508201625063001504715 77
+2025-08-21 14:18:43.523 -04:00 [INF] Extrayendo campos críticos de Comprobante de Transacción
+2025-08-21 14:18:43.527 -04:00 [INF] Extrayendo campos adicionales de Comprobante de Transacción
+2025-08-21 14:18:43.530 -04:00 [INF] Institución recaudadora extraída: Identificador de Transacci
+2025-08-21 14:18:43.532 -04:00 [INF] Identificador de transacción extraído: 77591058-5
+2025-08-21 14:18:43.533 -04:00 [INF] Código de barras extraído: 06240508201625063001504715
+2025-08-21 14:18:43.533 -04:00 [INF] Número de referencia extraído: 06240508201625063001504715
+2025-08-21 14:18:43.535 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento de Comprobante de Transacción
+2025-08-21 14:18:43.537 -04:00 [INF] Extracción completada para Comprobante de Transacción: 
+2025-08-21 14:18:43.538 -04:00 [INF] Documento de Comprobante de Transacción procesado exitosamente: 
+2025-08-21 14:18:43.545 -04:00 [INF] Solicitud completada: POST /api/ComprobanteTransaccion/procesar - 200 en 461.7506ms
+2025-08-21 14:19:18.737 -04:00 [INF] Iniciando solicitud: POST /api/ComprobanteTransaccion/procesar
+2025-08-21 14:19:18.739 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 14:19:18.740 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 14:19:18.743 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 14:19:18.745 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 14:19:18.859 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 14:19:18.867 -04:00 [INF] Iniciando procesamiento de documento de Comprobante de Transacción: 4.comprobante_transaccion.png
+2025-08-21 14:19:23.438 -04:00 [INF] Iniciando extracción de datos de Comprobante de Transacción desde stream: 4.comprobante_transaccion.png
+2025-08-21 14:19:41.478 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 14:19:45.416 -04:00 [INF] Texto extraído de Comprobante de Transacción:  
+
+*TGR COMPROBANTE DE TRANSACCION
+
+Tesorería Genera
+de la República
+
+ 
+
+ 
+
+Rut - Rol
+
+Formulario
+
+F
+2025-08-21 14:19:55.607 -04:00 [INF] Iniciando procesamiento de texto OCR para documento de Comprobante de Transacción
+2025-08-21 14:19:55.609 -04:00 [INF] Texto normalizado: *TGR COMPROBANTE DE TRANSACCION Tesorería Genera de la República    Rut - Rol Formulario Folio Vencimiento Moneda de Pago Total Pagado Fecha Pago Institución Recaudadora Identificador de Transacción 77591058-5 15 4560010758 09-07-2025 CLP 8.153.962 24-06-2025 17:44:12 BANCO ITAU 02847341-57208059    No válido para pago en Instituciones Recaudadoras 06240508201625063001504715 77
+2025-08-21 14:19:55.610 -04:00 [INF] Extrayendo campos críticos de Comprobante de Transacción
+2025-08-21 14:19:55.611 -04:00 [INF] Extrayendo campos adicionales de Comprobante de Transacción
+2025-08-21 14:19:55.612 -04:00 [INF] Institución recaudadora extraída: Identificador de Transacci
+2025-08-21 14:19:55.613 -04:00 [INF] Identificador de transacción extraído: 77591058-5
+2025-08-21 14:19:55.615 -04:00 [INF] Código de barras extraído: 06240508201625063001504715
+2025-08-21 14:19:55.616 -04:00 [INF] Número de referencia extraído: 06240508201625063001504715
+2025-08-21 14:19:55.617 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento de Comprobante de Transacción
+2025-08-21 14:20:08.145 -04:00 [INF] Extracción completada para Comprobante de Transacción: 
+2025-08-21 14:20:11.423 -04:00 [INF] Documento de Comprobante de Transacción procesado exitosamente: 
+2025-08-21 14:20:15.639 -04:00 [INF] Solicitud completada: POST /api/ComprobanteTransaccion/procesar - 200 en 56902.4171ms
+2025-08-21 14:20:54.301 -04:00 [INF] Iniciando solicitud: POST /api/DeclaracionIngreso/procesar
+2025-08-21 14:20:54.314 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 14:20:54.316 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 14:20:54.318 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 14:20:54.319 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 14:20:54.442 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 14:20:54.464 -04:00 [INF] Procesando Declaración de Ingreso con 2 archivos PNG
+2025-08-21 14:20:54.472 -04:00 [INF] Iniciando extracción de datos de DI desde stream: 1.di_parte1.png
+2025-08-21 14:20:54.830 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 14:20:54.837 -04:00 [INF] Iniciando extracción de campos críticos desde texto OCR
+2025-08-21 14:20:54.838 -04:00 [INF] Peso bruto extraído (fallback): 772
+2025-08-21 14:20:54.840 -04:00 [INF] Extracción de campos críticos completada
+2025-08-21 14:20:54.844 -04:00 [INF] Iniciando extracción de campos adicionales desde texto OCR
+2025-08-21 14:20:54.846 -04:00 [INF] Valor CIF extraído: 772
+2025-08-21 14:20:54.847 -04:00 [INF] Extracción de campos adicionales completada
+2025-08-21 14:20:54.850 -04:00 [INF] Iniciando búsqueda final de campos críticos
+2025-08-21 14:20:54.851 -04:00 [INF] Manifiesto extraído (búsqueda final): 020420
+2025-08-21 14:20:54.852 -04:00 [INF] Descripción de mercancías extraída (búsqueda final): OOETNUNTOE U OEUEN NA TNEO 1Y N
+2025-08-21 14:20:54.854 -04:00 [INF] Búsqueda final de campos críticos completada
+2025-08-21 14:20:54.855 -04:00 [INF] Iniciando búsqueda final de campos críticos
+2025-08-21 14:20:54.857 -04:00 [INF] Búsqueda final de campos críticos completada
+2025-08-21 14:20:54.858 -04:00 [INF] Extracción completada para DI: 
+2025-08-21 14:20:54.859 -04:00 [INF] Archivo PNG procesado: 1.di_parte1.png
+2025-08-21 14:20:54.861 -04:00 [INF] Iniciando extracción de datos de DI desde stream: 1.di_parte2.png
+2025-08-21 14:20:55.140 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 14:20:55.142 -04:00 [INF] Iniciando extracción de campos críticos desde texto OCR
+2025-08-21 14:20:55.144 -04:00 [INF] Peso bruto extraído (fallback): 700
+2025-08-21 14:20:55.145 -04:00 [INF] Extracción de campos críticos completada
+2025-08-21 14:20:55.146 -04:00 [INF] Iniciando extracción de campos adicionales desde texto OCR
+2025-08-21 14:20:55.148 -04:00 [INF] Valor CIF extraído: 700
+2025-08-21 14:20:55.149 -04:00 [INF] Extracción de campos adicionales completada
+2025-08-21 14:20:55.150 -04:00 [INF] Iniciando búsqueda final de campos críticos
+2025-08-21 14:20:55.151 -04:00 [INF] Manifiesto extraído (búsqueda final): 300257
+2025-08-21 14:20:55.154 -04:00 [INF] Búsqueda final de campos críticos completada
+2025-08-21 14:20:55.156 -04:00 [INF] Iniciando búsqueda final de campos críticos
+2025-08-21 14:20:55.158 -04:00 [INF] Búsqueda final de campos críticos completada
+2025-08-21 14:20:55.160 -04:00 [INF] Extracción completada para DI: 
+2025-08-21 14:20:55.161 -04:00 [INF] Archivo PNG procesado: 1.di_parte2.png
+2025-08-21 14:20:55.169 -04:00 [INF] Declaración de Ingreso procesada exitosamente: 
+2025-08-21 14:20:55.201 -04:00 [INF] Solicitud completada: POST /api/DeclaracionIngreso/procesar - 200 en 900.0313ms
+2025-08-21 14:22:29.031 -04:00 [INF] Iniciando solicitud: POST /api/DocumentoRecepcion/procesar
+2025-08-21 14:22:29.052 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 14:22:29.053 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 14:22:29.055 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 14:22:29.056 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 14:22:29.163 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 14:22:29.182 -04:00 [INF] Procesando Documento de Recepción desde archivo PNG: 2.dr_documento_recepcion.png
+2025-08-21 14:22:29.184 -04:00 [INF] Iniciando extracción de datos de DR desde stream: 2.dr_documento_recepcion.png
+2025-08-21 14:22:29.879 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 14:22:29.882 -04:00 [INF] Texto normalizado: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (492) MELOG Giro: SERVICIOS EXTRAPORTUARIOS Dirccción: CAMINO LAS MERCEDES 14851 - SANTIAGO Emitido por: [2452809-7 el 25-06-2025 151048 (WEB) Tipo D.R.: CONTENEDOR IMPORTACION - POR MANIFIESTO - INDIRECTO BL Armador: (M)BACOS10074/ (H)DACA7ESES Consignatario: (86963200-7) FORUS S A Dirección: AV LAS CONDES NRO 11281, BLOCK C - SANTIAGO    N* DR 2025- 10718 Situación D.R.: NORMAL Manifiesto: 257809 Fch. Mnfto SNA: 19/06/2025 Fch.nicio Alm.: 25/06/2025 Inicio 90 Dias: 20/06/2025 Término 90 Días: 17/09/2025 NavelViaje: CMA CGM BEIRA/ OLISSN1    Forwerder: Lines Operadora: CMA-COM CHLE SA Agencia de Aduene: Srv. Almaceneje: ALMACENAJE DE CONTENEDOR 40 NORMAL (27) Almecen: PATIO ZONA PRIVARIA Guerda Almacén: MELLA JUAN (13106396-) Destino Carga: MPORTACION Pto.Origen: CHITTAGONG Plo Descarga: SAN ANTONIO: Zona: PRIMARIA Pto Embarque: CHITTAGONG Origen: MPORTACION: Plo Transbordo: CALLAO : TD o] — | a | r | s l oe coeerMenaeEso | + | ae | 0e —| —memo -| — 1mmiior - ONSGUTARO FoRUSSA VNEN H ( cons n Cs CoNDES SA + [eneo au ssnno ray hrc zaz CE VADE N $ rec Ia + [TAT mesorzbo0aeas : TOTAES. 1| sas00s          [eDIs 67609 tem) 25 05    0p Conpiemestaas: VISACIÓN DE CONTENEDORES:   [Obsenciones DR SIN OBSERVACION    bcrvcin as    'MODULO DE DOCUMENTO DE RECEPCIÓN. ERCHA: 24062008 151048
+2025-08-21 14:22:29.891 -04:00 [INF] Iniciando extracción de campos críticos desde texto OCR para DR
+2025-08-21 14:22:29.893 -04:00 [INF] Situación del documento extraída: NORMAL
+2025-08-21 14:22:29.894 -04:00 [INF] Número de manifiesto extraído: 257809
+2025-08-21 14:22:29.895 -04:00 [INF] Fecha del manifiesto SNA extraída: 19-06-2025
+2025-08-21 14:22:29.896 -04:00 [INF] BL Armador extraído (fallback 2): (M)BACOS10074/ (H)DACA7ESES
+2025-08-21 14:22:29.898 -04:00 [INF] RUT del consignatario extraído (fallback): 86963200-7
+2025-08-21 14:22:29.899 -04:00 [INF] Puerto de origen extraído: CHITTAGONG
+2025-08-21 14:22:29.900 -04:00 [INF] Puerto de embarque extraído: CHITTAGONG
+2025-08-21 14:22:29.902 -04:00 [INF] Destino de carga extraído: MPORTACION
+2025-08-21 14:22:29.903 -04:00 [INF] Zona extraída: PRIMARIA
+2025-08-21 14:22:29.905 -04:00 [INF] Fecha de inicio 90 días extraída: 20-06-2025
+2025-08-21 14:22:29.906 -04:00 [INF] Fecha de término 90 días extraída: 17-09-2025
+2025-08-21 14:22:29.908 -04:00 [INF] Extracción de campos críticos completada. Documento válido: false
+2025-08-21 14:22:29.913 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento de recepción
+2025-08-21 14:22:29.914 -04:00 [INF] Extracción completada para DR: 
+2025-08-21 14:22:29.915 -04:00 [INF] Documento de Recepción procesado exitosamente: 
+2025-08-21 14:22:29.923 -04:00 [INF] Solicitud completada: POST /api/DocumentoRecepcion/procesar - 200 en 892.1499ms
+2025-08-21 14:22:55.409 -04:00 [INF] Iniciando solicitud: POST /api/GuiaDespacho/procesar
+2025-08-21 14:22:55.425 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 14:22:55.427 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 14:22:55.432 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 14:22:55.434 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 14:22:55.537 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 14:22:55.548 -04:00 [INF] Iniciando procesamiento de archivo PNG de Guía de Despacho: 7.guia_despacho.png
+2025-08-21 14:22:55.555 -04:00 [INF] Iniciando extracción de datos de Guía de Despacho desde archivo: C:\Users\Diego\AppData\Local\Temp\tmpA41A.tmp
+2025-08-21 14:22:55.561 -04:00 [INF] Iniciando extracción de datos de Guía de Despacho desde stream: tmpA41A.tmp
+2025-08-21 14:22:55.638 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 14:22:55.640 -04:00 [INF] Texto extraído de Guía de Despacho:  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2i
+E
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2025-08-21 14:22:55.642 -04:00 [INF] Iniciando procesamiento de texto OCR para documento de Guía de Despacho
+2025-08-21 14:22:55.644 -04:00 [INF] Texto normalizado: 2i E
+2025-08-21 14:22:55.646 -04:00 [INF] Formato detectado - Jorge Stein: false, Alberto Rubio: false, Ricardo Mewes: false, Alexis Montenegro: false
+2025-08-21 14:22:55.650 -04:00 [INF] Extrayendo campos críticos de Guía de Despacho
+2025-08-21 14:22:55.651 -04:00 [WRN] No se pudo extraer el número de guía
+2025-08-21 14:22:55.652 -04:00 [WRN] No se pudo extraer el RUT del emisor
+2025-08-21 14:22:55.655 -04:00 [WRN] No se pudo extraer la fecha del documento
+2025-08-21 14:22:55.668 -04:00 [INF] Extrayendo campos adicionales de Guía de Despacho
+2025-08-21 14:22:55.669 -04:00 [WRN] No se pudo extraer el nombre del emisor
+2025-08-21 14:22:55.671 -04:00 [WRN] No se pudo extraer el nombre del receptor
+2025-08-21 14:22:55.672 -04:00 [WRN] No se pudo extraer el RUT del receptor
+2025-08-21 14:22:55.674 -04:00 [INF] Origen establecido por defecto: N
+2025-08-21 14:22:55.675 -04:00 [INF] Conocimiento de embarque establecido por defecto: N
+2025-08-21 14:22:55.676 -04:00 [INF] Tipo de bulto establecido por defecto: DESPACHO
+2025-08-21 14:22:55.679 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento de Guía de Despacho
+2025-08-21 14:22:55.681 -04:00 [INF] Extracción completada para Guía de Despacho: 
+2025-08-21 14:22:55.682 -04:00 [INF] Guía de Despacho procesada exitosamente: 
+2025-08-21 14:22:55.723 -04:00 [INF] Solicitud completada: POST /api/GuiaDespacho/procesar - 201 en 314.579ms
+2025-08-21 14:27:15.105 -04:00 [INF] Iniciando solicitud: POST /api/GuiaDespacho/procesar
+2025-08-21 14:27:15.108 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 14:27:15.110 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 14:27:15.112 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 14:27:15.118 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 14:27:15.235 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 14:27:19.818 -04:00 [INF] Iniciando procesamiento de archivo PNG de Guía de Despacho: 7.guia_despacho.png
+2025-08-21 14:27:30.615 -04:00 [INF] Iniciando extracción de datos de Guía de Despacho desde archivo: C:\Users\Diego\AppData\Local\Temp\tmpC1E1.tmp
+2025-08-21 14:27:35.571 -04:00 [INF] Iniciando extracción de datos de Guía de Despacho desde stream: tmpC1E1.tmp
+2025-08-21 14:29:01.451 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 14:29:02.459 -04:00 [INF] Texto extraído de Guía de Despacho:  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2i
+E
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2025-08-21 14:29:02.461 -04:00 [INF] Iniciando procesamiento de texto OCR para documento de Guía de Despacho
+2025-08-21 14:29:02.462 -04:00 [INF] Texto normalizado: 2i E
+2025-08-21 14:29:02.463 -04:00 [INF] Formato detectado - Jorge Stein: false, Alberto Rubio: false, Ricardo Mewes: false, Alexis Montenegro: false
+2025-08-21 14:29:02.465 -04:00 [INF] Extrayendo campos críticos de Guía de Despacho
+2025-08-21 14:29:02.466 -04:00 [WRN] No se pudo extraer el número de guía
+2025-08-21 14:29:02.467 -04:00 [WRN] No se pudo extraer el RUT del emisor
+2025-08-21 14:29:02.468 -04:00 [WRN] No se pudo extraer la fecha del documento
+2025-08-21 14:29:02.469 -04:00 [INF] Extrayendo campos adicionales de Guía de Despacho
+2025-08-21 14:29:02.471 -04:00 [WRN] No se pudo extraer el nombre del emisor
+2025-08-21 14:29:02.472 -04:00 [WRN] No se pudo extraer el nombre del receptor
+2025-08-21 14:29:02.473 -04:00 [WRN] No se pudo extraer el RUT del receptor
+2025-08-21 14:29:02.474 -04:00 [INF] Origen establecido por defecto: N
+2025-08-21 14:29:02.475 -04:00 [INF] Conocimiento de embarque establecido por defecto: N
+2025-08-21 14:29:02.476 -04:00 [INF] Tipo de bulto establecido por defecto: DESPACHO
+2025-08-21 14:29:02.478 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento de Guía de Despacho
+2025-08-21 14:29:02.479 -04:00 [INF] Extracción completada para Guía de Despacho: 
+2025-08-21 14:29:02.480 -04:00 [INF] Guía de Despacho procesada exitosamente: 
+2025-08-21 14:29:02.486 -04:00 [INF] Solicitud completada: POST /api/GuiaDespacho/procesar - 201 en 107381.0548ms
+2025-08-21 14:29:35.795 -04:00 [INF] Iniciando solicitud: POST /api/SeleccionAforo/procesar
+2025-08-21 14:29:35.834 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 14:29:35.836 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 14:29:35.838 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 14:29:35.839 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 14:29:35.949 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 14:29:35.959 -04:00 [INF] Iniciando procesamiento de archivo PNG de Selección de Aforo: 3.seleccion_aforo.png
+2025-08-21 14:29:35.974 -04:00 [INF] Iniciando extracción de datos de Selección de Aforo desde archivo: C:\Users\Diego\AppData\Local\Temp\tmpC042.tmp
+2025-08-21 14:29:35.981 -04:00 [INF] Iniciando extracción de datos de Selección de Aforo desde stream: tmpC042.tmp
+2025-08-21 14:29:36.132 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 14:29:36.133 -04:00 [INF] Texto extraído de Selección de Aforo:  
+
+ 
+
+ 
+
+COMPROBANTE DE TIPO DE SELE
+
+CCION DE AFORO
+
+ 
+
+Deciaración de
+
+ 
+
+" =
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+2025-08-21 14:29:36.137 -04:00 [INF] Iniciando procesamiento de texto OCR para Selección de Aforo
+2025-08-21 14:29:36.139 -04:00 [INF] Texto normalizado: COMPROBANTE DE TIPO DE SELE CCION DE AFORO Deciaración de " = Ta [atExs moNTENEGRO P Aduans Tramitción » sa oo | Tipo Revisión Camerime ) [Cerar)
+2025-08-21 14:29:36.144 -04:00 [INF] Extrayendo campos críticos de Selección de Aforo
+2025-08-21 14:29:36.155 -04:00 [INF] Extrayendo campos adicionales de Selección de Aforo
+2025-08-21 14:29:36.161 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento de Selección de Aforo
+2025-08-21 14:29:36.163 -04:00 [INF] Extracción completada para Selección de Aforo: 
+2025-08-21 14:29:36.164 -04:00 [INF] Selección de Aforo procesada exitosamente: 
+2025-08-21 14:29:36.169 -04:00 [INF] Solicitud completada: POST /api/SeleccionAforo/procesar - 201 en 373.7412ms
+2025-08-21 14:30:36.144 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-21 14:30:36.156 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 14:30:36.158 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 14:30:36.160 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 14:30:36.161 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 14:30:36.269 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 14:30:36.280 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC: 5.TATC.png
+2025-08-21 14:30:36.283 -04:00 [INF] Iniciando extracción de datos de TACT/ADC desde stream: 5.TATC.png
+2025-08-21 14:30:36.986 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 14:30:36.988 -04:00 [INF] Texto extraído de TACT/ADC: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (492)
+
+MELOG Giro: SERVICIOS EXTRAPORTUARIOS
+
+Dirccción: CAMIN
+2025-08-21 14:30:36.991 -04:00 [INF] Iniciando procesamiento de texto OCR para documento TACT/ADC
+2025-08-21 14:30:36.992 -04:00 [INF] Texto normalizado: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (492) MELOG Giro: SERVICIOS EXTRAPORTUARIOS Dirccción: CAMINO LAS MERCEDES 14851 - SANTIAGO Emitido por: [2452809-7 el 25-06-2025 151048 (WEB) Tipo D.R.: CONTENEDOR IMPORTACION - POR MANIFIESTO - INDIRECTO BL Armador: (M)BACOS10074/ (H)DACA7ESES Consignatario: (86963200-7) FORUS S A Dirección: AV LAS CONDES NRO 11281, BLOCK C - SANTIAGO    N* DR 2025- 10718 Situación D.R.: NORMAL Manifiesto: 257809 Fch. Mnfto SNA: 19/06/2025 Fch.nicio Alm.: 25/06/2025 Inicio 90 Dias: 20/06/2025 Término 90 Días: 17/09/2025 NavelViaje: CMA CGM BEIRA/ OLISSN1    Forwerder: Lines Operadora: CMA-COM CHLE SA Agencia de Aduene: Srv. Almaceneje: ALMACENAJE DE CONTENEDOR 40 NORMAL (27) Almecen: PATIO ZONA PRIVARIA Guerda Almacén: MELLA JUAN (13106396-) Destino Carga: MPORTACION Pto.Origen: CHITTAGONG Plo Descarga: SAN ANTONIO: Zona: PRIMARIA Pto Embarque: CHITTAGONG Origen: MPORTACION: Plo Transbordo: CALLAO : TD o] — | a | r | s l oe coeerMenaeEso | + | ae | 0e —| —memo -| — 1mmiior - ONSGUTARO FoRUSSA VNEN H ( cons n Cs CoNDES SA + [eneo au ssnno ray hrc zaz CE VADE N $ rec Ia + [TAT mesorzbo0aeas : TOTAES. 1| sas00s          [eDIs 67609 tem) 25 05    0p Conpiemestaas: VISACIÓN DE CONTENEDORES:   [Obsenciones DR SIN OBSERVACION    bcrvcin as    'MODULO DE DOCUMENTO DE RECEPCIÓN. ERCHA: 24062008 151048
+2025-08-21 14:30:36.994 -04:00 [INF] Extrayendo campos críticos de TACT/ADC
+2025-08-21 14:30:36.998 -04:00 [INF] Extrayendo campos adicionales de TACT/ADC
+2025-08-21 14:30:37.000 -04:00 [INF] BL extraído: Armador
+2025-08-21 14:30:37.001 -04:00 [INF] Estado del documento: AUTORIZADO
+2025-08-21 14:30:37.002 -04:00 [INF] Guarda almacén extraído: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA
+2025-08-21 14:30:37.004 -04:00 [INF] Número de contenedor extraído (último intento): IMPORTACION - POR MANIFIESTO - INDIRECTO BL Armador
+2025-08-21 14:30:37.006 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento TACT/ADC (Autorización de Despacho de Contenedores)
+2025-08-21 14:30:37.007 -04:00 [INF] Extracción completada para TACT/ADC: 
+2025-08-21 14:30:37.008 -04:00 [INF] Documento TACT/ADC procesado exitosamente: 
+2025-08-21 14:30:37.011 -04:00 [INF] Solicitud completada: POST /api/TactAdc/procesar - 200 en 866.8717ms
+2025-08-21 14:43:02.107 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 14:43:04.645 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 14:43:20.744 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-21 14:43:20.787 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 14:43:20.789 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 14:43:20.793 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 14:43:20.795 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 14:43:21.711 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 14:43:21.813 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-21 14:43:21.830 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmp5A43.tmp
+2025-08-21 14:43:21.839 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmp5A43.tmp
+2025-08-21 14:43:22.767 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 14:43:22.770 -04:00 [INF] Texto extraído con servicio híbrido: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº ................ GONZALEZ..PJ.NO.--.......-
+
+15.970178K RUT.15..97.0-:-128—K----------...
+
+Resol. 01.
+2025-08-21 14:43:22.774 -04:00 [INF] Texto extraído de carné aduanero: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº .
+2025-08-21 14:43:22.777 -04:00 [INF] Iniciando procesamiento de texto OCR para carné aduanero
+2025-08-21 14:43:22.782 -04:00 [INF] Texto normalizado: CARNÉ /Óana9ena ADUANER0 N868 7 , Nombre"'-0E3'2Áf90"1kmhm ........... o9:5;?-fE ;op?:;9o ................ G0N2ALE2..PJ.N0.--.......- 15.970178K RUT.15..97.0-:-128-K----------... Reso1. 01.42.-...........e.eee.- Fecha ..17..01..2024.............. AGAD Cod...8:=.].2..........e.e.e.... Nombre .ALEX-1G-..........e e. AGAD Cod.... e M0 ..................... Nombre >”. AGAD CÓ07-GONZALEZ GONZALEZ
+2025-08-21 14:43:22.784 -04:00 [INF] Título extraído: 
+2025-08-21 14:43:22.789 -04:00 [INF] Nombre extraído: GONZALEZ
+2025-08-21 14:43:22.791 -04:00 [INF] RUT extraído: 15.970178K
+2025-08-21 14:43:22.793 -04:00 [INF] Número de carné extraído: N868
+2025-08-21 14:43:22.795 -04:00 [INF] Fecha extraída: 17.01.2024
+2025-08-21 14:43:22.797 -04:00 [INF] Resolución extraída: 
+2025-08-21 14:43:22.799 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del carné aduanero
+2025-08-21 14:43:22.800 -04:00 [INF] Extracción completada para carné aduanero: N868
+2025-08-21 14:43:22.802 -04:00 [INF] Carné procesado exitosamente: N868
+2025-08-21 14:43:22.831 -04:00 [INF] Solicitud completada: POST /api/CarnetAduanero/procesar - 200 en 2087.6106ms
+2025-08-21 14:45:11.892 -04:00 [INF] Iniciando solicitud: POST /api/ComprobanteTransaccion/procesar
+2025-08-21 14:45:11.900 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 14:45:11.902 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 14:45:11.904 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 14:45:11.906 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 14:45:12.003 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 14:45:12.018 -04:00 [INF] Iniciando procesamiento de documento de Comprobante de Transacción: 4.comprobante_transaccion.png
+2025-08-21 14:45:16.155 -04:00 [INF] Iniciando extracción de datos de Comprobante de Transacción desde stream: 4.comprobante_transaccion.png
+2025-08-21 14:45:16.426 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 14:45:16.427 -04:00 [INF] Texto extraído de Comprobante de Transacción:  
+
+*TGR COMPROBANTE DE TRANSACCION
+
+Tesorería Genera
+de la República
+
+ 
+
+ 
+
+Rut - Rol
+
+Formulario
+
+F
+2025-08-21 14:45:16.431 -04:00 [INF] Iniciando procesamiento de texto OCR para documento de Comprobante de Transacción
+2025-08-21 14:45:16.432 -04:00 [INF] Texto normalizado: *TGR COMPROBANTE DE TRANSACCION Tesorería Genera de la República    Rut - Rol Formulario Folio Vencimiento Moneda de Pago Total Pagado Fecha Pago Institución Recaudadora Identificador de Transacción 77591058-5 15 4560010758 09-07-2025 CLP 8.153.962 24-06-2025 17:44:12 BANCO ITAU 02847341-57208059    No válido para pago en Instituciones Recaudadoras 06240508201625063001504715 77
+2025-08-21 14:45:16.434 -04:00 [INF] Extrayendo campos críticos de Comprobante de Transacción
+2025-08-21 14:45:16.437 -04:00 [INF] Extrayendo campos adicionales de Comprobante de Transacción
+2025-08-21 14:45:16.439 -04:00 [INF] Institución recaudadora extraída: Identificador de Transacci
+2025-08-21 14:45:16.440 -04:00 [INF] Identificador de transacción extraído: 77591058-5
+2025-08-21 14:45:16.441 -04:00 [INF] Código de barras extraído: 06240508201625063001504715
+2025-08-21 14:45:16.443 -04:00 [INF] Número de referencia extraído: 06240508201625063001504715
+2025-08-21 14:45:16.445 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento de Comprobante de Transacción
+2025-08-21 14:45:16.447 -04:00 [INF] Extracción completada para Comprobante de Transacción: 
+2025-08-21 14:45:16.448 -04:00 [INF] Documento de Comprobante de Transacción procesado exitosamente: 
+2025-08-21 14:45:16.453 -04:00 [INF] Solicitud completada: POST /api/ComprobanteTransaccion/procesar - 200 en 4561.1378ms
+2025-08-21 14:58:01.567 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 14:58:04.244 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 14:58:31.192 -04:00 [INF] Iniciando solicitud: POST /api/ComprobanteTransaccion/procesar
+2025-08-21 14:58:31.234 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 14:58:31.237 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 14:58:31.241 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 14:58:31.243 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 14:58:32.022 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 14:58:32.088 -04:00 [INF] Iniciando procesamiento de documento de Comprobante de Transacción: 4.comprobante_transaccion.png
+2025-08-21 14:58:32.092 -04:00 [INF] Iniciando extracción de datos de Comprobante de Transacción desde stream: 4.comprobante_transaccion.png
+2025-08-21 14:58:32.533 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 14:58:32.536 -04:00 [INF] Texto extraído de Comprobante de Transacción:  
+
+*TGR COMPROBANTE DE TRANSACCION
+
+Tesorería Genera
+de la República
+
+ 
+
+ 
+
+Rut - Rol
+
+Formulario
+
+F
+2025-08-21 14:58:32.540 -04:00 [INF] Iniciando procesamiento de texto OCR para documento de Comprobante de Transacción
+2025-08-21 14:58:32.559 -04:00 [INF] Texto normalizado: *TGR C0MPR08ANTE DE TRAN5ACC10N Tesorería Genera de 1a Repúb1ica Rut - Ro1 Formu1ario Fo1io Vencimiento Moneda de Pa9o Tota1 Pa9ado Fecha Pa9o 1nstitución Recaudadora 1dentificador de Transacción 77591058-5 15 4560010758 09-07-2025 CLP 8.153.962 24-06-2025 17:44:12 8ANC0 1TAU 02847341-57208059 No vá1ido para pa9o en 1nstituciones Recaudadoras 06240508201625063001504715 77
+2025-08-21 14:58:32.568 -04:00 [INF] Extrayendo campos críticos de Comprobante de Transacción
+2025-08-21 14:58:32.574 -04:00 [INF] Extrayendo campos adicionales de Comprobante de Transacción
+2025-08-21 14:58:32.579 -04:00 [INF] Código de barras extraído: 06240508201625063001504715
+2025-08-21 14:58:32.581 -04:00 [INF] Número de referencia establecido igual al código de barras: 06240508201625063001504715
+2025-08-21 14:58:32.586 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento de Comprobante de Transacción
+2025-08-21 14:58:32.589 -04:00 [INF] Extracción completada para Comprobante de Transacción: 
+2025-08-21 14:58:32.591 -04:00 [INF] Documento de Comprobante de Transacción procesado exitosamente: 
+2025-08-21 14:58:32.650 -04:00 [INF] Solicitud completada: POST /api/ComprobanteTransaccion/procesar - 200 en 1458.4388ms
+2025-08-21 15:39:03.842 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 15:39:06.507 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 15:42:22.531 -04:00 [INF] Iniciando solicitud: POST /api/ComprobanteTransaccion/procesar
+2025-08-21 15:42:22.568 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 15:42:22.570 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 15:42:22.573 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 15:42:22.575 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 15:42:23.305 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 15:42:23.370 -04:00 [INF] Iniciando procesamiento de documento de Comprobante de Transacción: 4.comprobante_transaccion.png
+2025-08-21 15:42:23.375 -04:00 [INF] Iniciando extracción de datos de Comprobante de Transacción desde stream: 4.comprobante_transaccion.png
+2025-08-21 15:42:23.729 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 15:42:23.731 -04:00 [INF] Texto extraído de Comprobante de Transacción:  
+
+*TGR COMPROBANTE DE TRANSACCION
+
+Tesorería Genera
+de la República
+
+ 
+
+ 
+
+Rut - Rol
+
+Formulario
+
+F
+2025-08-21 15:42:23.734 -04:00 [INF] Iniciando procesamiento de texto OCR para documento de Comprobante de Transacción
+2025-08-21 15:42:23.738 -04:00 [INF] Texto normalizado: *TGR COMPROBANTE DE TRANSACCION Tesorería Genera de la República Rut - Rol Formulario Folio Vencimiento Moneda de Pago Total Pagado Fecha Pago Institución Recaudadora Identificador de Transacción 77591058-5 15 4560010758 09-07-2025 CLP 8.153.962 24-06-2025 17:44:12 BANCO ITAU 02847341-57208059 No válido para pago en Instituciones Recaudadoras 06240508201625063001504715 77
+2025-08-21 15:42:23.741 -04:00 [INF] Extrayendo campos críticos de Comprobante de Transacción
+2025-08-21 15:42:23.747 -04:00 [INF] Extrayendo campos adicionales de Comprobante de Transacción
+2025-08-21 15:42:23.748 -04:00 [INF] RUT extraído (último fallback): 77591058-5
+2025-08-21 15:42:23.752 -04:00 [INF] Institución recaudadora extraída (fallback): Identificador de Transacci
+2025-08-21 15:42:23.753 -04:00 [INF] Identificador de transacción extraído (fallback): 77591058-5
+2025-08-21 15:42:23.755 -04:00 [INF] Código de barras extraído: 06240508201625063001504715
+2025-08-21 15:42:23.756 -04:00 [INF] Número de referencia establecido igual al código de barras: 06240508201625063001504715
+2025-08-21 15:42:23.759 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento de Comprobante de Transacción
+2025-08-21 15:42:23.760 -04:00 [INF] Extracción completada para Comprobante de Transacción: 
+2025-08-21 15:42:23.761 -04:00 [INF] Documento de Comprobante de Transacción procesado exitosamente: 
+2025-08-21 15:42:23.792 -04:00 [INF] Solicitud completada: POST /api/ComprobanteTransaccion/procesar - 200 en 1261.9041ms
+2025-08-21 17:54:40.966 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 17:54:45.584 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 17:56:15.312 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 17:56:18.067 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 17:56:34.016 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-21 17:56:34.068 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 17:56:34.071 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 17:56:34.075 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 17:56:34.077 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 17:56:34.831 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 17:56:34.937 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-21 17:56:34.951 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmp3FE8.tmp
+2025-08-21 17:56:34.958 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmp3FE8.tmp
+2025-08-21 17:56:35.956 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 17:56:35.960 -04:00 [INF] Texto extraído con servicio híbrido: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº ................ GONZALEZ..PJ.NO.--.......-
+
+15.970178K RUT.15..97.0-:-128—K----------...
+
+Resol. 01.
+2025-08-21 17:56:35.963 -04:00 [INF] Texto extraído de carné aduanero: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº .
+2025-08-21 17:56:35.967 -04:00 [INF] Iniciando procesamiento de texto OCR para carné aduanero
+2025-08-21 17:56:35.973 -04:00 [INF] Texto normalizado: CARNÉ /Óana9ena ADUANER0 N868 7 , Nombre"'-0E3'2Áf90"1kmhm ........... o9:5;?-fE ;op?:;9o ................ G0N2ALE2..PJ.N0.--.......- 15.970178K RUT.15..97.0-:-128-K----------... Reso1. 01.42.-...........e.eee.- Fecha ..17..01..2024.............. AGAD Cod...8:=.].2..........e.e.e.... Nombre .ALEX-1G-..........e e. AGAD Cod.... e M0 ..................... Nombre >”. AGAD CÓ07-GONZALEZ GONZALEZ
+2025-08-21 17:56:35.976 -04:00 [INF] Título extraído: 
+2025-08-21 17:56:35.981 -04:00 [INF] Nombre extraído: GONZALEZ
+2025-08-21 17:56:35.984 -04:00 [INF] RUT extraído: 15.970178K
+2025-08-21 17:56:35.986 -04:00 [INF] Número de carné extraído: N868
+2025-08-21 17:56:35.988 -04:00 [INF] Fecha extraída: 17.01.2024
+2025-08-21 17:56:35.990 -04:00 [INF] Resolución extraída: 
+2025-08-21 17:56:35.991 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del carné aduanero
+2025-08-21 17:56:35.993 -04:00 [INF] Extracción completada para carné aduanero: N868
+2025-08-21 17:56:35.994 -04:00 [INF] Carné procesado exitosamente: N868
+2025-08-21 17:56:36.025 -04:00 [INF] Solicitud completada: POST /api/CarnetAduanero/procesar - 200 en 2008.6759ms
+2025-08-21 17:57:09.665 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-21 17:57:09.682 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 17:57:09.683 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 17:57:09.684 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 17:57:09.687 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 17:57:09.788 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 17:57:14.355 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-21 17:57:29.721 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmpE65A.tmp
+2025-08-21 17:57:36.481 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmpE65A.tmp
+2025-08-21 17:57:39.715 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 17:57:39.717 -04:00 [INF] Texto extraído con servicio híbrido: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº ................ GONZALEZ..PJ.NO.--.......-
+
+15.970178K RUT.15..97.0-:-128—K----------...
+
+Resol. 01.
+2025-08-21 17:57:51.648 -04:00 [INF] Texto extraído de carné aduanero: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº .
+2025-08-21 17:57:59.860 -04:00 [INF] Iniciando procesamiento de texto OCR para carné aduanero
+2025-08-21 17:58:37.811 -04:00 [INF] Texto normalizado: CARNÉ /Óana9ena ADUANER0 N868 7 , Nombre"'-0E3'2Áf90"1kmhm ........... o9:5;?-fE ;op?:;9o ................ G0N2ALE2..PJ.N0.--.......- 15.970178K RUT.15..97.0-:-128-K----------... Reso1. 01.42.-...........e.eee.- Fecha ..17..01..2024.............. AGAD Cod...8:=.].2..........e.e.e.... Nombre .ALEX-1G-..........e e. AGAD Cod.... e M0 ..................... Nombre >”. AGAD CÓ07-GONZALEZ GONZALEZ
+2025-08-21 17:58:39.194 -04:00 [INF] Título extraído: 
+2025-08-21 17:58:40.324 -04:00 [INF] Nombre extraído: GONZALEZ
+2025-08-21 17:58:41.162 -04:00 [INF] RUT extraído: 15.970178K
+2025-08-21 17:58:41.982 -04:00 [INF] Número de carné extraído: N868
+2025-08-21 17:58:42.923 -04:00 [INF] Fecha extraída: 17.01.2024
+2025-08-21 17:58:44.775 -04:00 [INF] Resolución extraída: 
+2025-08-21 17:58:50.677 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del carné aduanero
+2025-08-21 18:05:45.867 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 18:05:48.399 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 18:08:03.552 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 18:08:06.214 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 18:08:20.320 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-21 18:08:20.364 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 18:08:20.367 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 18:08:20.372 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 18:08:20.374 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 18:08:21.468 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 18:08:25.927 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-21 18:08:34.626 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmp1FA8.tmp
+2025-08-21 18:08:41.059 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmp1FA8.tmp
+2025-08-21 18:08:48.383 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 18:08:48.386 -04:00 [INF] Texto extraído con servicio híbrido: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº ................ GONZALEZ..PJ.NO.--.......-
+
+15.970178K RUT.15..97.0-:-128—K----------...
+
+Resol. 01.
+2025-08-21 18:08:54.411 -04:00 [INF] Texto extraído de carné aduanero: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº .
+2025-08-21 18:09:00.604 -04:00 [INF] Iniciando procesamiento de texto OCR para carné aduanero
+2025-08-21 18:09:10.855 -04:00 [INF] Texto normalizado: CARNÉ /Óana9ena ADUANER0 N868 7 , Nombre"'-0E3'2Áf90"1kmhm ........... o9:5;?-fE ;op?:;9o ................ G0N2ALE2..PJ.N0.--.......- 15.970178K RUT.15..97.0-:-128-K----------... Reso1. 01.42.-...........e.eee.- Fecha ..17..01..2024.............. AGAD Cod...8:=.].2..........e.e.e.... Nombre .ALEX-1G-..........e e. AGAD Cod.... e M0 ..................... Nombre >”. AGAD CÓ07-GONZALEZ GONZALEZ
+2025-08-21 18:09:11.997 -04:00 [INF] Título extraído: 
+2025-08-21 18:09:13.125 -04:00 [INF] Nombre extraído: GONZALEZ
+2025-08-21 18:09:14.167 -04:00 [INF] RUT extraído: 15.970178K
+2025-08-21 18:09:15.394 -04:00 [INF] Número de carné extraído: N868
+2025-08-21 18:09:16.617 -04:00 [INF] Fecha extraída: 17.01.2024
+2025-08-21 18:09:18.184 -04:00 [INF] Resolución extraída: 
+2025-08-21 18:09:28.716 -04:00 [WRN] Extracción incompleta, intentando post-procesamiento con IA
+2025-08-21 18:09:54.359 -04:00 [INF] Iniciando post-procesamiento con IA usando Ollama con modelo: llama3.2:3b
+2025-08-21 18:10:42.819 -04:00 [INF] Llamando a Ollama con modelo llama3.2:3b para procesar documento
+2025-08-21 18:13:48.148 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 18:13:51.623 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 18:14:07.141 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-21 18:14:07.178 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 18:14:07.180 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 18:14:07.183 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 18:14:07.185 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 18:14:08.031 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 18:14:10.976 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-21 18:14:10.990 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmp5D16.tmp
+2025-08-21 18:14:10.997 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmp5D16.tmp
+2025-08-21 18:14:11.905 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 18:14:11.908 -04:00 [INF] Texto extraído con servicio híbrido: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº ................ GONZALEZ..PJ.NO.--.......-
+
+15.970178K RUT.15..97.0-:-128—K----------...
+
+Resol. 01.
+2025-08-21 18:14:11.912 -04:00 [INF] Texto extraído de carné aduanero: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº .
+2025-08-21 18:14:11.914 -04:00 [INF] Iniciando procesamiento de texto OCR para carné aduanero
+2025-08-21 18:14:11.918 -04:00 [INF] Texto normalizado: CARNÉ /Óana9ena ADUANER0 N868 7 , Nombre"'-0E3'2Áf90"1kmhm ........... o9:5;?-fE ;op?:;9o ................ G0N2ALE2..PJ.N0.--.......- 15.970178K RUT.15..97.0-:-128-K----------... Reso1. 01.42.-...........e.eee.- Fecha ..17..01..2024.............. AGAD Cod...8:=.].2..........e.e.e.... Nombre .ALEX-1G-..........e e. AGAD Cod.... e M0 ..................... Nombre >”. AGAD CÓ07-GONZALEZ GONZALEZ
+2025-08-21 18:14:11.920 -04:00 [INF] Título extraído: 
+2025-08-21 18:14:11.923 -04:00 [INF] Nombre extraído: GONZALEZ
+2025-08-21 18:14:11.925 -04:00 [INF] RUT extraído: 15.970178K
+2025-08-21 18:14:11.927 -04:00 [INF] Número de carné extraído: N868
+2025-08-21 18:14:11.929 -04:00 [INF] Fecha extraída: 17.01.2024
+2025-08-21 18:14:11.930 -04:00 [INF] Resolución extraída: 
+2025-08-21 18:14:11.930 -04:00 [WRN] Extracción incompleta, intentando post-procesamiento con IA
+2025-08-21 18:14:11.942 -04:00 [INF] Iniciando post-procesamiento con IA usando Ollama con modelo: gemma3:1b
+2025-08-21 18:14:11.945 -04:00 [INF] Llamando a Ollama con modelo gemma3:1b para procesar documento
+2025-08-21 18:14:55.972 -04:00 [INF] Se actualizaron 0 campos del documento
+2025-08-21 18:14:55.994 -04:00 [INF] Documento combinado exitosamente con respuesta de Ollama
+2025-08-21 18:15:02.137 -04:00 [INF] Post-procesamiento con IA completado exitosamente usando gemma3:1b
+2025-08-21 18:16:34.108 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 18:16:37.703 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 18:16:50.763 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-21 18:16:50.816 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 18:16:50.819 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 18:16:50.822 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 18:16:50.824 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 18:16:51.747 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 18:16:54.927 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-21 18:16:54.942 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmpDD88.tmp
+2025-08-21 18:16:54.949 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmpDD88.tmp
+2025-08-21 18:16:55.821 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 18:16:55.824 -04:00 [INF] Texto extraído con servicio híbrido: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº ................ GONZALEZ..PJ.NO.--.......-
+
+15.970178K RUT.15..97.0-:-128—K----------...
+
+Resol. 01.
+2025-08-21 18:16:55.826 -04:00 [INF] Texto extraído de carné aduanero: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº .
+2025-08-21 18:16:55.829 -04:00 [INF] Iniciando procesamiento de texto OCR para carné aduanero
+2025-08-21 18:16:55.833 -04:00 [INF] Texto normalizado: CARNÉ /Óana9ena ADUANER0 N868 7 , Nombre"'-0E3'2Áf90"1kmhm ........... o9:5;?-fE ;op?:;9o ................ G0N2ALE2..PJ.N0.--.......- 15.970178K RUT.15..97.0-:-128-K----------... Reso1. 01.42.-...........e.eee.- Fecha ..17..01..2024.............. AGAD Cod...8:=.].2..........e.e.e.... Nombre .ALEX-1G-..........e e. AGAD Cod.... e M0 ..................... Nombre >”. AGAD CÓ07-GONZALEZ GONZALEZ
+2025-08-21 18:16:55.835 -04:00 [INF] Título extraído: 
+2025-08-21 18:16:55.838 -04:00 [INF] Nombre extraído: GONZALEZ
+2025-08-21 18:16:55.840 -04:00 [INF] RUT extraído: 15.970178K
+2025-08-21 18:16:55.842 -04:00 [INF] Número de carné extraído: N868
+2025-08-21 18:16:55.843 -04:00 [INF] Fecha extraída: 17.01.2024
+2025-08-21 18:16:55.844 -04:00 [INF] Resolución extraída: 
+2025-08-21 18:16:55.845 -04:00 [WRN] Extracción incompleta, intentando post-procesamiento con IA
+2025-08-21 18:16:55.857 -04:00 [INF] Iniciando post-procesamiento con IA usando Ollama con modelo: gemma3:1b
+2025-08-21 18:16:55.859 -04:00 [INF] Llamando a Ollama con modelo gemma3:1b para procesar documento
+2025-08-21 18:17:01.408 -04:00 [INF] Se actualizaron 0 campos del documento
+2025-08-21 18:17:01.425 -04:00 [INF] Documento combinado exitosamente con respuesta de Ollama
+2025-08-21 18:17:01.426 -04:00 [INF] Post-procesamiento con IA completado exitosamente usando gemma3:1b
+2025-08-21 18:17:01.500 -04:00 [ERR] Error en post-procesamiento con IA para carné aduanero
+System.Text.Json.JsonException: The JSON value could not be converted to System.Decimal. Path: $.ConfianzaExtraccion | LineNumber: 13 | BytePositionInLine: 30.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'String' as a number.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_ExpectedNumber(JsonTokenType tokenType)
+   at System.Text.Json.Utf8JsonReader.TryGetDecimal(Decimal& value)
+   at System.Text.Json.Utf8JsonReader.GetDecimal()
+   at System.Text.Json.Serialization.Converters.DecimalConverter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at CarnetAduaneroProcessor.Infrastructure.Services.CarnetAduaneroProcessorService.ProcesarTextoOcrAsync(String textoOcr) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\CarnetAduaneroProcessorService.cs:line 81
+2025-08-21 18:17:01.522 -04:00 [WRN] Extracción incompleta después de IA: No se pudieron extraer todos los campos requeridos del carné aduanero, incluso con IA
+2025-08-21 18:17:01.523 -04:00 [INF] Extracción completada para carné aduanero: N868
+2025-08-21 18:17:01.523 -04:00 [INF] Carné procesado exitosamente: N868
+2025-08-21 18:17:01.543 -04:00 [INF] Solicitud completada: POST /api/CarnetAduanero/procesar - 200 en 10780.7759ms
+2025-08-21 18:25:53.967 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-21 18:25:56.477 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-21 18:26:24.091 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-21 18:26:24.127 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-21 18:26:24.129 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-21 18:26:24.133 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-21 18:26:24.135 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-21 18:26:24.881 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-21 18:26:29.639 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-21 18:26:29.653 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmpA286.tmp
+2025-08-21 18:26:29.661 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmpA286.tmp
+2025-08-21 18:26:30.547 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-21 18:26:30.549 -04:00 [INF] Texto extraído con servicio híbrido: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº ................ GONZALEZ..PJ.NO.--.......-
+
+15.970178K RUT.15..97.0-:-128—K----------...
+
+Resol. 01.
+2025-08-21 18:26:30.552 -04:00 [INF] Texto extraído de carné aduanero: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº .
+2025-08-21 18:26:30.555 -04:00 [INF] Iniciando procesamiento de texto OCR para carné aduanero
+2025-08-21 18:26:30.559 -04:00 [INF] Texto normalizado: CARNÉ /Óana9ena ADUANER0 N868 7 , Nombre"'-0E3'2Áf90"1kmhm ........... o9:5;?-fE ;op?:;9o ................ G0N2ALE2..PJ.N0.--.......- 15.970178K RUT.15..97.0-:-128-K----------... Reso1. 01.42.-...........e.eee.- Fecha ..17..01..2024.............. AGAD Cod...8:=.].2..........e.e.e.... Nombre .ALEX-1G-..........e e. AGAD Cod.... e M0 ..................... Nombre >”. AGAD CÓ07-GONZALEZ GONZALEZ
+2025-08-21 18:26:30.562 -04:00 [INF] Título extraído: 
+2025-08-21 18:26:30.566 -04:00 [INF] Nombre extraído: GONZALEZ
+2025-08-21 18:26:30.568 -04:00 [INF] RUT extraído: 15.970178K
+2025-08-21 18:26:30.569 -04:00 [INF] Número de carné extraído: N868
+2025-08-21 18:26:30.571 -04:00 [INF] Fecha extraída: 17.01.2024
+2025-08-21 18:26:30.572 -04:00 [INF] Resolución extraída: 
+2025-08-21 18:26:30.573 -04:00 [WRN] Extracción incompleta, intentando post-procesamiento con IA
+2025-08-21 18:26:30.588 -04:00 [INF] Iniciando post-procesamiento con IA usando Ollama con modelo: gemma3:1b
+2025-08-21 18:26:30.591 -04:00 [INF] Llamando a Ollama con modelo gemma3:1b para procesar documento
+2025-08-21 18:28:11.044 -04:00 [INF] Se actualizaron 2 campos del documento
+2025-08-21 18:28:11.059 -04:00 [INF] Documento combinado exitosamente con respuesta de Ollama
+2025-08-21 18:28:12.071 -04:00 [INF] Post-procesamiento con IA completado exitosamente usando gemma3:1b
+2025-08-21 18:28:12.117 -04:00 [ERR] Error en post-procesamiento con IA para carné aduanero
+System.Text.Json.JsonException: The JSON value could not be converted to System.Decimal. Path: $.ConfianzaExtraccion | LineNumber: 13 | BytePositionInLine: 30.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'String' as a number.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_ExpectedNumber(JsonTokenType tokenType)
+   at System.Text.Json.Utf8JsonReader.TryGetDecimal(Decimal& value)
+   at System.Text.Json.Utf8JsonReader.GetDecimal()
+   at System.Text.Json.Serialization.Converters.DecimalConverter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at CarnetAduaneroProcessor.Infrastructure.Services.CarnetAduaneroProcessorService.ProcesarTextoOcrAsync(String textoOcr) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\CarnetAduaneroProcessorService.cs:line 81
+2025-08-21 18:28:12.138 -04:00 [WRN] Extracción incompleta después de IA: No se pudieron extraer todos los campos requeridos del carné aduanero, incluso con IA
+2025-08-21 18:28:12.139 -04:00 [INF] Extracción completada para carné aduanero: N868
+2025-08-21 18:28:12.139 -04:00 [INF] Carné procesado exitosamente: N868
+2025-08-21 18:28:12.154 -04:00 [INF] Solicitud completada: POST /api/CarnetAduanero/procesar - 200 en 108064.2855ms

@@ -11,10 +11,10 @@
         </member>
         <member name="M:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.ProcesarPng(Microsoft.AspNetCore.Http.IFormFile)">
             <summary>
-            Sube y procesa un archivo PNG de carné aduanero
+            Sube y procesa un archivo PNG de carné aduanero usando IA directamente
             </summary>
             <param name="file">Archivo PNG a procesar</param>
-            <returns>Datos extraídos del carné</returns>
+            <returns>Datos extraídos del carné usando IA</returns>
         </member>
         <member name="M:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.ProcesarLote(Microsoft.AspNetCore.Http.IFormFileCollection)">
             <summary>
@@ -82,6 +82,13 @@
             <param name="request">Objeto con la propiedad 'textoOcr'</param>
             <returns>Datos estructurados del carné aduanero</returns>
         </member>
+        <member name="M:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.ProcesarImagenConIA(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Procesa una imagen directamente con IA (Gemma 3: 4B) para extraer el JSON completo
+            </summary>
+            <param name="file">Archivo de imagen a procesar (PNG, JPG, JPEG, etc.)</param>
+            <returns>JSON extraído directamente de la imagen por IA</returns>
+        </member>
         <member name="M:CarnetAduaneroProcessor.API.Controllers.CarnetAduaneroController.GuardarArchivoTemporalAsync(Microsoft.AspNetCore.Http.IFormFile)">
             <summary>
             Guarda un archivo temporalmente
@@ -94,7 +101,7 @@
         </member>
         <member name="M:CarnetAduaneroProcessor.API.Controllers.ComprobanteTransaccionController.ProcesarDocumento(Microsoft.AspNetCore.Http.IFormFile)">
             <summary>
-            Procesa un archivo PNG de documento de Comprobante de Transacción
+            Procesa un archivo PNG de documento de Comprobante de Transacción usando IA directamente
             </summary>
             <param name="file">Archivo PNG del documento de Comprobante de Transacción</param>
             <returns>Datos extraídos del documento de Comprobante de Transacción</returns>
@@ -126,7 +133,7 @@
         </member>
         <member name="M:CarnetAduaneroProcessor.API.Controllers.DeclaracionIngresoController.ProcesarDeclaracionIngreso(Microsoft.AspNetCore.Http.IFormFileCollection)">
             <summary>
-            Procesa 1 o 2 archivos PNG de Declaración de Ingreso
+            Procesa 1 o 2 archivos PNG de Declaración de Ingreso usando IA directamente
             </summary>
             <param name="files">1 o 2 archivos PNG de la declaración</param>
             <returns>Datos extraídos combinados de los archivos</returns>
@@ -205,7 +212,7 @@
         </member>
         <member name="M:CarnetAduaneroProcessor.API.Controllers.DocumentoRecepcionController.ProcesarDocumentoRecepcion(Microsoft.AspNetCore.Http.IFormFile)">
             <summary>
-            Procesa un archivo PNG de Documento de Recepción
+            Procesa un archivo PNG de Documento de Recepción usando IA directamente
             </summary>
             <param name="file">Archivo PNG a procesar</param>
             <returns>Documento de recepción procesado con todos los campos</returns>
@@ -251,7 +258,7 @@
         </member>
         <member name="M:CarnetAduaneroProcessor.API.Controllers.GuiaDespachoController.ProcesarPng(Microsoft.AspNetCore.Http.IFormFile)">
             <summary>
-            Sube y procesa un archivo PNG de Guía de Despacho Electrónica
+            Sube y procesa un archivo PNG de Guía de Despacho Electrónica usando IA directamente
             </summary>
             <param name="file">Archivo PNG a procesar</param>
             <returns>Datos extraídos de la guía de despacho</returns>
@@ -338,7 +345,7 @@
         </member>
         <member name="M:CarnetAduaneroProcessor.API.Controllers.SeleccionAforoController.ProcesarPng(Microsoft.AspNetCore.Http.IFormFile)">
             <summary>
-            Sube y procesa un archivo PNG de Selección de Aforo
+            Sube y procesa un archivo PNG de Selección de Aforo usando IA directamente
             </summary>
             <param name="file">Archivo PNG a procesar</param>
             <returns>Datos extraídos de la selección de aforo</returns>
@@ -416,7 +423,7 @@
         </member>
         <member name="M:CarnetAduaneroProcessor.API.Controllers.TactAdcController.ProcesarDocumento(Microsoft.AspNetCore.Http.IFormFile)">
             <summary>
-            Procesa un archivo PNG de documento TACT/ADC (Autorización de Despacho de Contenedores)
+            Procesa un archivo PNG de documento TACT/ADC usando IA directamente
             Soporta formatos de MAERSK, Mediterranean Shipping Company (MSC) e IANTAYLOR
             </summary>
             <param name="file">Archivo PNG del documento TACT/ADC</param>

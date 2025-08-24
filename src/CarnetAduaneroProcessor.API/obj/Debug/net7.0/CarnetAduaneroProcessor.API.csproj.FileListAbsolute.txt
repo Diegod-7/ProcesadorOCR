@@ -189,3 +189,4 @@ C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API
 C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\CarnetAduaneroProcessor.API.csproj.CopyComplete
 C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\CarnetAduaneroProcessor.API.genruntimeconfig.cache
 C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\obj\Debug\net7.0\ref\CarnetAduaneroProcessor.API.dll
+C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\bin\Debug\net7.0\appsettings.Development.json

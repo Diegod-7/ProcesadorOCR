@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  procesador-ocr:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: procesador-ocr-api
+    ports:
+      - "8080:80"
+      - "8443:443"
+      - "11434:11434"  # Puerto de Ollama
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:80;https://+:443
+      - DOTNET_SYSTEM_DRAWING_ENABLE_UNSAFE_CODE=1
+      - DOTNET_SYSTEM_DRAWING_ENABLE_LINUX_NATIVE=1
+      - OLLAMA_HOST=http://localhost:11434
+    volumes:
+      - ./Uploads:/app/Uploads
+      - ./Logs:/app/Logs
+      - ./tessdata:/usr/share/tessdata
+      - ollama_data:/root/.ollama  # Persistir modelos de Ollama
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 120s  # Aumentado para dar tiempo a Ollama
+    networks:
+      - procesador-network
+    deploy:
+      resources:
+        reservations:
+          memory: 12G  # Mínimo para Ollama + app
+        limits:
+          memory: 16G  # Máximo recomendado
+
+  # Opcional: Base de datos SQL Server (descomenta si necesitas persistencia)
+  # sqlserver:
+  #   image: mcr.microsoft.com/mssql/server:2019-latest
+  #   container_name: procesador-ocr-db
+  #   environment:
+  #     - ACCEPT_EULA=Y
+  #     - SA_PASSWORD=YourStrong@Passw0rd
+  #   ports:
+  #     - "1433:1433"
+  #   volumes:
+  #     - sqlserver_data:/var/opt/mssql
+  #   networks:
+  #     - procesador-network
+
+networks:
+  procesador-network:
+    driver: bridge
+
+# volumes:
+#   sqlserver_data: 

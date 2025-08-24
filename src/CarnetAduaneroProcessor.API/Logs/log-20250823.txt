@@ -1,0 +1,116 @@
+2025-08-23 20:04:34.741 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-23 20:04:34.750 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-23 20:04:34.752 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-23 20:04:34.753 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-23 20:04:34.755 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-23 20:04:34.842 -04:00 [WRN] Error parseando JSON de IA, usando método tradicional
+System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.Decimal]. Path: $.Peso | LineNumber: 9 | BytePositionInLine: 18.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'String' as a number.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_ExpectedNumber(JsonTokenType tokenType)
+   at System.Text.Json.Utf8JsonReader.TryGetDecimal(Decimal& value)
+   at System.Text.Json.Utf8JsonReader.GetDecimal()
+   at System.Text.Json.Serialization.Converters.DecimalConverter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at CarnetAduaneroProcessor.API.Controllers.TactAdcController.ProcesarDocumento(IFormFile file) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\Controllers\TactAdcController.cs:line 86
+2025-08-23 20:04:34.892 -04:00 [INF] Iniciando extracción de datos de TACT/ADC desde stream: 5.TACT.png
+2025-08-23 20:04:34.905 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-23 20:04:37.766 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: 5.TACT.png
+2025-08-23 20:04:37.773 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TACT.png
+2025-08-23 20:04:37.839 -04:00 [INF] Tipo de documento detectado: TactAdc para 5.TACT.png
+2025-08-23 20:04:37.841 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 5.TACT.png
+2025-08-23 20:04:38.686 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-23 20:04:38.689 -04:00 [INF] Texto extraído de TACT/ADC: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (492)
+
+MELOG Giro: SERVICIOS EXTRAPORTUARIOS
+
+Dirccción: CAMIN
+2025-08-23 20:04:38.691 -04:00 [INF] Iniciando procesamiento de texto OCR para documento TACT/ADC
+2025-08-23 20:04:38.693 -04:00 [INF] Texto normalizado: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (492) MELOG Giro: SERVICIOS EXTRAPORTUARIOS Dirccción: CAMINO LAS MERCEDES 14851 - SANTIAGO Emitido por: [2452809-7 el 25-06-2025 151048 (WEB) Tipo D.R.: CONTENEDOR IMPORTACION - POR MANIFIESTO - INDIRECTO BL Armador: (M)BACOS10074/ (H)DACA7ESES Consignatario: (86963200-7) FORUS S A Dirección: AV LAS CONDES NRO 11281, BLOCK C - SANTIAGO    N* DR 2025- 10718 Situación D.R.: NORMAL Manifiesto: 257809 Fch. Mnfto SNA: 19/06/2025 Fch.nicio Alm.: 25/06/2025 Inicio 90 Dias: 20/06/2025 Término 90 Días: 17/09/2025 NavelViaje: CMA CGM BEIRA/ OLISSN1    Forwerder: Lines Operadora: CMA-COM CHLE SA Agencia de Aduene: Srv. Almaceneje: ALMACENAJE DE CONTENEDOR 40 NORMAL (27) Almecen: PATIO ZONA PRIVARIA Guerda Almacén: MELLA JUAN (13106396-) Destino Carga: MPORTACION Pto.Origen: CHITTAGONG Plo Descarga: SAN ANTONIO: Zona: PRIMARIA Pto Embarque: CHITTAGONG Origen: MPORTACION: Plo Transbordo: CALLAO : TD o] — | a | r | s l oe coeerMenaeEso | + | ae | 0e —| —memo -| — 1mmiior - ONSGUTARO FoRUSSA VNEN H ( cons n Cs CoNDES SA + [eneo au ssnno ray hrc zaz CE VADE N $ rec Ia + [TAT mesorzbo0aeas : TOTAES. 1| sas00s          [eDIs 67609 tem) 25 05    0p Conpiemestaas: VISACIÓN DE CONTENEDORES:   [Obsenciones DR SIN OBSERVACION    bcrvcin as    'MODULO DE DOCUMENTO DE RECEPCIÓN. ERCHA: 24062008 151048
+2025-08-23 20:04:38.695 -04:00 [INF] Extrayendo campos críticos de TACT/ADC
+2025-08-23 20:04:38.703 -04:00 [INF] Extrayendo campos adicionales de TACT/ADC
+2025-08-23 20:04:38.706 -04:00 [INF] BL extraído: Armador
+2025-08-23 20:04:38.708 -04:00 [INF] Estado del documento: AUTORIZADO
+2025-08-23 20:04:38.709 -04:00 [INF] Guarda almacén extraído: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA
+2025-08-23 20:04:38.712 -04:00 [INF] Número de contenedor extraído (último intento): IMPORTACION - POR MANIFIESTO - INDIRECTO BL Armador
+2025-08-23 20:04:38.714 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento TACT/ADC (Autorización de Despacho de Contenedores)
+2025-08-23 20:04:38.715 -04:00 [INF] Extracción completada para TACT/ADC: 
+2025-08-23 20:04:38.745 -04:00 [INF] Solicitud completada: POST /api/TactAdc/procesar - 200 en 99903653.707ms
+2025-08-23 20:06:12.940 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-23 20:06:12.942 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: TactAdc
+2025-08-23 20:06:12.993 -04:00 [WRN] Error parseando JSON de IA, usando método tradicional
+System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.Decimal]. Path: $.Peso | LineNumber: 9 | BytePositionInLine: 18.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'String' as a number.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_ExpectedNumber(JsonTokenType tokenType)
+   at System.Text.Json.Utf8JsonReader.TryGetDecimal(Decimal& value)
+   at System.Text.Json.Utf8JsonReader.GetDecimal()
+   at System.Text.Json.Serialization.Converters.DecimalConverter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at CarnetAduaneroProcessor.API.Controllers.TactAdcController.ProcesarDocumento(IFormFile file) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\Controllers\TactAdcController.cs:line 86
+2025-08-23 20:06:12.999 -04:00 [INF] Iniciando extracción de datos de TACT/ADC desde stream: 5.TACT.png
+2025-08-23 20:06:13.728 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-23 20:06:13.731 -04:00 [INF] Texto extraído de TACT/ADC: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (492)
+
+MELOG Giro: SERVICIOS EXTRAPORTUARIOS
+
+Dirccción: CAMIN
+2025-08-23 20:06:13.732 -04:00 [INF] Iniciando procesamiento de texto OCR para documento TACT/ADC
+2025-08-23 20:06:13.733 -04:00 [INF] Texto normalizado: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (492) MELOG Giro: SERVICIOS EXTRAPORTUARIOS Dirccción: CAMINO LAS MERCEDES 14851 - SANTIAGO Emitido por: [2452809-7 el 25-06-2025 151048 (WEB) Tipo D.R.: CONTENEDOR IMPORTACION - POR MANIFIESTO - INDIRECTO BL Armador: (M)BACOS10074/ (H)DACA7ESES Consignatario: (86963200-7) FORUS S A Dirección: AV LAS CONDES NRO 11281, BLOCK C - SANTIAGO    N* DR 2025- 10718 Situación D.R.: NORMAL Manifiesto: 257809 Fch. Mnfto SNA: 19/06/2025 Fch.nicio Alm.: 25/06/2025 Inicio 90 Dias: 20/06/2025 Término 90 Días: 17/09/2025 NavelViaje: CMA CGM BEIRA/ OLISSN1    Forwerder: Lines Operadora: CMA-COM CHLE SA Agencia de Aduene: Srv. Almaceneje: ALMACENAJE DE CONTENEDOR 40 NORMAL (27) Almecen: PATIO ZONA PRIVARIA Guerda Almacén: MELLA JUAN (13106396-) Destino Carga: MPORTACION Pto.Origen: CHITTAGONG Plo Descarga: SAN ANTONIO: Zona: PRIMARIA Pto Embarque: CHITTAGONG Origen: MPORTACION: Plo Transbordo: CALLAO : TD o] — | a | r | s l oe coeerMenaeEso | + | ae | 0e —| —memo -| — 1mmiior - ONSGUTARO FoRUSSA VNEN H ( cons n Cs CoNDES SA + [eneo au ssnno ray hrc zaz CE VADE N $ rec Ia + [TAT mesorzbo0aeas : TOTAES. 1| sas00s          [eDIs 67609 tem) 25 05    0p Conpiemestaas: VISACIÓN DE CONTENEDORES:   [Obsenciones DR SIN OBSERVACION    bcrvcin as    'MODULO DE DOCUMENTO DE RECEPCIÓN. ERCHA: 24062008 151048
+2025-08-23 20:06:13.735 -04:00 [INF] Extrayendo campos críticos de TACT/ADC
+2025-08-23 20:06:13.736 -04:00 [INF] Extrayendo campos adicionales de TACT/ADC
+2025-08-23 20:06:13.739 -04:00 [INF] BL extraído: Armador
+2025-08-23 20:06:13.741 -04:00 [INF] Estado del documento: AUTORIZADO
+2025-08-23 20:06:13.742 -04:00 [INF] Guarda almacén extraído: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA
+2025-08-23 20:06:13.743 -04:00 [INF] Número de contenedor extraído (último intento): IMPORTACION - POR MANIFIESTO - INDIRECTO BL Armador
+2025-08-23 20:06:13.744 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento TACT/ADC (Autorización de Despacho de Contenedores)
+2025-08-23 20:06:13.745 -04:00 [INF] Extracción completada para TACT/ADC: 
+2025-08-23 20:06:13.750 -04:00 [INF] Solicitud completada: POST /api/TactAdc/procesar - 200 en 99008.9568ms
+2025-08-23 20:06:46.987 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-23 20:06:46.991 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-23 20:06:46.992 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-23 20:06:46.994 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-23 20:06:46.996 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-23 20:06:47.126 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-23 20:06:51.370 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: 5.TACT.png
+2025-08-23 20:07:01.783 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TACT.png
+2025-08-23 20:07:01.808 -04:00 [INF] Tipo de documento detectado: TactAdc para 5.TACT.png
+2025-08-23 20:07:01.809 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 5.TACT.png
+2025-08-23 20:08:27.734 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-23 20:08:27.739 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: TactAdc
+2025-08-23 20:09:03.687 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-23 20:09:08.219 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-23 20:09:47.452 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-23 20:09:47.515 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-23 20:09:47.518 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-23 20:09:47.522 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-23 20:09:47.524 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-23 20:09:48.438 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-23 20:09:57.362 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: 5.TACT.png
+2025-08-23 20:10:08.231 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TACT.png
+2025-08-23 20:10:13.848 -04:00 [INF] Tipo de documento detectado: TactAdc para 5.TACT.png
+2025-08-23 20:10:15.423 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 5.TACT.png
+2025-08-23 20:12:03.240 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-23 20:12:04.110 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: TactAdc
+2025-08-23 20:12:37.270 -04:00 [INF] Documento TACT/ADC procesado exitosamente con IA: 2025391250035445
+2025-08-23 20:12:37.300 -04:00 [INF] Solicitud completada: POST /api/TactAdc/procesar - 200 en 169848.2742ms

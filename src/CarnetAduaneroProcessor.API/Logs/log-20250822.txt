@@ -1,0 +1,708 @@
+2025-08-22 09:55:18.476 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 09:55:21.269 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 10:31:17.769 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-22 10:31:17.819 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 10:31:17.822 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 10:31:17.826 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 10:31:17.828 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 10:31:18.549 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 10:31:25.743 -04:00 [INF] Iniciando procesamiento de archivo PNG: 6.carne.png
+2025-08-22 10:31:30.990 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde archivo: C:\Users\Diego\AppData\Local\Temp\tmp1CE0.tmp
+2025-08-22 10:31:31.014 -04:00 [INF] Iniciando extracción de datos de carné aduanero desde stream: tmp1CE0.tmp
+2025-08-22 10:31:32.014 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-22 10:31:32.017 -04:00 [INF] Texto extraído con servicio híbrido: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº ................ GONZALEZ..PJ.NO.--.......-
+
+15.970178K RUT.15..97.0-:-128—K----------...
+
+Resol. 01.
+2025-08-22 10:31:32.019 -04:00 [INF] Texto extraído de carné aduanero: * CARNÉ /Óanagena
+
+ADUANERO
+
+N868 7 ,
+
+ 
+
+Nºmbre"'-0E3'ZÁfgO"lkmhm ...........
+
+ºg:5;¿—f£ ;ºp?:;gº .
+2025-08-22 10:31:32.022 -04:00 [INF] Iniciando procesamiento de texto OCR para carné aduanero
+2025-08-22 10:31:32.028 -04:00 [INF] Texto normalizado: CARNÉ /Óana9ena ADUANER0 N868 7 , Nombre"'-0E3'2Áf90"1kmhm ........... o9:5;?-fE ;op?:;9o ................ G0N2ALE2..PJ.N0.--.......- 15.970178K RUT.15..97.0-:-128-K----------... Reso1. 01.42.-...........e.eee.- Fecha ..17..01..2024.............. AGAD Cod...8:=.].2..........e.e.e.... Nombre .ALEX-1G-..........e e. AGAD Cod.... e M0 ..................... Nombre >”. AGAD CÓ07-GONZALEZ GONZALEZ
+2025-08-22 10:31:32.031 -04:00 [INF] Título extraído: 
+2025-08-22 10:31:32.035 -04:00 [INF] Nombre extraído: GONZALEZ
+2025-08-22 10:31:32.038 -04:00 [INF] RUT extraído: 15.970178K
+2025-08-22 10:31:32.039 -04:00 [INF] Número de carné extraído: N868
+2025-08-22 10:31:32.042 -04:00 [INF] Fecha extraída: 17.01.2024
+2025-08-22 10:31:32.044 -04:00 [INF] Resolución extraída: 
+2025-08-22 10:31:32.045 -04:00 [WRN] Extracción incompleta, intentando post-procesamiento con IA
+2025-08-22 10:31:32.061 -04:00 [INF] Iniciando post-procesamiento con IA usando Ollama con modelo: gemma3:4b
+2025-08-22 10:31:32.064 -04:00 [INF] Llamando a Ollama con modelo gemma3:4b para procesar documento
+2025-08-22 11:06:42.955 -04:00 [INF] Se actualizaron 2 campos del documento
+2025-08-22 11:06:42.977 -04:00 [INF] Documento combinado exitosamente con respuesta de Ollama
+2025-08-22 11:11:25.662 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 11:11:27.820 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 11:11:46.132 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-22 11:11:46.165 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 11:11:46.167 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 11:11:46.171 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 11:11:46.172 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 11:11:46.796 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 11:11:52.362 -04:00 [INF] Iniciando procesamiento de archivo PNG con IA: 6.carne.png
+2025-08-22 11:12:29.485 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 6.carne.png
+2025-08-22 11:13:02.143 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 6.carne.png
+2025-08-22 11:15:11.439 -04:00 [INF] JSON extraído exitosamente de imagen: 6.carne.png
+2025-08-22 11:15:20.769 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B
+2025-08-22 11:21:45.668 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 11:21:47.960 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 11:22:20.720 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-22 11:22:20.751 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 11:22:20.753 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 11:22:20.756 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 11:22:20.757 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 11:22:21.423 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 11:22:27.508 -04:00 [INF] Iniciando procesamiento de archivo PNG con IA: imagen_2025-08-22_112218747.png
+2025-08-22 11:22:50.995 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: imagen_2025-08-22_112218747.png
+2025-08-22 11:22:50.998 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: imagen_2025-08-22_112218747.png
+2025-08-22 11:24:03.857 -04:00 [INF] JSON extraído exitosamente de imagen: imagen_2025-08-22_112218747.png
+2025-08-22 11:24:03.859 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B
+2025-08-22 11:27:27.553 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 11:27:29.993 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 11:28:38.176 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-22 11:28:38.210 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 11:28:38.212 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 11:28:38.215 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 11:28:38.217 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 11:28:38.908 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 11:28:43.673 -04:00 [INF] Iniciando procesamiento de archivo PNG con IA: 6.carne.png
+2025-08-22 11:28:52.524 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 6.carne.png
+2025-08-22 11:28:52.527 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 6.carne.png
+2025-08-22 11:30:02.031 -04:00 [INF] JSON extraído exitosamente de imagen: 6.carne.png
+2025-08-22 11:30:02.033 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B
+2025-08-22 11:30:16.434 -04:00 [INF] Carné procesado exitosamente con IA: N8687
+2025-08-22 11:30:41.438 -04:00 [INF] Solicitud completada: POST /api/CarnetAduanero/procesar - 200 en 123262.7071ms
+2025-08-22 11:35:52.557 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 11:35:54.243 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 11:36:11.097 -04:00 [INF] Iniciando solicitud: POST /api/CarnetAduanero/procesar
+2025-08-22 11:36:11.130 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 11:36:11.132 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 11:36:11.135 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 11:36:11.137 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 11:36:11.823 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 11:36:17.549 -04:00 [INF] Iniciando procesamiento de archivo PNG con IA: 6.carne.png
+2025-08-22 11:36:25.414 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 6.carne.png
+2025-08-22 11:36:25.418 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 6.carne.png
+2025-08-22 11:37:40.757 -04:00 [INF] JSON extraído exitosamente de imagen: 6.carne.png
+2025-08-22 11:37:40.760 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B
+2025-08-22 11:38:20.961 -04:00 [INF] Carné procesado exitosamente con IA: N8687
+2025-08-22 11:38:39.663 -04:00 [INF] Solicitud completada: POST /api/CarnetAduanero/procesar - 200 en 148567.3695ms
+2025-08-22 11:48:00.525 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 11:48:03.096 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 11:53:33.020 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 11:53:34.900 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 11:57:40.862 -04:00 [INF] Iniciando solicitud: POST /api/ComprobanteTransaccion/procesar
+2025-08-22 11:57:40.898 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 11:57:40.900 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 11:57:40.903 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 11:57:40.905 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 11:57:41.612 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 11:57:41.672 -04:00 [INF] Iniciando procesamiento de documento de Comprobante de Transacción: 4.comprobante_transaccion.png
+2025-08-22 11:57:41.676 -04:00 [INF] Iniciando extracción de datos de Comprobante de Transacción desde stream: 4.comprobante_transaccion.png
+2025-08-22 11:57:42.044 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-22 11:57:42.046 -04:00 [INF] Texto extraído de Comprobante de Transacción:  
+
+*TGR COMPROBANTE DE TRANSACCION
+
+Tesorería Genera
+de la República
+
+ 
+
+ 
+
+Rut - Rol
+
+Formulario
+
+F
+2025-08-22 11:57:42.049 -04:00 [INF] Iniciando procesamiento de texto OCR para documento de Comprobante de Transacción
+2025-08-22 11:57:42.054 -04:00 [INF] Texto normalizado: *TGR COMPROBANTE DE TRANSACCION Tesorería Genera de la República Rut - Rol Formulario Folio Vencimiento Moneda de Pago Total Pagado Fecha Pago Institución Recaudadora Identificador de Transacción 77591058-5 15 4560010758 09-07-2025 CLP 8.153.962 24-06-2025 17:44:12 BANCO ITAU 02847341-57208059 No válido para pago en Instituciones Recaudadoras 06240508201625063001504715 77
+2025-08-22 11:57:42.057 -04:00 [INF] Extrayendo campos críticos de Comprobante de Transacción
+2025-08-22 11:57:42.060 -04:00 [INF] Número de folio extraído (último fallback): 4560010758
+2025-08-22 11:57:42.062 -04:00 [INF] Total pagado extraído (fallback): 8153962
+2025-08-22 11:57:42.066 -04:00 [INF] Extrayendo campos adicionales de Comprobante de Transacción
+2025-08-22 11:57:42.068 -04:00 [INF] RUT extraído (último fallback): 77591058-5
+2025-08-22 11:57:42.070 -04:00 [INF] Formulario extraído (último fallback): 77
+2025-08-22 11:57:42.073 -04:00 [INF] Moneda de pago extraída: Total
+2025-08-22 11:57:42.075 -04:00 [INF] Institución recaudadora extraída: Identificador de Transacci
+2025-08-22 11:57:42.077 -04:00 [INF] Identificador de transacción extraído: 77591058-5
+2025-08-22 11:57:42.078 -04:00 [INF] Código de barras extraído: 06240508201625063001504715
+2025-08-22 11:57:42.079 -04:00 [INF] Número de referencia establecido igual al código de barras: 06240508201625063001504715
+2025-08-22 11:57:42.089 -04:00 [INF] Fecha de vencimiento extraída: "2025-07-09T00:00:00.0000000"
+2025-08-22 11:57:42.092 -04:00 [INF] Fecha de pago extraída: "2025-06-24T00:00:00.0000000"
+2025-08-22 11:57:42.094 -04:00 [INF] Procesamiento completado exitosamente para Comprobante de Transacción: 4560010758
+2025-08-22 11:57:42.095 -04:00 [INF] Extracción completada para Comprobante de Transacción: 4560010758
+2025-08-22 11:57:42.097 -04:00 [INF] Documento de Comprobante de Transacción procesado exitosamente: 4560010758
+2025-08-22 11:57:42.128 -04:00 [INF] Solicitud completada: POST /api/ComprobanteTransaccion/procesar - 200 en 1266.2219ms
+2025-08-22 12:01:25.985 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 12:01:27.532 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 12:01:43.140 -04:00 [INF] Iniciando solicitud: POST /api/ComprobanteTransaccion/procesar
+2025-08-22 12:01:43.180 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 12:01:43.183 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 12:01:43.186 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 12:01:43.188 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 12:01:43.886 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 12:01:43.952 -04:00 [INF] Iniciando procesamiento de documento de Comprobante de Transacción con IA: 4.comprobante_transaccion.png
+2025-08-22 12:01:43.961 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 4.comprobante_transaccion.png
+2025-08-22 12:01:43.965 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 4.comprobante_transaccion.png
+2025-08-22 12:03:01.194 -04:00 [INF] JSON extraído exitosamente de imagen: 4.comprobante_transaccion.png
+2025-08-22 12:03:01.196 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B
+2025-08-22 12:03:01.206 -04:00 [INF] Documento de Comprobante de Transacción procesado exitosamente con IA (Gemma 3: 4B): 
+2025-08-22 12:03:01.229 -04:00 [INF] Solicitud completada: POST /api/ComprobanteTransaccion/procesar - 200 en 78089.0971ms
+2025-08-22 12:03:23.708 -04:00 [INF] Iniciando solicitud: POST /api/ComprobanteTransaccion/procesar
+2025-08-22 12:03:23.710 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 12:03:23.713 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 12:03:23.715 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 12:03:23.717 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 12:03:23.854 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 12:03:28.586 -04:00 [INF] Iniciando procesamiento de documento de Comprobante de Transacción con IA: 4.comprobante_transaccion.png
+2025-08-22 12:03:43.965 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 4.comprobante_transaccion.png
+2025-08-22 12:03:56.536 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 4.comprobante_transaccion.png
+2025-08-22 12:04:36.856 -04:00 [INF] Iniciando solicitud: POST /api/ComprobanteTransaccion/procesar
+2025-08-22 12:04:36.862 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 12:04:36.863 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 12:04:36.865 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 12:04:36.867 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 12:04:37.046 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 12:04:42.323 -04:00 [INF] Iniciando procesamiento de documento de Comprobante de Transacción con IA: 4.comprobante_transaccion.png
+2025-08-22 12:04:51.004 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 4.comprobante_transaccion.png
+2025-08-22 12:04:51.007 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 4.comprobante_transaccion.png
+2025-08-22 12:12:49.220 -04:00 [INF] JSON extraído exitosamente de imagen: 4.comprobante_transaccion.png
+2025-08-22 12:12:49.236 -04:00 [INF] JSON extraído exitosamente de imagen: 4.comprobante_transaccion.png
+2025-08-22 12:13:14.838 -04:00 [INF] JSON extraído exitosamente de imagen: 4.comprobante_transaccion.png
+2025-08-22 12:13:14.843 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B
+2025-08-22 12:13:16.341 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B
+2025-08-22 12:48:16.281 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 12:48:18.692 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 12:48:31.774 -04:00 [INF] Iniciando solicitud: POST /api/ComprobanteTransaccion/procesar
+2025-08-22 12:48:31.806 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 12:48:31.808 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 12:48:31.811 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 12:48:31.813 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 12:48:32.525 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 12:48:36.322 -04:00 [INF] Iniciando procesamiento de documento de Comprobante de Transacción con IA: 4.comprobante_transaccion.png
+2025-08-22 12:48:45.950 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 4.comprobante_transaccion.png
+2025-08-22 12:48:45.953 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 4.comprobante_transaccion.png
+2025-08-22 12:50:25.335 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 12:50:32.456 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: ComprobanteTransaccion
+2025-08-22 12:58:25.608 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 12:58:28.080 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 13:03:42.877 -04:00 [INF] Iniciando solicitud: POST /api/ComprobanteTransaccion/procesar
+2025-08-22 13:03:42.915 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 13:03:42.917 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 13:03:42.921 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 13:03:42.923 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 13:03:43.623 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 13:03:48.801 -04:00 [INF] Iniciando procesamiento de documento de Comprobante de Transacción con IA: 4.comprobante_transaccion.png
+2025-08-22 13:05:01.653 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 4.comprobante_transaccion.png
+2025-08-22 13:05:01.658 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 4.comprobante_transaccion.png
+2025-08-22 13:08:27.332 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 13:08:28.131 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: ComprobanteTransaccion
+2025-08-22 13:09:55.473 -04:00 [INF] Documento de Comprobante de Transacción procesado exitosamente con IA (Gemma 3: 4B): 4560010758
+2025-08-22 13:11:29.742 -04:00 [INF] Solicitud completada: POST /api/ComprobanteTransaccion/procesar - 200 en 465969.5582ms
+2025-08-22 13:12:19.464 -04:00 [INF] Iniciando solicitud: POST /api/DeclaracionIngreso/procesar
+2025-08-22 13:12:19.473 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 13:12:19.475 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 13:12:19.476 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 13:12:19.478 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 13:12:19.667 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 13:12:19.697 -04:00 [INF] Procesando Declaración de Ingreso con IA desde 2 archivos PNG
+2025-08-22 13:12:19.702 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 1.di_parte1.png
+2025-08-22 13:12:19.704 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 1.di_parte1.png
+2025-08-22 13:13:49.237 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 13:13:49.238 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: DeclaracionIngreso
+2025-08-22 13:13:49.255 -04:00 [INF] Archivo PNG procesado con IA (Gemma 3: 4B): 1.di_parte1.png
+2025-08-22 13:13:49.262 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 1.di_parte2.png
+2025-08-22 13:13:49.265 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 1.di_parte2.png
+2025-08-22 13:15:10.317 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 13:15:10.318 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: DeclaracionIngreso
+2025-08-22 13:15:10.322 -04:00 [INF] Archivo PNG procesado con IA (Gemma 3: 4B): 1.di_parte2.png
+2025-08-22 13:15:10.330 -04:00 [INF] Declaración de Ingreso procesada exitosamente: 967
+2025-08-22 13:15:10.342 -04:00 [INF] Solicitud completada: POST /api/DeclaracionIngreso/procesar - 200 en 170904.8136ms
+2025-08-22 13:16:01.320 -04:00 [INF] Iniciando solicitud: POST /api/DeclaracionIngreso/procesar
+2025-08-22 13:16:01.322 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 13:16:01.323 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 13:16:01.325 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 13:16:01.326 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 13:16:01.452 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 13:16:06.964 -04:00 [INF] Procesando Declaración de Ingreso con IA desde 2 archivos PNG
+2025-08-22 13:17:39.553 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 1.di_parte1.png
+2025-08-22 13:18:03.796 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 1.di_parte1.png
+2025-08-22 13:28:28.265 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 13:28:28.273 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: DeclaracionIngreso
+2025-08-22 13:28:28.275 -04:00 [INF] Archivo PNG procesado con IA (Gemma 3: 4B): 1.di_parte1.png
+2025-08-22 13:28:28.282 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 1.di_parte2.png
+2025-08-22 13:28:28.283 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 1.di_parte2.png
+2025-08-22 13:29:04.139 -04:00 [INF] Iniciando solicitud: POST /api/DeclaracionIngreso/procesar
+2025-08-22 13:29:04.170 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 13:29:04.172 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 13:29:04.176 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 13:29:04.179 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 13:29:04.579 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 13:29:08.087 -04:00 [INF] Procesando Declaración de Ingreso con IA desde 2 archivos PNG
+2025-08-22 13:29:33.205 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 1.di_parte1.png
+2025-08-22 13:29:33.211 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 1.di_parte1.png
+2025-08-22 13:29:47.984 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 13:29:47.985 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: DeclaracionIngreso
+2025-08-22 13:29:48.002 -04:00 [INF] Archivo PNG procesado con IA (Gemma 3: 4B): 1.di_parte2.png
+2025-08-22 13:29:48.004 -04:00 [INF] Declaración de Ingreso procesada exitosamente: 967
+2025-08-22 13:29:48.010 -04:00 [INF] Solicitud completada: POST /api/DeclaracionIngreso/procesar - 200 en 826690.0786ms
+2025-08-22 13:30:55.753 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 13:30:55.754 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: DeclaracionIngreso
+2025-08-22 13:33:15.995 -04:00 [INF] Archivo PNG procesado con IA (Gemma 3: 4B): 1.di_parte1.png
+2025-08-22 13:33:16.009 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 1.di_parte2.png
+2025-08-22 13:33:16.015 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 1.di_parte2.png
+2025-08-22 13:33:16.020 -04:00 [INF] Iniciando solicitud: POST /api/DocumentoRecepcion/procesar
+2025-08-22 13:33:16.030 -04:00 [INF] Iniciando solicitud: POST /api/DocumentoRecepcion/procesar
+2025-08-22 13:33:16.036 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 13:33:16.038 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 13:33:16.038 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 13:33:16.040 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 13:33:16.040 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 13:33:16.041 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 13:33:16.042 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 13:33:16.043 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 13:33:16.155 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 13:33:16.167 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 13:33:20.798 -04:00 [INF] Procesando Documento de Recepción con IA desde archivo PNG: 2.dr_documento_recepcion.png
+2025-08-22 13:33:34.059 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 2.dr_documento_recepcion.png
+2025-08-22 13:33:34.062 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 2.dr_documento_recepcion.png
+2025-08-22 13:33:34.063 -04:00 [INF] Solicitud completada: POST /api/DocumentoRecepcion/procesar - 400 en 18043.4046ms
+2025-08-22 13:34:26.864 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 13:34:26.872 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: DeclaracionIngreso
+2025-08-22 13:34:26.873 -04:00 [INF] Archivo PNG procesado con IA (Gemma 3: 4B): 1.di_parte2.png
+2025-08-22 13:34:26.874 -04:00 [INF] Declaración de Ingreso procesada exitosamente: 967
+2025-08-22 13:34:26.876 -04:00 [INF] Solicitud completada: POST /api/DeclaracionIngreso/procesar - 200 en 322736.8993ms
+2025-08-22 13:35:14.146 -04:00 [ERR] Error llamando a Ollama con imagen usando modelo gemma3:4b
+System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+ ---> System.TimeoutException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación..
+ ---> System.Net.Sockets.SocketException (995): La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.InitialFillAsync(Boolean async)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at CarnetAduaneroProcessor.Infrastructure.Services.OllamaAiPostProcessorService.LlamarOllamaConImagenAsync(String prompt, Byte[] imagenBytes, String nombreArchivo) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\OllamaAiPostProcessorService.cs:line 652
+2025-08-22 13:35:14.186 -04:00 [WRN] Respuesta de Ollama vacía para imagen: 2.dr_documento_recepcion.png
+2025-08-22 13:35:14.189 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: DocumentoRecepcion
+2025-08-22 13:53:37.216 -04:00 [INF] Documento de Recepción procesado exitosamente con IA: 
+2025-08-22 13:53:37.225 -04:00 [INF] Iniciando solicitud: POST /api/DocumentoRecepcion/procesar
+2025-08-22 13:53:37.232 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 13:53:37.233 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 13:53:37.234 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 13:53:37.234 -04:00 [INF] Solicitud completada: POST /api/DocumentoRecepcion/procesar - 200 en 1221204.862ms
+2025-08-22 13:53:37.235 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 13:53:37.369 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 13:53:40.478 -04:00 [INF] Procesando Documento de Recepción con IA desde archivo PNG: 2.dr_documento_recepcion.png
+2025-08-22 13:53:43.335 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 2.dr_documento_recepcion.png
+2025-08-22 13:53:43.337 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 2.dr_documento_recepcion.png
+2025-08-22 13:53:55.050 -04:00 [INF] Iniciando solicitud: POST /api/DocumentoRecepcion/procesar
+2025-08-22 13:53:55.057 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 13:53:55.061 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 13:53:55.062 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 13:53:55.063 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 13:53:55.266 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 13:54:12.989 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 13:54:17.108 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 14:18:28.480 -04:00 [INF] Iniciando solicitud: POST /api/DocumentoRecepcion/procesar
+2025-08-22 14:18:28.519 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 14:18:28.521 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 14:18:28.525 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 14:18:28.527 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 14:18:29.280 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 14:18:35.144 -04:00 [INF] Procesando Documento de Recepción con IA desde archivo PNG: 2.dr_documento_recepcion.png
+2025-08-22 14:18:44.908 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 2.dr_documento_recepcion.png
+2025-08-22 14:18:51.872 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 2.dr_documento_recepcion.png
+2025-08-22 14:20:31.991 -04:00 [ERR] Error llamando a Ollama con imagen usando modelo gemma3:4b
+System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+ ---> System.TimeoutException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación..
+ ---> System.Net.Sockets.SocketException (995): La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.InitialFillAsync(Boolean async)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at CarnetAduaneroProcessor.Infrastructure.Services.OllamaAiPostProcessorService.LlamarOllamaConImagenAsync(String prompt, Byte[] imagenBytes, String nombreArchivo) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\OllamaAiPostProcessorService.cs:line 719
+2025-08-22 14:20:43.027 -04:00 [WRN] Respuesta de Ollama vacía para imagen: 2.dr_documento_recepcion.png
+2025-08-22 14:20:43.714 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: DocumentoRecepcion
+2025-08-22 14:21:12.122 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 2.dr_documento_recepcion.png
+2025-08-22 14:21:17.332 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 14:21:19.858 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 14:23:20.797 -04:00 [INF] Iniciando solicitud: POST /api/DocumentoRecepcion/procesar
+2025-08-22 14:23:20.831 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 14:23:20.833 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 14:23:20.837 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 14:23:20.838 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 14:23:21.709 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 14:23:50.651 -04:00 [INF] Procesando Documento de Recepción con IA desde archivo PNG: 2.dr_documento_recepcion.png
+2025-08-22 14:24:02.614 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 2.dr_documento_recepcion.png
+2025-08-22 14:24:06.024 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 2.dr_documento_recepcion.png
+2025-08-22 14:25:46.141 -04:00 [ERR] Error llamando a Ollama con imagen usando modelo gemma3:4b
+System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+ ---> System.TimeoutException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación..
+ ---> System.Net.Sockets.SocketException (995): La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.InitialFillAsync(Boolean async)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at CarnetAduaneroProcessor.Infrastructure.Services.OllamaAiPostProcessorService.LlamarOllamaConImagenAsync(String prompt, Byte[] imagenBytes, String nombreArchivo) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.Infrastructure\Services\OllamaAiPostProcessorService.cs:line 719
+2025-08-22 14:26:12.137 -04:00 [INF] Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 2.dr_documento_recepcion.png
+2025-08-22 14:31:08.596 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 14:31:11.562 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 14:31:35.241 -04:00 [INF] Iniciando solicitud: POST /api/DocumentoRecepcion/procesar
+2025-08-22 14:31:35.279 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 14:31:35.281 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 14:31:35.285 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 14:31:35.287 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 14:31:36.217 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 14:31:40.099 -04:00 [INF] Procesando Documento de Recepción con IA desde archivo PNG: 2.dr_documento_recepcion.png
+2025-08-22 14:31:51.067 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 2.dr_documento_recepcion.png
+2025-08-22 14:31:53.117 -04:00 [INF] Tipo de documento detectado: DocumentoRecepcion para 2.dr_documento_recepcion.png
+2025-08-22 14:31:55.747 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 2.dr_documento_recepcion.png
+2025-08-22 14:33:59.316 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 14:34:00.386 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: DocumentoRecepcion
+2025-08-22 14:34:14.934 -04:00 [INF] Documento de Recepción procesado exitosamente con IA: 2025-10718
+2025-08-22 14:34:19.688 -04:00 [INF] Solicitud completada: POST /api/DocumentoRecepcion/procesar - 200 en 164447.3078ms
+2025-08-22 14:35:28.376 -04:00 [INF] Iniciando solicitud: POST /api/GuiaDespacho/procesar
+2025-08-22 14:35:28.381 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 14:35:28.382 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 14:35:28.383 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 14:35:28.385 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 14:35:28.497 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 14:35:33.324 -04:00 [INF] Iniciando procesamiento de archivo PNG de Guía de Despacho con IA: 7.guia_despacho.png
+2025-08-22 14:35:42.015 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 7.guia_despacho.png
+2025-08-22 14:35:47.300 -04:00 [INF] Tipo de documento detectado: GuiaDespacho para 7.guia_despacho.png
+2025-08-22 14:35:49.936 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 7.guia_despacho.png
+2025-08-22 14:37:19.809 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 14:37:20.507 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: GuiaDespacho
+2025-08-22 14:38:28.843 -04:00 [INF] Guía de Despacho procesada exitosamente con IA: 11
+2025-08-22 14:38:28.880 -04:00 [INF] Solicitud completada: POST /api/GuiaDespacho/procesar - 201 en 180504.1558ms
+2025-08-22 14:41:20.420 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 14:41:23.106 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 14:41:38.838 -04:00 [INF] Iniciando solicitud: POST /api/GuiaDespacho/procesar
+2025-08-22 14:41:38.874 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 14:41:38.877 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 14:41:38.880 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 14:41:38.882 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 14:41:39.720 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 14:41:46.515 -04:00 [INF] Iniciando procesamiento de archivo PNG de Guía de Despacho con IA: 7.guia_despacho.png
+2025-08-22 14:41:54.989 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 7.guia_despacho.png
+2025-08-22 14:41:57.380 -04:00 [INF] Tipo de documento detectado: GuiaDespacho para 7.guia_despacho.png
+2025-08-22 14:41:58.906 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 7.guia_despacho.png
+2025-08-22 14:44:03.055 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 14:44:03.738 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: GuiaDespacho
+2025-08-22 14:44:36.808 -04:00 [INF] Guía de Despacho procesada exitosamente con IA: 11
+2025-08-22 14:44:39.879 -04:00 [INF] Solicitud completada: POST /api/GuiaDespacho/procesar - 201 en 181040.8476ms
+2025-08-22 14:45:16.706 -04:00 [INF] Iniciando solicitud: POST /api/SeleccionAforo/procesar
+2025-08-22 14:45:16.712 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 14:45:16.713 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 14:45:16.715 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 14:45:16.716 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 14:45:16.828 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 14:45:16.847 -04:00 [INF] Iniciando procesamiento de archivo PNG de Selección de Aforo con IA: 3.seleccion_aforo.png
+2025-08-22 14:45:16.852 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 3.seleccion_aforo.png
+2025-08-22 14:45:16.863 -04:00 [INF] Tipo de documento detectado: SeleccionAforo para 3.seleccion_aforo.png
+2025-08-22 14:45:16.865 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 3.seleccion_aforo.png
+2025-08-22 14:46:19.043 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 14:46:19.046 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: SeleccionAforo
+2025-08-22 14:46:19.049 -04:00 [INF] Selección de Aforo procesada exitosamente con IA: 
+2025-08-22 14:46:19.053 -04:00 [INF] Solicitud completada: POST /api/SeleccionAforo/procesar - 201 en 62347.2962ms
+2025-08-22 14:50:20.218 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 14:50:22.639 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 14:50:46.857 -04:00 [INF] Iniciando solicitud: POST /api/SeleccionAforo/procesar
+2025-08-22 14:50:46.893 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 14:50:46.895 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 14:50:46.900 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 14:50:46.901 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 14:50:47.738 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 14:50:51.504 -04:00 [INF] Iniciando procesamiento de archivo PNG de Selección de Aforo con IA: 3.seleccion_aforo.png
+2025-08-22 14:50:58.866 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 3.seleccion_aforo.png
+2025-08-22 14:51:00.344 -04:00 [INF] Tipo de documento detectado: SeleccionAforo para 3.seleccion_aforo.png
+2025-08-22 14:51:01.500 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 3.seleccion_aforo.png
+2025-08-22 14:51:31.234 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 14:51:32.056 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: SeleccionAforo
+2025-08-22 14:51:40.147 -04:00 [INF] Selección de Aforo procesada exitosamente con IA: 2120204867
+2025-08-22 14:51:44.227 -04:00 [INF] Solicitud completada: POST /api/SeleccionAforo/procesar - 201 en 57369.7362ms
+2025-08-22 14:52:13.956 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 14:52:16.393 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 14:52:36.606 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-22 14:52:36.639 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 14:52:36.642 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 14:52:36.645 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 14:52:36.647 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 14:52:37.617 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 14:52:40.668 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: 5.TATC.png
+2025-08-22 14:52:51.763 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TATC.png
+2025-08-22 14:52:51.851 -04:00 [INF] Tipo de documento detectado: Generico para 5.TATC.png
+2025-08-22 14:52:51.856 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 5.TATC.png
+2025-08-22 14:54:05.101 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 14:54:05.103 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: Generico
+2025-08-22 14:54:55.160 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TATC.png
+2025-08-22 14:57:49.536 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 14:57:51.803 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 14:58:14.499 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-22 14:58:14.539 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 14:58:14.541 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 14:58:14.544 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 14:58:14.546 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 14:58:15.458 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 14:58:19.333 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: 5.TATC.png
+2025-08-22 14:58:47.315 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TATC.png
+2025-08-22 14:58:54.702 -04:00 [INF] Tipo de documento detectado: TactAdc para 5.TATC.png
+2025-08-22 14:59:11.726 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 5.TATC.png
+2025-08-22 15:00:45.243 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 15:00:45.855 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: TactAdc
+2025-08-22 15:02:59.922 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 15:03:02.673 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 15:03:23.207 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-22 15:03:23.254 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 15:03:23.258 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 15:03:23.262 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 15:03:23.263 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 15:03:24.171 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 15:03:27.550 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: 5.TATC.png
+2025-08-22 15:03:36.354 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TATC.png
+2025-08-22 15:03:38.353 -04:00 [INF] Tipo de documento detectado: TactAdc para 5.TATC.png
+2025-08-22 15:03:42.079 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 5.TATC.png
+2025-08-22 15:04:21.702 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 15:04:30.743 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: TactAdc
+2025-08-22 15:04:48.200 -04:00 [INF] Documento TACT/ADC procesado exitosamente con IA: 
+2025-08-22 15:04:48.224 -04:00 [INF] Solicitud completada: POST /api/TactAdc/procesar - 200 en 85017.3701ms
+2025-08-22 15:11:52.970 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 15:11:55.516 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 15:12:23.171 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-22 15:12:23.213 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 15:12:23.216 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 15:12:23.220 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 15:12:23.223 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 15:12:23.958 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 15:12:54.843 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: imagen_2025-08-22_151221508.png
+2025-08-22 15:13:35.452 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: imagen_2025-08-22_151221508.png
+2025-08-22 15:13:54.213 -04:00 [INF] Tipo de documento detectado: Generico para imagen_2025-08-22_151221508.png
+2025-08-22 15:13:54.218 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: imagen_2025-08-22_151221508.png
+2025-08-22 15:15:04.266 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 15:15:23.521 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-22 15:15:23.525 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 15:15:23.526 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 15:15:23.528 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 15:15:23.529 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 15:15:23.900 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 15:15:27.601 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: 5.TATC.png
+2025-08-22 15:15:36.502 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TATC.png
+2025-08-22 15:16:46.826 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 15:16:49.240 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 15:17:05.491 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-22 15:17:05.525 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 15:17:05.527 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 15:17:05.532 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 15:17:05.534 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 15:17:06.575 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 15:17:09.246 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: 5.TACT.png
+2025-08-22 15:17:17.821 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TACT.png
+2025-08-22 15:17:19.914 -04:00 [INF] Tipo de documento detectado: Generico para 5.TACT.png
+2025-08-22 15:20:15.256 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 15:20:17.680 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 15:20:34.383 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-22 15:20:34.438 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 15:20:34.440 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 15:20:34.446 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 15:20:34.448 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 15:20:35.436 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 15:20:38.256 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: 5.TACT.png
+2025-08-22 15:20:46.655 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TACT.png
+2025-08-22 15:20:51.525 -04:00 [INF] Tipo de documento detectado: TactAdc para 5.TACT.png
+2025-08-22 15:20:52.254 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 5.TACT.png
+2025-08-22 15:23:32.570 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 15:23:39.676 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: TactAdc
+2025-08-22 15:23:45.891 -04:00 [INF] Documento TACT/ADC procesado exitosamente con IA: 
+2025-08-22 15:23:49.643 -04:00 [INF] Solicitud completada: POST /api/TactAdc/procesar - 200 en 195261.1576ms
+2025-08-22 15:33:01.294 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 15:33:03.706 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 15:34:07.505 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-22 15:34:07.537 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 15:34:07.538 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 15:34:07.542 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 15:34:07.543 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 15:34:08.227 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 15:34:13.009 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: 5.TACT.png
+2025-08-22 15:34:18.877 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TACT.png
+2025-08-22 15:34:18.965 -04:00 [INF] Tipo de documento detectado: TactAdc para 5.TACT.png
+2025-08-22 15:34:18.970 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 5.TACT.png
+2025-08-22 15:36:06.778 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 15:36:06.780 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: TactAdc
+2025-08-22 15:36:55.103 -04:00 [INF] Documento TACT/ADC procesado exitosamente con IA: 
+2025-08-22 15:36:55.138 -04:00 [INF] Solicitud completada: POST /api/TactAdc/procesar - 200 en 167634.0174ms
+2025-08-22 15:40:57.722 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 15:41:00.806 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 15:43:30.699 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-22 15:43:30.734 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 15:43:30.737 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 15:43:30.740 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 15:43:30.741 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 15:43:31.536 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 15:43:39.810 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: 5.TACT.png
+2025-08-22 15:43:39.825 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TACT.png
+2025-08-22 15:43:39.901 -04:00 [INF] Tipo de documento detectado: TactAdc para 5.TACT.png
+2025-08-22 15:43:39.906 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 5.TACT.png
+2025-08-22 15:45:09.624 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 15:45:09.626 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: TactAdc
+2025-08-22 15:45:09.726 -04:00 [WRN] Error parseando JSON de IA, usando método tradicional
+System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.Decimal]. Path: $.Peso | LineNumber: 9 | BytePositionInLine: 18.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'String' as a number.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_ExpectedNumber(JsonTokenType tokenType)
+   at System.Text.Json.Utf8JsonReader.TryGetDecimal(Decimal& value)
+   at System.Text.Json.Utf8JsonReader.GetDecimal()
+   at System.Text.Json.Serialization.Converters.DecimalConverter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at CarnetAduaneroProcessor.API.Controllers.TactAdcController.ProcesarDocumento(IFormFile file) in C:\Users\Diego\OneDrive\Escritorio\ProcesadorOCR\src\CarnetAduaneroProcessor.API\Controllers\TactAdcController.cs:line 86
+2025-08-22 15:45:09.754 -04:00 [INF] Iniciando extracción de datos de TACT/ADC desde stream: 5.TACT.png
+2025-08-22 15:45:10.546 -04:00 [INF] Texto extraído exitosamente con Tesseract
+2025-08-22 15:45:10.550 -04:00 [INF] Texto extraído de TACT/ADC: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (492)
+
+MELOG Giro: SERVICIOS EXTRAPORTUARIOS
+
+Dirccción: CAMIN
+2025-08-22 15:45:10.553 -04:00 [INF] Iniciando procesamiento de texto OCR para documento TACT/ADC
+2025-08-22 15:45:10.554 -04:00 [INF] Texto normalizado: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA (492) MELOG Giro: SERVICIOS EXTRAPORTUARIOS Dirccción: CAMINO LAS MERCEDES 14851 - SANTIAGO Emitido por: [2452809-7 el 25-06-2025 151048 (WEB) Tipo D.R.: CONTENEDOR IMPORTACION - POR MANIFIESTO - INDIRECTO BL Armador: (M)BACOS10074/ (H)DACA7ESES Consignatario: (86963200-7) FORUS S A Dirección: AV LAS CONDES NRO 11281, BLOCK C - SANTIAGO    N* DR 2025- 10718 Situación D.R.: NORMAL Manifiesto: 257809 Fch. Mnfto SNA: 19/06/2025 Fch.nicio Alm.: 25/06/2025 Inicio 90 Dias: 20/06/2025 Término 90 Días: 17/09/2025 NavelViaje: CMA CGM BEIRA/ OLISSN1    Forwerder: Lines Operadora: CMA-COM CHLE SA Agencia de Aduene: Srv. Almaceneje: ALMACENAJE DE CONTENEDOR 40 NORMAL (27) Almecen: PATIO ZONA PRIVARIA Guerda Almacén: MELLA JUAN (13106396-) Destino Carga: MPORTACION Pto.Origen: CHITTAGONG Plo Descarga: SAN ANTONIO: Zona: PRIMARIA Pto Embarque: CHITTAGONG Origen: MPORTACION: Plo Transbordo: CALLAO : TD o] — | a | r | s l oe coeerMenaeEso | + | ae | 0e —| —memo -| — 1mmiior - ONSGUTARO FoRUSSA VNEN H ( cons n Cs CoNDES SA + [eneo au ssnno ray hrc zaz CE VADE N $ rec Ia + [TAT mesorzbo0aeas : TOTAES. 1| sas00s          [eDIs 67609 tem) 25 05    0p Conpiemestaas: VISACIÓN DE CONTENEDORES:   [Obsenciones DR SIN OBSERVACION    bcrvcin as    'MODULO DE DOCUMENTO DE RECEPCIÓN. ERCHA: 24062008 151048
+2025-08-22 15:45:10.556 -04:00 [INF] Extrayendo campos críticos de TACT/ADC
+2025-08-22 15:45:10.565 -04:00 [INF] Extrayendo campos adicionales de TACT/ADC
+2025-08-22 15:45:10.568 -04:00 [INF] BL extraído: Armador
+2025-08-22 15:45:10.570 -04:00 [INF] Estado del documento: AUTORIZADO
+2025-08-22 15:45:10.572 -04:00 [INF] Guarda almacén extraído: MEDLOG CHILE EXTRAPORTUARIOS LIMITADA
+2025-08-22 15:45:10.575 -04:00 [INF] Número de contenedor extraído (último intento): IMPORTACION - POR MANIFIESTO - INDIRECTO BL Armador
+2025-08-22 15:45:10.577 -04:00 [WRN] Extracción incompleta: No se pudieron extraer todos los campos requeridos del documento TACT/ADC (Autorización de Despacho de Contenedores)
+2025-08-22 15:45:10.579 -04:00 [INF] Extracción completada para TACT/ADC: 
+2025-08-22 15:45:10.604 -04:00 [INF] Solicitud completada: POST /api/TactAdc/procesar - 200 en 99904.7994ms
+2025-08-22 15:45:33.641 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-22 15:45:33.650 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 15:45:33.652 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 15:45:33.657 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 15:45:33.659 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 15:45:33.818 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 15:45:36.380 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: 5.TACT.png
+2025-08-22 15:45:42.307 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TACT.png
+2025-08-22 15:45:42.345 -04:00 [INF] Tipo de documento detectado: TactAdc para 5.TACT.png
+2025-08-22 15:45:42.346 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 5.TACT.png
+2025-08-22 15:47:03.162 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 15:47:03.163 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: TactAdc
+2025-08-22 15:47:24.166 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TACT.png
+2025-08-22 15:47:32.100 -04:00 [INF] Tipo de documento detectado: TactAdc para 5.TACT.png
+2025-08-22 15:49:58.125 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 5.TACT.png
+2025-08-22 15:56:16.478 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 15:56:18.824 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 15:59:14.636 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-22 15:59:14.673 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 15:59:14.675 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 15:59:14.679 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 15:59:14.680 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 15:59:15.400 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 15:59:19.330 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: 5.TACT.png
+2025-08-22 15:59:59.278 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TACT.png
+2025-08-22 16:00:01.945 -04:00 [INF] Detectando tipo de documento para archivo: 5.TACT.png
+2025-08-22 16:00:01.947 -04:00 [INF] Archivo 5.TACT.png detectado como TactAdc
+2025-08-22 16:00:05.157 -04:00 [INF] Tipo de documento detectado: TactAdc para 5.TACT.png
+2025-08-22 16:00:06.394 -04:00 [INF] Seleccionando prompt para tipo de documento: TactAdc
+2025-08-22 16:00:06.395 -04:00 [INF] Usando prompt de TactAdc
+2025-08-22 16:00:14.570 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 5.TACT.png
+2025-08-22 16:06:02.614 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 16:06:05.161 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 16:07:56.944 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-22 16:07:56.977 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 16:07:56.980 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 16:07:56.984 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 16:07:56.985 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 16:07:57.694 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 16:08:00.581 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: 5.TACT.png
+2025-08-22 16:08:07.199 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TACT.png
+2025-08-22 16:08:07.274 -04:00 [INF] Tipo de documento detectado: TactAdc para 5.TACT.png
+2025-08-22 16:08:07.279 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 5.TACT.png
+2025-08-22 16:09:48.720 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 16:09:48.722 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: TactAdc
+2025-08-22 16:11:01.179 -04:00 [INF] Documento TACT/ADC procesado exitosamente con IA: 
+2025-08-22 16:17:15.265 -04:00 [INF] Iniciando aplicación Carnet Aduanero Processor
+2025-08-22 16:17:17.629 -04:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-08-22 16:19:35.092 -04:00 [INF] Iniciando solicitud: POST /api/TactAdc/procesar
+2025-08-22 16:19:35.125 -04:00 [INF] Inicializando motor de Tesseract desde: C:\Program Files\Tesseract-OCR\tessdata
+2025-08-22 16:19:35.128 -04:00 [INF] Verificando archivo español: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata - Existe: true
+2025-08-22 16:19:35.131 -04:00 [INF] Verificando archivo inglés: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata - Existe: true
+2025-08-22 16:19:35.132 -04:00 [INF] Intentando inicializar Tesseract con idioma español...
+2025-08-22 16:19:35.781 -04:00 [INF] Tesseract inicializado exitosamente con idioma español
+2025-08-22 16:19:40.188 -04:00 [INF] Iniciando procesamiento de documento TACT/ADC con IA: 5.TACT.png
+2025-08-22 16:19:48.611 -04:00 [INF] Iniciando procesamiento directo de imagen con Gemma 3: 4B: 5.TACT.png
+2025-08-22 16:19:48.693 -04:00 [INF] Tipo de documento detectado: TactAdc para 5.TACT.png
+2025-08-22 16:19:48.698 -04:00 [INF] Intento 1/2: Llamando a Ollama con imagen usando modelo gemma3:4b para procesar: 5.TACT.png
+2025-08-22 16:21:15.369 -04:00 [INF] Respuesta de imagen procesada exitosamente por Ollama
+2025-08-22 16:21:15.371 -04:00 [INF] Procesamiento de imagen completado exitosamente con Gemma 3: 4B para tipo: TactAdc

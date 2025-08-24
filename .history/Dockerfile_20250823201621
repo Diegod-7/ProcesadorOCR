@@ -1,0 +1,79 @@
+# Usar la imagen oficial de .NET 8.0 (actualizada)
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+EXPOSE 11434
+
+# Instalar Tesseract OCR, Ollama y dependencias
+RUN apt-get update && apt-get install -y \
+    tesseract-ocr \
+    tesseract-ocr-spa \
+    tesseract-ocr-eng \
+    libgdiplus \
+    libc6-dev \
+    libgif-dev \
+    libjpeg-dev \
+    libpng-dev \
+    libtiff-dev \
+    libwebp-dev \
+    libfontconfig1 \
+    libfreetype6 \
+    libexpat1 \
+    libuuid1 \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Instalar Ollama
+RUN curl -fsSL https://ollama.ai/install.sh | sh
+
+# Usar la imagen de SDK para compilar
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+
+# Copiar archivos de proyecto y restaurar dependencias
+COPY ["src/CarnetAduaneroProcessor.API/CarnetAduaneroProcessor.API.csproj", "src/CarnetAduaneroProcessor.API/"]
+COPY ["src/CarnetAduaneroProcessor.Core/CarnetAduaneroProcessor.Core.csproj", "src/CarnetAduaneroProcessor.Core/"]
+COPY ["src/CarnetAduaneroProcessor.Infrastructure/CarnetAduaneroProcessor.Infrastructure.csproj", "src/CarnetAduaneroProcessor.Infrastructure/"]
+
+RUN dotnet restore "src/CarnetAduaneroProcessor.API/CarnetAduaneroProcessor.API.csproj"
+
+# Copiar todo el código fuente
+COPY . .
+WORKDIR "/src/src/CarnetAduaneroProcessor.API"
+
+# Compilar la aplicación
+RUN dotnet build "CarnetAduaneroProcessor.API.csproj" -c Release -o /app/build
+
+# Publicar la aplicación
+FROM build AS publish
+RUN dotnet publish "CarnetAduaneroProcessor.API.csproj" -c Release -o /app/publish /p:UseAppHost=false
+
+# Imagen final
+FROM base AS final
+WORKDIR /app
+
+# Copiar archivos de Tesseract locales si existen
+COPY tessdata/ /usr/share/tessdata/
+
+# Copiar la aplicación publicada
+COPY --from=publish /app/publish .
+
+# Crear directorio para uploads
+RUN mkdir -p /app/Uploads
+RUN mkdir -p /app/Logs
+
+# Establecer permisos
+RUN chmod -R 755 /app/Uploads
+RUN chmod -R 755 /app/Logs
+
+# Usuario no root para seguridad
+RUN groupadd -r appuser && useradd -r -g appuser appuser
+RUN chown -R appuser:appuser /app
+USER appuser
+
+# Configurar variables de entorno para System.Drawing
+ENV DOTNET_SYSTEM_DRAWING_ENABLE_UNSAFE_CODE=1
+ENV DOTNET_SYSTEM_DRAWING_ENABLE_LINUX_NATIVE=1
+
+ENTRYPOINT ["dotnet", "CarnetAduaneroProcessor.API.dll"] 
